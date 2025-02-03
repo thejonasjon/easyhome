@@ -1,0 +1,274 @@
+/* General CSS */
+@import url("/assets/css/resets.css");
+
+/* Variable */
+:root {
+    /* Colors */
+    --white-clr-100: #fff;
+
+    --primary-clr-1101: #0b0c0b;
+    --primary-clr-1001: #121312;
+    --primary-clr-901: #1c1d1b;
+    --primary-clr-801: #252724;
+    --primary-clr-701: #2e302d;
+    --primary-clr-601: #383a36;
+    --primary-clr-501: #595b58;
+    --primary-clr-401: #7a7c79;
+    --primary-clr-301: #9b9c9a;
+    --primary-clr-201: #bcbdbc;
+    --primary-clr-101: #d7d8d7;
+
+    --secondary-clr-1101: #2e2d2c;
+    --secondary-clr-1001: #4d4b4a;
+    --secondary-clr-901: #73716f;
+    --secondary-clr-801: #999793;
+    --secondary-clr-701: #c0bcb8;
+    --secondary-clr-601: #e6e2dc;
+    --secondary-clr-501: #e9e7e3;
+    --secondary-clr-401: #eeece8;
+    --secondary-clr-301: #f2f0ee;
+    --secondary-clr-201: #f7f5f4;
+    --secondary-clr-101: #faf9f8;
+
+    --accent-clr-1101: #2a1a14;
+    --accent-clr-1001: #472b22;
+    --accent-clr-901: #6a4133;
+    --accent-clr-801: #8d5745;
+    --accent-clr-701: #b16c56;
+    --accent-clr-601: #d38166;
+    --accent-clr-501: #db9680;
+    --accent-clr-401: #e3ab99;
+    --accent-clr-301: #e8c0b2;
+    --accent-clr-201: #f1d5cc;
+    --accent-clr-101: #f6e6e0;
+
+    --grey-clr-1101: #0e0e0e;
+    --grey-clr-1001: #171717;
+    --grey-clr-901: #222222;
+    --grey-clr-801: #2d2d2d;
+    --grey-clr-701: #393939;
+    --grey-clr-601: #444444;
+    --grey-clr-501: #636363;
+    --grey-clr-401: #828282;
+    --grey-clr-301: #a1a1a1;
+    --grey-clr-201: #c1c1c1;
+    --grey-clr-101: #dadada;
+
+    --black-clr-1101: #030303;
+    --black-clr-1001: #060505;
+    --black-clr-901: #090808;
+    --black-clr-801: #393838;
+    --black-clr-701: #0e0d0d;
+    --black-clr-601: #111010;
+    --black-clr-501: #393838;
+    --black-clr-401: #606060;
+    --black-clr-301: #888787;
+    --black-clr-201: #b0afaf;
+    --black-clr-101: #cfcfcf;
+
+    /* Sizes */
+    --size-1: 0.1rem;
+    --size-2: 0.2rem;
+    --size-3: 0.3rem;
+    --size-4: 0.4rem;
+    --size-5: 0.5rem;
+    --size-6: 0.6rem;
+    --size-7: 0.7rem;
+    --size-8: 0.8rem;
+    --size-9: 0.9rem;
+    --size-10: 1rem;
+    --size-11: 1.1rem;
+    --size-12: 1.2rem;
+    --size-13: 1.3rem;
+    --size-14: 1.4rem;
+    --size-15: 1.5rem;
+    --size-16: 1.6rem;
+    --size-17: 1.7rem;
+    --size-18: 1.8rem;
+    --size-19: 1.9rem;
+    --size-20: 2rem;
+    --size-21: 2.1rem;
+    --size-22: 2.2rem;
+    --size-23: 2.3rem;
+    --size-24: 2.4rem;
+    --size-25: 2.5rem;
+    --size-26: 2.6rem;
+    --size-27: 2.7rem;
+    --size-28: 2.8rem;
+    --size-29: 2.9rem;
+    --size-30: 3rem;
+    --size-31: 3.1rem;
+    --size-32: 3.2rem;
+    --size-33: 3.3rem;
+    --size-34: 3.4rem;
+    --size-35: 3.5rem;
+    --size-36: 3.6rem;
+    --size-37: 3.7rem;
+    --size-38: 3.8rem;
+    --size-39: 3.9rem;
+    --size-40: 4rem;
+    --size-41: 4.1rem;
+    --size-42: 4.2rem;
+    --size-43: 4.3rem;
+    --size-44: 4.4rem;
+    --size-45: 4.5rem;
+    --size-46: 4.6rem;
+    --size-47: 4.7rem;
+    --size-48: 4.8rem;
+    --size-49: 4.9rem;
+    --size-50: 5rem;
+    --size-51: 5.1rem;
+    --size-52: 5.2rem;
+    --size-53: 5.3rem;
+    --size-54: 5.4rem;
+    --size-55: 5.5rem;
+    --size-56: 5.6rem;
+    --size-57: 5.7rem;
+    --size-58: 5.8rem;
+    --size-59: 5.9rem;
+    --size-60: 6rem;
+    --size-61: 6.1rem;
+    --size-62: 6.2rem;
+    --size-63: 6.3rem;
+    --size-64: 6.4rem;
+    --size-65: 6.5rem;
+    --size-66: 6.6rem;
+    --size-67: 6.7rem;
+    --size-68: 6.8rem;
+    --size-69: 6.9rem;
+    --size-70: 7rem;
+    --size-71: 7.1rem;
+    --size-72: 7.2rem;
+    --size-73: 7.3rem;
+    --size-74: 7.4rem;
+    --size-75: 7.5rem;
+    --size-76: 7.6rem;
+    --size-77: 7.7rem;
+    --size-78: 7.8rem;
+    --size-79: 7.9rem;
+    --size-80: 8rem;
+    --size-81: 8.1rem;
+    --size-82: 8.2rem;
+    --size-83: 8.3rem;
+    --size-84: 8.4rem;
+    --size-85: 8.5rem;
+    --size-86: 8.6rem;
+    --size-87: 8.7rem;
+    --size-88: 8.8rem;
+    --size-89: 8.9rem;
+    --size-90: 9rem;
+    --size-91: 9.1rem;
+    --size-92: 9.2rem;
+    --size-93: 9.3rem;
+    --size-94: 9.4rem;
+    --size-95: 9.5rem;
+    --size-96: 9.6rem;
+    --size-97: 9.7rem;
+    --size-98: 9.8rem;
+    --size-99: 9.9rem;
+    --size-100: 10rem;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.grid-item {
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+/* Column Spans */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* Gap */
+.gap--10 {
+  gap: var(--size-10);;
+}
+
+.gap--15 {
+  gap: var(--size-15);;
+}
+
+.gap--20 {
+  gap: var(--size-20);
+}
+
+.gap--40 {
+  gap: var(--size-40);
+}
+
+.gap--60 {
+  gap: var(--size-60);
+}
+
+.gap--200 {
+    gap: var(--size-200);
+}
+
+/* Buttons */
+[class^="button-"]:hover {
+  cursor: pointer;
+}
