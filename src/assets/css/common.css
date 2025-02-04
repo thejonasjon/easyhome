@@ -1,5 +1,5 @@
 /* General CSS */
-@import url("/assets/css/resets.css");
+@import url("/src/assets/css/resets.css");
 
 /* Variable */
 :root {
@@ -223,6 +223,10 @@
   justify-content: space-between;
 }
 
+.justify-around {
+    justify-content: space-around;
+  }
+
 .align-start {
   align-items: flex-start;
 }
@@ -244,12 +248,32 @@
 }
 
 /* Gap */
+.gap--1 {
+    gap: var(--size-1);
+}
+
+.gap--2 {
+    gap: var(--size-2);
+}
+
+.gap--3 {
+    gap: var(--size-3);
+}
+
+.gap--4 {
+    gap: var(--size-4);
+}
+
+.gap--5 {
+    gap: var(--size-5);
+}
+
 .gap--10 {
-  gap: var(--size-10);;
+  gap: var(--size-10);
 }
 
 .gap--15 {
-  gap: var(--size-15);;
+  gap: var(--size-15);
 }
 
 .gap--20 {
@@ -268,7 +292,86 @@
     gap: var(--size-200);
 }
 
+/* Headings */
+
+[class^="heading--h"] {
+    font-family: poppins-regular;
+}
+
+[class^="paragraph--"] {
+  font-family: montserrat-default;
+}
+
+.heading--h1{
+
+}
+
+.heading--h2{
+  font-size: var(--size-48);
+  line-height: var(--size-72);
+  font-weight: 800;
+}
+
+.heading--h3{
+    font-size: var(--size-40);
+    line-height: var(--size-48);
+    font-weight: 700;
+}
+
+.heading--h4{
+    font-size: var(--size-33);
+    line-height: var(--size-40);
+    font-weight: 800;
+}
+
+.heading--h4{
+    font-size: var(--size-23);
+    line-height: var(--size-35);
+    font-weight: 700;
+}
+
+.paragraph--sm {
+    font-size: var(--size-14);
+    line-height: var(--size-24);
+}
+
+.paragraph--md {
+  font-size: var(--size-19);
+  line-height: var(--size-23);
+}
+
+.paragraph--xl {
+  font-size: var(--size-23);
+  line-height: var(--size-27);
+  font-weight: 500;
+}
+
+
 /* Buttons */
 [class^="button-"]:hover {
   cursor: pointer;
+}
+
+/* SVGs */
+
+svg {
+    width: var(--size-16);
+    height: var(--size-16);
+}
+
+/* Container */
+.container-layer--large {
+    width: 95%;
+    background-color: var(--primary-clr-801);
+}
+
+.container-layer--medium {
+    width: 90%;
+    background-color: var(--primary-clr-901);
+    padding: 10rem;
+}
+
+.container-layer--large, .container-layer--medium {
+    margin: 0 auto;
+    border-radius: var(--size-10);
 }

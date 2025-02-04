@@ -153,6 +153,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--primary-clr-701);
 }
 
 /* A elements that don't have a class get default styles */
@@ -209,5 +210,6 @@ h6 {
 }
 
 a {
+  font-family: poppins-regular;
   text-decoration: none;
 }
