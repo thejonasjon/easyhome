@@ -225,7 +225,11 @@
 
 .justify-around {
     justify-content: space-around;
-  }
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
 
 .align-start {
   align-items: flex-start;
@@ -363,6 +367,7 @@ svg {
 .container-layer--large {
     width: 95%;
     background-color: var(--primary-clr-801);
+    margin-bottom: 40rem;
 }
 
 .container-layer--medium {
@@ -374,4 +379,8 @@ svg {
 .container-layer--large, .container-layer--medium {
     margin: 0 auto;
     border-radius: var(--size-10);
+}
+
+.container-layer--large {
+    margin-bottom: clamp(var(--size-50), 10rem, 2rem);
 }
