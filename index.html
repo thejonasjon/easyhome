@@ -10,9 +10,28 @@
 <body>
     <section class="hero">
         <div class="section-container">
-            <div class="slide-wrapper">
+            <div class="slide-wrapper flex">
                 <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="">
+                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1 Image">
+                </div>
+
+                <div class="slide">
+                    <img src="/src/assets/images/landing-slide-2.png" alt="Slide 2 Image">
+                </div>
+
+                <div class="slide">
+                    <img src="/src/assets/images/landing-slide-3.png" alt="Slide 3 Image">
+                </div>
+
+                <div class="slide">
+                    <img src="/src/assets/images/landing-slide-4.png" alt="Slide 4 Image">
+                </div>
+
+                <div class="slide">
+                    <img src="/src/assets/images/landing-slide-5.png" alt="Slide 5 Image">
+                </div>
+                <div class="slide">
+                    <img src="/src/assets/images/landing-slide-6.png" alt="Slide 5 Image">
                 </div>
             </div>
 
@@ -28,9 +47,25 @@
                         <ul role="list" class="main-nav flex gap--40">
                             <li><a href="#">Property Listings</a></li>
                             <li><a href="#">Rent</a></li>
-                            <li><a href="#">Post your Property</a></li>
+                            <li><a href="#">Post a Property</a></li>
                             <li><a href="#">Find a Roomate</a></li>
-                            <li><a href="#">About Us</a></li>
+                            <li>
+                                <div class="flex align-end  gap--4" style="position: relative;">
+                                    <a href="#">About Us</a>
+                                    <span class="flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </span>
+
+                                    <div style="display: none; position: absolute; top: 40px; left: -50%; width: 400px;">
+                                        <ul role="list">
+                                            <li><a href="#">Search for avalilable rooms</a></li>
+                                            <li><a href="#">List your space</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href="#">Help/Support</a></li>
                         </ul>
                     </nav>
@@ -38,7 +73,7 @@
 
                 <div class="hero-text flex flex-column">
                     <div class="text flex flex-column">
-                        <h1 class="heading--h2">Find, Connect, Move In—It’s That Simple</h1>
+                        <h2 class="heading--h2">Find, Connect, Move In—It’s That Simple</h2>
                         <p class="paragraph--md">EasyHome connects you directly with landlords, making home searches simple, transparent, and stress-free</p>
                     </div>
 
@@ -172,291 +207,322 @@
         </div>
     </section>
 
-    <!-- Featured Houses -->
-    <section class="featured-houses">
-        <div class="conatiner">
+    <main class="space--16">
+        <!-- Featured Houses -->
+        <section class="featured-houses">
+            <div class="conatiner">
+                <div class="container-layer--large">
+                    <div class="container-layer--medium">
+                        <div class="section-heading flex justify-between align-center">
+                            <div class="text">
+                                <h3 class="heading--h3">
+                                    <strong>Featured</strong> Houses
+                                </h3>
+                            </div>
+
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+
+                            </div>
+                        </div>
+
+                        <div class="slide-wrapper flex">
+                            <div class="block slide">
+                                <div class="image-cont">
+                                    <div class="location">
+                                        <span>Ikeja, Lagos</span>
+                                    </div>
+                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                </div>
+
+                                <div class="text">
+                                    <div class="status">
+                                        <span>Avalilable</span>
+                                    </div>
+
+                                    <h4 class="heading--h4">Grand Luxurious Mansion</h4>
+
+                                    <div class="property-includes flex gap--10">
+                                        <div class="includes">
+                                            <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
+                                            <span>8 Bedrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            <span>8 Bathrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
+                                            <span>Newly Built </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr">
+                                        <hr>
+                                    </div>
+
+                                    <div class="price-details-link flex justify-between align-center">
+                                        <div class="price">
+                                            <span><strong>₦4.6M</strong>/ year</span>
+                                        </div>
+
+                                        <div class="details-link">
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block slide">
+                                <div class="image-cont">
+                                    <div class="location">
+                                        <span>Ikeja, Lagos</span>
+                                    </div>
+                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                </div>
+
+                                <div class="text">
+                                    <div class="status">
+                                        <span>Avalilable</span>
+                                    </div>
+
+                                    <h4 class="heading--h4">Modern Duplex</h4>
+
+                                    <div class="property-includes flex gap--10">
+                                        <div class="includes">
+                                            <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
+                                            <span>8 Bedrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            <span>8 Bathrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
+                                            <span>Newly Built </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr">
+                                        <hr>
+                                    </div>
+
+                                    <div class="price-details-link flex justify-between align-center">
+                                        <div class="price">
+                                            <span><strong>₦1.8M</strong>/ year</span>
+                                        </div>
+
+                                        <div class="details-link">
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="block slide">
+                                <div class="image-cont">
+                                    <div class="location">
+                                        <span>Ikeja, Lagos</span>
+                                    </div>
+                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                </div>
+
+                                <div class="text">
+                                    <div class="status">
+                                        <span>Avalilable</span>
+                                    </div>
+
+                                    <h4 class="heading--h4">Luxurious</h4>
+
+                                    <div class="property-includes flex gap--10">
+                                        <div class="includes">
+                                            <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
+                                            <span>8 Bedrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            <span>8 Bathrooms</span>
+                                        </div>
+                                        <div class="includes">
+                                            <svg class="new" width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="58" height="58" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
+                                            <span>Newly Built </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr">
+                                        <hr>
+                                    </div>
+
+                                    <div class="price-details-link flex justify-between align-center">
+                                        <div class="price">
+                                            <span><strong>₦3.4M</strong>/ year</span>
+                                        </div>
+
+                                        <div class="details-link">
+                                            <a href="#">View Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container-layer--large flex justify-evenly">
+                <div class="block">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </div>
+
+                    <h4 class="heading--h4">600+</h4>
+                    <p>Rented Houses</p>
+                </div>
+
+                <div class="block">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z" />
+                            <path d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z" />
+                        </svg>
+                    </div>
+
+                    <h2 class="heading--h4">1k+</h2>
+                    <p>Houses Listed for Rent</p>
+                </div>
+
+                <div class="block">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+
+                    <h2 class="heading--h4">9.7/10</h2>
+                    <p>Average Customer Ratings</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We DO -->
+        <section class="wwd">
             <div class="container-layer--large">
                 <div class="container-layer--medium">
-                    <div class="section-heading flex justify-between align-center">
-                        <div class="text">
-                            <h3 class="heading--h3">
-                                <strong>Featured</strong> Houses
-                            </h3>
-                        </div>
-
-                        <div class="icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                              </svg>
-
-                        </div>
+                    <div class="heading flex align-center gap-- text-align-center">
+                        <hr>
+                        <h3 class="heading--h3">What We Do</h3>
+                        <hr>
                     </div>
 
-                    <div class="slide-wrapper flex">
-                        <div class="block slide">
-                            <div class="image-cont">
-                                <div class="location">
-                                    <span>Ikeja, Lagos</span>
-                                </div>
-                                <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
-                            </div>
-
-                            <div class="text">
-                                <div class="status">
-                                    <span>Avalilable</span>
-                                </div>
-
-                                <h4 class="heading--h4">Grand Luxurious Mansion</h4>
-
-                                <div class="property-includes flex gap--10">
-                                    <div class="includes">
-                                        <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
-                                        <span>8 Bedrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                        <span>8 Bathrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
-                                        <span>Newly Built </span>
-                                    </div>
-                                </div>
-
-                                <div class="hr">
-                                    <hr>
-                                </div>
-
-                                <div class="price-details-link flex justify-between align-center">
-                                    <div class="price">
-                                        <span><strong>₦4.6M</strong>/ year</span>
-                                    </div>
-
-                                    <div class="details-link">
-                                        <a href="#">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="block flex align-center justify-between">
+                        <div class="text flex flex-column gap--40">
+                            <h4>Direct Connection Between Homeowners and Tenants</h4>
+                            <p>We eliminate the middleman by connecting homeowners and tenants directly, allowing for quick and transparent communication to streamline the home search and rental process.</p>
                         </div>
 
-                        <div class="block slide">
-                            <div class="image-cont">
-                                <div class="location">
-                                    <span>Ikeja, Lagos</span>
-                                </div>
-                                <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
-                            </div>
+                        <div class="image-cont">
+                            <img src="/src/assets/images/landlord-tenant.png" alt="Langlord and Tenants Image">
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="text">
-                                <div class="status">
-                                    <span>Avalilable</span>
-                                </div>
-
-                                <h4 class="heading--h4">Modern Duplex</h4>
-
-                                <div class="property-includes flex gap--10">
-                                    <div class="includes">
-                                        <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
-                                        <span>8 Bedrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                        <span>8 Bathrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
-                                        <span>Newly Built </span>
-                                    </div>
-                                </div>
-
-                                <div class="hr">
-                                    <hr>
-                                </div>
-
-                                <div class="price-details-link flex justify-between align-center">
-                                    <div class="price">
-                                        <span><strong>₦1.8M</strong>/ year</span>
-                                    </div>
-
-                                    <div class="details-link">
-                                        <a href="#">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="container-layer--medium">
+                    <div class="block flex align-center justify-between">
+                        <div class="text flex flex-column gap--40">
+                            <h4>Show Only Verified Listings</h4>
+                            <p>Every homeowner and property on our platform is carefully verified to prevent scams and misleading listings. Our secure process ensures trust between homeowners and tenants, giving you peace of mind when renting or leasing.</p>
                         </div>
 
+                        <div class="image-cont">
+                            <img src="/src/assets/images/verified-listing.png" alt="Verified Listings Image">
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="block slide">
-                            <div class="image-cont">
-                                <div class="location">
-                                    <span>Ikeja, Lagos</span>
-                                </div>
-                                <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
-                            </div>
+                <div class="container-layer--medium">
+                    <div class="block flex align-center justify-between">
+                        <div class="text flex flex-column gap--40">
+                            <h4>Easy-to-Use Platform</h4>
+                            <p>Our user-friendly dashboard and customizable search filters make finding the perfect home or tenant a breeze. Both homeowners and tenants can manage their needs and preferences effortlessly.</p>
+                        </div>
 
-                            <div class="text">
-                                <div class="status">
-                                    <span>Avalilable</span>
-                                </div>
-
-                                <h4 class="heading--h4">Luxurious</h4>
-
-                                <div class="property-includes flex gap--10">
-                                    <div class="includes">
-                                        <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
-                                        <span>8 Bedrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                                        <span>8 Bathrooms</span>
-                                    </div>
-                                    <div class="includes">
-                                        <svg class="new" width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>new-rectangle</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="58" height="58" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M44,14H4a2,2,0,0,0-2,2V32a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V16A2,2,0,0,0,44,14ZM17.3,29H14.8l-3-5-.7-1.3h0V29H8.7V19h2.5l3,5,.6,1.3h.1s-.1-1.2-.1-1.6V19h2.5Zm9.1,0H18.7V19h7.6v2H21.2v1.8h4.4v2H21.2v2.1h5.2Zm10.9,0H34.8l-1-4.8c-.2-.8-.4-1.9-.4-1.9h0s-.2,1.1-.3,1.9L32,29H29.6L26.8,19h2.5l1,4.2a20.1,20.1,0,0,1,.5,2.5h0l.5-2.4,1-4.3h2.3l.9,4.3.5,2.4h0l.5-2.5,1-4.2H40Z"></path> </g> </g> </g></svg>
-                                        <span>Newly Built </span>
-                                    </div>
-                                </div>
-
-                                <div class="hr">
-                                    <hr>
-                                </div>
-
-                                <div class="price-details-link flex justify-between align-center">
-                                    <div class="price">
-                                        <span><strong>₦3.4M</strong>/ year</span>
-                                    </div>
-
-                                    <div class="details-link">
-                                        <a href="#">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="image-cont">
+                            <img src="/src/assets/images/easy-to-use.png" alt="Ease to Use Image">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="container-layer--large flex justify-evenly">
-            <div class="block">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                        <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                      </svg>
-                </div>
-
-                <h4 class="heading--h4">600+</h4>
-                <p>Rented Houses</p>
-            </div>
-
-            <div class="block">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32l8.4-8.4Z" />
-                        <path d="M5.25 5.25a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h10.5a3 3 0 0 0 3-3V13.5a.75.75 0 0 0-1.5 0v5.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5h5.25a.75.75 0 0 0 0-1.5H5.25Z" />
-                      </svg>
-                </div>
-
-                <h2 class="heading--h4">1k+</h2>
-                <p>Houses Listed for Rent</p>
-            </div>
-
-            <div class="block">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                    </svg>
-                </div>
-
-                <h2 class="heading--h4">9.7/10</h2>
-                <p>Average Customer Ratings</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- What We DO -->
-    <section class="wwd">
-        <div class="container-layer--large">
-            <div class="container-layer--medium">
-                <div class="heading flex align-center gap-- text-align-center">
-                    <hr>
-                    <h3 class="heading--h3">What We Do</h3>
-                    <hr>
-                </div>
-
-                <div class="block flex align-center justify-between">
-                    <div class="text flex flex-column gap--40">
-                        <h4>Direct Connection Between Homeowners and Tenants</h4>
-                        <p>We eliminate the middleman by connecting homeowners and tenants directly, allowing for quick and transparent communication to streamline the home search and rental process.</p>
+        <!-- Purchases -->
+        <section class="purchases">
+            <div>
+                <div class="slide-wrapper flex">
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
                     </div>
-
-                    <div class="image-cont">
-                        <img src="/src/assets/images/landlord-tenant.png" alt="Langlord and Tenants Image">
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
                     </div>
                 </div>
-            </div>
 
-            <div class="container-layer--medium">
-                <div class="block flex align-center justify-between">
-                    <div class="text flex flex-column gap--40">
-                        <h4>Show Only Verified Listings</h4>
-                        <p>Every homeowner and property on our platform is carefully verified to prevent scams and misleading listings. Our secure process ensures trust between homeowners and tenants, giving you peace of mind when renting or leasing.</p>
-                    </div>
-
-                    <div class="image-cont">
-                        <img src="/src/assets/images/verified-listing.png" alt="Verified Listings Image">
-                    </div>
+                <div class="text text-align-center">
+                    <h3 class="heading--h3">With Over a 100 + Successful Purchases</h3>
+                    <p class="paragraph--xl">Be rest assured that we provide a secure, seamless, and trustworthy home rental experience</p>
                 </div>
             </div>
-
-            <div class="container-layer--medium">
-                <div class="block flex align-center justify-between">
-                    <div class="text flex flex-column gap--40">
-                        <h4>Easy-to-Use Platform</h4>
-                        <p>Our user-friendly dashboard and customizable search filters make finding the perfect home or tenant a breeze. Both homeowners and tenants can manage their needs and preferences effortlessly.</p>
-                    </div>
-
-                    <div class="image-cont">
-                        <img src="/src/assets/images/easy-to-use.png" alt="Ease to Use Image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Purchases -->
-    <section class="purchases">
-        <div>
-            <div class="slide-wrapper flex">
-                <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="/src/assets/images/landing-slide-1.png" alt="Slide 1">
-                </div>
-            </div>
-
-            <div class="text text-align-center">
-                <h3 class="heading--h3">With Over a 100 + Successful Purchases</h3>
-                <p class="paragraph--xl">Be rest assured that we provide a secure, seamless, and trustworthy home rental experience</p>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <!-- Footer -->
-    <footer>
+    <footer class="space--168">
         <div class="footer-content">
             <section class="f-one">
                 <div class="section-one flex justify-end">
@@ -465,14 +531,17 @@
                             <h4 class="heading--h4">Get Property Alerts From EasyHome</h4>
                         </div>
 
-                        <div class="input-group flex align-center gap--4">
+                        <div class="input-group flex align-center gap--8">
                             <input type="email" placeholder="Enter Your Email Address For Alert">
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+                            <button class="flex align-center justify-center">
+                                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                                    <title>send_line</title>
+                                    <g id="send_line" fill='none' fill-rule='evenodd'>
+                                        <path d='M24 0v24H0V0zM12.594 23.258l-.012.002-.071.035-.02.004-.014-.004-.071-.036c-.01-.003-.019 0-.024.006l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113-.014.002-.184.093-.01.01-.003.011.018.43.005.012.008.008.201.092c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.003-.011.018-.43-.003-.012-.01-.01z'/>
+                                        <path fill='#09244BFF' d='M17.991 6.01 5.399 10.563l4.195 2.428 3.699-3.7a1 1 0 0 1 1.414 1.415l-3.7 3.7 2.43 4.194L17.99 6.01Zm.323-2.244c1.195-.433 2.353.725 1.92 1.92l-5.282 14.605c-.434 1.198-2.07 1.344-2.709.241l-3.217-5.558-5.558-3.217c-1.103-.639-.957-2.275.241-2.709z'/>
+                                    </g>
                                 </svg>
-                            </button>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -547,13 +616,17 @@
                                     call
                                 </span>
                                 +2348135319804</a></li>
-                            <li><a class="flex align-center gap--4" href="#">
-                                <svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.856 6.84a.75.75 0 0 0-1.106.66V17a.75.75 0 0 0 1.5 0V8.756l5.394 2.904c.222.12.49.12.712 0l5.394-2.904V17a.75.75 0 0 0 1.5 0V7.5a.75.75 0 0 0-1.106-.66L12 10.148 5.856 6.84Z"></path>
-                                    <path fill-rule="evenodd" d="M17.31 3.722a59.632 59.632 0 0 0-10.62 0l-1.518.135a3.53 3.53 0 0 0-3.179 3.006 35.508 35.508 0 0 0 0 10.274 3.53 3.53 0 0 0 3.18 3.005l1.516.136c3.534.316 7.088.316 10.622 0l1.517-.136a3.53 3.53 0 0 0 3.179-3.005 35.508 35.508 0 0 0 0-10.274 3.53 3.53 0 0 0-3.18-3.006l-1.516-.135ZM6.824 5.216a58.133 58.133 0 0 1 10.354 0l1.517.136a2.03 2.03 0 0 1 1.829 1.728 34.005 34.005 0 0 1 0 9.84 2.03 2.03 0 0 1-1.829 1.728l-1.517.136c-3.444.308-6.91.308-10.354 0l-1.517-.136a2.03 2.03 0 0 1-1.829-1.728 34.008 34.008 0 0 1 0-9.84 2.03 2.03 0 0 1 1.829-1.728l1.517-.136Z" clip-rule="evenodd"></path>
-                                </svg>
-                                Easyhome@gmail.com</a></li>
-
+                            <li>
+                                <a href="#">
+                                    <div class="flex align-center gap--4">
+                                        <svg width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.856 6.84a.75.75 0 0 0-1.106.66V17a.75.75 0 0 0 1.5 0V8.756l5.394 2.904c.222.12.49.12.712 0l5.394-2.904V17a.75.75 0 0 0 1.5 0V7.5a.75.75 0 0 0-1.106-.66L12 10.148 5.856 6.84Z"></path>
+                                            <path fill-rule="evenodd" d="M17.31 3.722a59.632 59.632 0 0 0-10.62 0l-1.518.135a3.53 3.53 0 0 0-3.179 3.006 35.508 35.508 0 0 0 0 10.274 3.53 3.53 0 0 0 3.18 3.005l1.516.136c3.534.316 7.088.316 10.622 0l1.517-.136a3.53 3.53 0 0 0 3.179-3.005 35.508 35.508 0 0 0 0-10.274 3.53 3.53 0 0 0-3.18-3.006l-1.516-.135ZM6.824 5.216a58.133 58.133 0 0 1 10.354 0l1.517.136a2.03 2.03 0 0 1 1.829 1.728 34.005 34.005 0 0 1 0 9.84 2.03 2.03 0 0 1-1.829 1.728l-1.517.136c-3.444.308-6.91.308-10.354 0l-1.517-.136a2.03 2.03 0 0 1-1.829-1.728 34.008 34.008 0 0 1 0-9.84 2.03 2.03 0 0 1 1.829-1.728l1.517-.136Z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        Easyhome@gmail.com
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

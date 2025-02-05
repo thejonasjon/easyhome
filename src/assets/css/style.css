@@ -31,6 +31,10 @@
 
       & .hero-text {
         gap: clamp(2rem, 3rem, 5rem);
+
+        & .heading--h2, p {
+            color: var(--primary-clr-101);
+            text-shadow: 0 var(--size-1) var(--size-4) #000, 1px 1px 4px rgba(0, 0, 0, 0.251);
       }
     }
 
@@ -80,6 +84,21 @@
             color: var(--primary-clr-101);
         }
     }
+    }
+}
+
+.main-nav {
+
+    & li {
+        cursor: pointer;
+    }
+
+    & svg {
+        width: var(--size-22);
+        height: auto;
+        stroke: var(--primary-clr-101);;
+        cursor: pointer;
+    }
 }
 
 .main-nav a{
@@ -89,9 +108,28 @@
     color: var(--primary-clr-101);
 }
 
+.main-nav li a,
+.main-nav li svg {
+    transition: fill 0.3s ease-in-out, color 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+.main-nav li:hover a {
+    color: var(--accent-clr-601);
+}
+
+.main-nav li:hover svg {
+    transform: scaleY(-1);
+    transition: transform 0.3s ease-in-out;
+    stroke: var(--accent-clr-601);
+}
+
+
 /* Services */
 
 .services {
+    position: relative;
+    top: -4rem;
+    z-index: 100;
     padding-inline: clamp(4rem, 10vw, 10rem);
     & > * {
         flex: 1 1;
@@ -376,7 +414,6 @@
 }
 
 /* Purchases */
-
 .purchases {
     color: var(--primary-clr-101);
 
@@ -415,11 +452,18 @@ footer {
     }
 
     .section-two .social svg {
-      width: var(--size-20);
+      width: var(--size-23);
       height: auto;
       max-width: 100%;
+      cursor: pointer;
+      transition: stroke 0.6s ease-in-out;
+
+      &:hover path{
+        stroke: var(--white-clr-100);
+      }
     }
 
+    /* .section-two li */
     .section-two > * {
       flex: 1 1;
     }
@@ -449,11 +493,19 @@ footer {
       padding: var(--size-6);
     }
 
-    .links-list a {
+    & .links-list a {
       font-size: var(--size-14);
       line-height: var(--size-21);
       color: var(--white-clr-101);
       cursor: pointer;
+      display: inline-block;
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: scaleX(1.03);
+        font-weight: 580;
+      }
     }
 
     .f-two {
@@ -463,16 +515,20 @@ footer {
     .input-group {
       input {
         width: 100%;
-        max-width: 40rem;
-        min-width: 16rem;
+        max-width: 600rem;
+        min-width: 52.1rem;
         font-size: var(--size-14);
         line-height: var(--size-21);
         background-color: var(--secondary-clr-1001);
         color: rgba(255, 255, 255, 0.5);
-        border-radius: var(--size-3);
+        border-radius: var(--size-5);
         border: none;
         outline: none;
-        padding: var(--size-10);
+        padding: var(--size-14) var(--size-16);
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
       }
 
       button {
@@ -480,8 +536,95 @@ footer {
         border: none;
         outline: none;
         cursor: pointer;
-        padding: var(--size-10);
-        border-radius: var(--size-3);
+        padding: var(--size-10) var(--size-14);
+        border-radius: var(--size-5);
+        transition: background-color 0.3s ease-in-out;
+
+        & svg {
+            width: var(--size-30);
+            height: auto;
+        }
+
+        &:hover {
+            background-color: var(--primary-clr-401);
+        }
+
+        &:hover svg path:nth-child(2) {
+            fill: var(--primary-clr-101);
+        }
       }
     }
-  }
+}
+
+.purchases .slide-wrapper {
+    overflow: hidden;
+}
+
+.purchases .slide {
+    flex: 0 0 30rem;
+    cursor: pointer;
+    animation: slideAnimation 15s infinite linear;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.purchases .slide-wrapper:hover .slide {
+    animation-play-state: paused;
+}
+
+.hero .slide-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes heroBgAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0); /* Hold first image */
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%); /* Hold second image */
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%); /* Hold third image */
+    }
+    90% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0); /* Reset for the loop */
+    }
+}
+
+.hero .slide {
+    flex: 0 0 100%;
+    animation: heroBgAnimation 13s ease-in-out infinite;
+    /* animation-delay: 5s; */
+}

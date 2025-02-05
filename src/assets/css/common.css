@@ -272,6 +272,10 @@
     gap: var(--size-5);
 }
 
+.gap--8 {
+    gap: var(--size-8);
+}
+
 .gap--10 {
   gap: var(--size-10);
 }
@@ -383,4 +387,11 @@ svg {
 
 .container-layer--large {
     margin-bottom: clamp(var(--size-50), 10rem, 2rem);
+}
+
+/* Move content up page 16rem */
+.space--16 {
+    position: relative;
+    margin-top: -16rem;
+    z-index: 10;
 }
