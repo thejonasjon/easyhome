@@ -593,37 +593,55 @@ footer {
 
 .hero .slide-wrapper {
     overflow: hidden;
-    position: relative;
+    width: max-content;
 }
 
 @keyframes heroBgAnimation {
     0% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
-    25% {
-        transform: translateX(0);
+    12.66% {
+      transform: translateX(0);
     }
-    30% {
-        transform: translateX(-100%);
+    17% {
+      transform: translateX(-100%);
     }
-    55% {
-        transform: translateX(-100%);
+    29.66% {
+      transform: translateX(-100%);
     }
-    60% {
-        transform: translateX(-200%);
+    34% {
+      transform: translateX(-200%);
+    }
+    46.66% {
+      transform: translateX(-200%);
+    }
+    51% {
+      transform: translateX(-300%);
+    }
+    63.66% {
+      transform: translateX(-300%);
+    }
+    68% {
+      transform: translateX(-400%);
+    }
+    80.66% {
+      transform: translateX(-400%);
     }
     85% {
-        transform: translateX(-200%);
+        transform: translateX(-500%);
     }
-    90% {
-        transform: translateX(-300%);
+    97% {
+      transform: translateX(-500%);
     }
+
     100% {
-        transform: translateX(0);
+      transform: translateX(0);
     }
-}
+  }
+
 
 .hero .slide {
-    flex: 0 0 100%;
-    animation: heroBgAnimation 13s ease-in-out infinite;
+    flex: 0 0 100vw;
+    animation: heroBgAnimation 18s ease-in-out infinite;
+
 }
