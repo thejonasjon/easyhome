@@ -601,30 +601,29 @@ footer {
         transform: translateX(0);
     }
     25% {
-        transform: translateX(0); /* Hold first image */
+        transform: translateX(0);
     }
     30% {
         transform: translateX(-100%);
     }
     55% {
-        transform: translateX(-100%); /* Hold second image */
+        transform: translateX(-100%);
     }
     60% {
         transform: translateX(-200%);
     }
     85% {
-        transform: translateX(-200%); /* Hold third image */
+        transform: translateX(-200%);
     }
     90% {
         transform: translateX(-300%);
     }
     100% {
-        transform: translateX(0); /* Reset for the loop */
+        transform: translateX(0);
     }
 }
 
 .hero .slide {
     flex: 0 0 100%;
     animation: heroBgAnimation 13s ease-in-out infinite;
-    /* animation-delay: 5s; */
 }
