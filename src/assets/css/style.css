@@ -117,6 +117,10 @@
     color: var(--accent-clr-601);
 }
 
+.main-nav a.active {
+    color: var(--accent-clr-601);
+}
+
 .main-nav li:hover svg {
     transform: scaleY(-1);
     transition: transform 0.3s ease-in-out;

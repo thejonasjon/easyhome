@@ -1,0 +1,166 @@
+/* Terms and Conditions */
+
+.about-us {
+    color: var(--secondary-clr-101);
+    padding-block: var(--size-50) 0 ;
+    padding-inline: clamp(1rem, 11rem, 11rem);
+
+    & .revolution-mission-vision {
+
+        & .block {
+            width: 100%;
+            height: 100%;
+            gap: 6rem;
+
+        }
+
+        & h4 {
+            font-size: 3.981rem;
+            line-height: 5.972rem;
+            font-weight: 600;
+            color: var(--accent-clr-601);
+        }
+
+        & p {
+            font-size: 1.92rem;
+            line-height: 2.88rem;
+            font-weight: 400;
+            color: var(--secondary-clr-101);
+        }
+    }
+
+    & .revolution-mission-vision .flex {
+        & > * {
+            flex: 1 1;
+        }
+    }
+
+    &  .img-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    & .overlap-image {
+        position: relative;
+        display: inline-block;
+
+        & .image-one {
+            position: relative;
+            z-index: 1;
+        }
+
+        & .image-two {
+            position: relative;
+            float: right;
+            margin-top: -125px;
+            z-index: 2;
+        }
+    }
+
+    & .our-goals {
+        color: var(--white-clr-100);
+        margin-top: clamp(2rem, 14rem, 14rem);
+
+        & .heading {
+            margin-bottom: clamp(2rem, 4rem, 4rem);
+
+        }
+
+        & .heading h3 {
+            font-size: 4.778rem;
+            line-height: 7.167rem;
+            font-weight: 600;
+            color: var(--accent-clr-601);
+        }
+    }
+
+    & .our-goals .block-content {
+        gap: var(--size-30);
+
+        & .text {
+            margin-top: var(--size-15);
+        }
+    }
+
+    & .our-goals .block-content > * {
+        flex: 0 1 34rem;
+
+    }
+
+    & .our-goals .block {
+        background-color: var(--primary-clr-601);
+
+        border-radius: var(--size-6);
+        border-top: var(--size-6) solid var(--accent-clr-601);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--size-34) var(--size-28);
+
+        & h5 {
+            font-size: 2.765rem;
+            line-height: 4.147rem;
+            font-weight: 600;
+        }
+
+        & p {
+            font-size: 1.92rem;
+            line-height: 2.88rem;
+            font-weight: 400;
+            text-wrap: balance;
+        }
+
+        & svg {
+            width: var(--size-100);
+            height: auto;
+        }
+    }
+
+    & .our-goals .heading-icon {
+        display: flex;
+        gap: var(--size-20);
+    }
+
+}
+
+.find-a-home {
+    padding-block: var(--size-100);
+    margin-top: var(--size-80);
+    background-color: var(--primary-clr-601);
+    & .heading--h4 {
+        font-size: 3.981rem;
+        line-height: 5.972rem;
+        font-weight: 600;
+        color: var(--white-clr-100);
+    }
+
+    & .btn-cont {
+        margin-top: var(--size-20);
+    }
+
+    & button {
+        font-size: var(--size-19);
+        line-height: 2.28rem;
+        font-weight: 300;
+        color: var(--white-clr-100);
+        background-color: var(--accent-clr-601);
+        padding: var(--size-15) var(--size-30);
+        color: var(--white-clr-100);
+        border-radius: var(--size-5);
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--accent-clr-501);
+        }
+    }
+}
+
+footer {
+    & .section-one {
+        margin-block: 0 var(--size-80);
+    }
+}

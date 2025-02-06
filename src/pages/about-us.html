@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>easyhomd | About Us</title>
+    <title>easyhome | About Us</title>
 
     <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="stylesheet" href="/src/assets/css/terms-conditions.css">
+    <link rel="stylesheet" href="/src/assets/css/about-us.css">
+
 </head>
 <body>
-    <section class="hero">
-        <div class="section-container" style="border: 1px solid red;">
-
-            <div class="content flex flex-column" style="border: 1px solid red;">
-                <header >
+    <section class="page-hero">
+        <div class="hero-page-content">
+            <div class="content-static static-bg">
+                <header>
                     <nav class="flex justify-between">
                         <div class="brand-containter">
                             <span>
@@ -24,10 +26,9 @@
                             <li><a href="#">Property Listings</a></li>
                             <li><a href="#">Rent</a></li>
                             <li><a href="#">Post a Property</a></li>
-                            <li><a href="#">Find a Roomate</a></li>
                             <li>
                                 <div class="flex align-end  gap--4" style="position: relative;">
-                                    <a href="#">About Us</a>
+                                    <a href="#">Find a Roomate</a>
                                     <span class="flex">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -42,17 +43,148 @@
                                     </div>
                                 </div>
                             </li>
+                            <li><a class="active" href="#">About Us</a></li>
                             <li><a href="#">Help/Support</a></li>
                         </ul>
                     </nav>
                 </header>
+
+                <div class="text flex justify-center align-center">
+                    <h2 class="heading--h2">About EasyHome</h2>
+                </div>
             </div>
         </div>
     </section>
 
-    <main>
-        <h1>About</h1>
+    <main class="about-us">
+        <section class="revolution-mission-vision">
+            <div class="content">
+                <div class="block flex align-center gap--20">
+                    <div class="img-cont flex justify-center align-center">
+                        <div class="overlap-image flex">
+                            <img class="image-one" src="/src/assets/images/revolution-1.png" alt="">
+                            <img  class="image-two" src="/src/assets/images/revolution-2.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="text">
+                        <h4>Revolutionize Your HousingExperience</h4>
+                        <p>Easy Home is your trusted partner in finding and securing housing in Nigeria. Our platform is designed to connect homeowners and tenants directly, offering transparency, affordability, and convenience in the housing market.</p>
+                    </div>
+                </div>
+
+                <div class="block flex align-center flex-row--reverse gap--20 margin-block--20">
+                    <div class="img-cont">
+                        <img src="/src/assets/images/our-mission.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h4>Our Mission</h4>
+                        <p>To revolutionize the housing market in Nigeria by providing a seamless, transparent, and direct platform that connects homeowners and tenants. Easy Home is dedicated to eliminating exploitation, reducing costs, and empowering users with real-time, verified information to make informed housing decisions.</p>
+                    </div>
+                </div>
+
+                <div class="block flex align-center gap--20">
+                    <div class="img-cont">
+                        <div><img src="/src/assets/images/our-vision.png" alt=""></div>
+                    </div>
+
+                    <div class="text">
+                        <h4>Our Vision</h4>
+                        <p>To become Nigeria's most trusted and innovative housing platform, creating a future where finding a home is effortless, transparent, and accessible to all. Easy Home envisions a housing market free from middlemen exploitation, where individuals and families find homes that meet their needs with confidence and convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-goals">
+            <div class="block-content--">
+                <div class="heading text-align-center">
+                    <h3>Our Goals</h3>
+                </div>
+
+                <div class="block-content flex flex-wrap justify-center">
+                    <div class="block">
+                        <div class="heading-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 26 26"><g fill="none"><defs><mask id="pepiconsPencilHandshakeCircleFilled0"><path fill="#fff" d="M0 0h26v26H0z"/><g fill="#000"><path fill-rule="evenodd" d="M6.646 5.49a1 1 0 0 0-1.322.502l-2.163 4.803a1 1 0 0 0 .5 1.322l1.49.671a1 1 0 0 0 1.323-.5l2.163-4.804a1 1 0 0 0-.5-1.322zm-1.773 5.927a.681.681 0 1 0 .56-1.242a.681.681 0 0 0-.56 1.242m17.142.831a1 1 0 0 0 .58-1.29L20.73 6.034a1 1 0 0 0-1.29-.581l-1.527.579a1 1 0 0 0-.58 1.29l1.866 4.925a1 1 0 0 0 1.289.581zm-2.937-5.445a.681.681 0 1 0 .483 1.274a.681.681 0 0 0-.483-1.274" clip-rule="evenodd"/><path fill-rule="evenodd" d="M17.885 7.107h.008a.5.5 0 1 0-.087-.997h-.008l-.026.003l-.096.01l-.354.034c-.297.03-.708.077-1.162.137c-.895.118-2.004.298-2.73.54c-.352.117-.724.344-1.08.604c-.361.264-.735.585-1.093.918a28 28 0 0 0-1.819 1.885c-.419.474-.516 1.23-.024 1.766c.32.346.82.784 1.468.98c.677.203 1.457.124 2.254-.468l.999-.645l.018-.011c.143.087.342.237.58.436c.26.218.542.475.805.722a34 34 0 0 1 .88.86l.055.057l.014.014l.005.005l.059.06l.075.039c.403.2.846.128 1.19.012c.358-.12.714-.324 1.017-.525a9 9 0 0 0 1.075-.849l.018-.016l.005-.005l.001-.001s-.088-.31-.432-.672l-.271.34L19 13l-2.508.957L17 13.5l-.268-.717a34 34 0 0 0-.508-.49c-.27-.254-.568-.525-.85-.76c-.273-.23-.557-.448-.794-.578c-.394-.216-.78-.056-.988.079l-1.028.664l-.014.01c-.555.416-1.011.432-1.38.321c-.4-.12-.755-.412-1.02-.7c-.083-.09-.107-.263.037-.426a27 27 0 0 1 1.752-1.815c.34-.317.682-.61 1.001-.843c.326-.238.6-.393.807-.462c.624-.208 1.645-.379 2.544-.498a41 41 0 0 1 1.478-.167l.093-.009z" clip-rule="evenodd"/><path d="M17.127 13.177a35 35 0 0 0-.395-.394L17 13.5l-.508.457L19 13l.229-.66l.271-.34l-.255-.054l-.003.002l-.014.013l-.054.05a8 8 0 0 1-.895.699c-.27.18-.543.33-.783.41c-.186.063-.302.068-.369.057"/><path fill-rule="evenodd" d="m8.047 8.068l-.197-.46l-.197-.46l.04-.016l.113-.048a93 93 0 0 1 1.67-.69a38 38 0 0 1 1.372-.523c.203-.072.392-.134.55-.179c.136-.039.31-.084.452-.084c.13 0 .267.03.38.06c.122.033.256.077.392.127c.274.1.583.23.869.356a29 29 0 0 1 .992.466l.066.032l.018.009l.006.003a.5.5 0 0 1-.447.895l-.005-.003l-.016-.008l-.062-.03a29 29 0 0 0-.959-.45a13 13 0 0 0-.803-.33a4 4 0 0 0-.309-.1a1 1 0 0 0-.119-.026l-.009.002c-.02.003-.073.014-.172.042a9 9 0 0 0-.492.161c-.388.137-.865.322-1.332.509a87 87 0 0 0-1.651.681l-.111.047zm-.657-.263a.5.5 0 0 1 .263-.656l.197.46l.197.459a.5.5 0 0 1-.657-.263m-1.903 3.96a.5.5 0 0 1 .707-.02l-.344.363l-.343.364a.5.5 0 0 1-.02-.707m4.57 3.387l2.763 1.036a1.5 1.5 0 0 0 1.587-.344l2.09-2.09a.5.5 0 0 1 .707.708l-2.09 2.09a2.5 2.5 0 0 1-2.645.572l-2.82-1.057l-.023-.011a3 3 0 0 1-.434-.293c-.162-.124-.352-.28-.557-.454a57 57 0 0 1-1.358-1.199a128 128 0 0 1-1.623-1.5l-.109-.102l-.038-.036l.343-.364l.344-.363l.037.035l.107.101a132 132 0 0 0 1.61 1.488c.46.417.935.84 1.333 1.178c.2.169.377.313.52.424c.132.101.215.157.256.18M6.67 17.288a.5.5 0 0 1 .703-.063l.959.8a1.5 1.5 0 0 0 .753.334l1.236.174a.5.5 0 1 1-.138.99l-1.237-.173a2.5 2.5 0 0 1-1.255-.557l-.959-.8a.5.5 0 0 1-.063-.705" clip-rule="evenodd"/></g></mask></defs><circle cx="13" cy="13" r="13" fill="#fff" mask="url(#pepiconsPencilHandshakeCircleFilled0)"/></g></svg>
+                            <h5>Eliminate Exploitations</h5>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                We aim to eradicate the exploitation commonly faced by tenants in the Nigerian housing market. By cutting out agents and providing a direct link between homeowners and tenants, we ensure fair pricing and transparent interactions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="heading-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 32 32"><path fill="#fff" d="M23 14v-2H9v2h5v2.734l-3.868 6.77l1.736.992L15.58 18h.84l3.712 6.496l1.736-.992L18 16.734V14z"/><circle cx="16" cy="9" r="2" fill="#fff"/><path fill="#fff" d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4"/></svg>
+                            <h5>Enhance Accessibility</h5>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                Finding a home should be simple and stress-free. Our platform is designed with user-friendly features and comprehensive search filters, enabling users to locate properties based on their preferences, such as price range, location, and amenities, all in real time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="heading-icon">
+                            <svg width="100" height="100" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M24 44a19.937 19.937 0 0 0 14.142-5.858A19.937 19.937 0 0 0 44 24a19.938 19.938 0 0 0-5.858-14.142A19.937 19.937 0 0 0 24 4A19.938 19.938 0 0 0 9.858 9.858A19.938 19.938 0 0 0 4 24a19.937 19.937 0 0 0 5.858 14.142A19.938 19.938 0 0 0 24 44z"/><path d="M16 24l6 6l12-12" stroke-linecap="round"/></g></svg>
+                            <h5>Promote Transparency</h5>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                Trust is paramount in the housing market. Through our verified property listings and Know Your Customer (KYC) processes, we ensure all users have access to accurate and reliable information, reducing the risks of fraud and misinformation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="heading-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 26 26"><g fill="#fff" fill-rule="evenodd" clip-rule="evenodd"><path d="M8 12a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 1a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M6.854 11.896a.5.5 0 0 1 0 .708l-.338.337A3.47 3.47 0 0 0 5.5 15.394v1.856a.5.5 0 1 1-1 0v-1.856a4.47 4.47 0 0 1 1.309-3.16l.337-.338a.5.5 0 0 1 .708 0m11.792-.3a.5.5 0 0 0 0 .708l.338.337A3.47 3.47 0 0 1 20 15.094v2.156a.5.5 0 0 0 1 0v-2.156a4.47 4.47 0 0 0-1.309-3.16l-.337-.338a.5.5 0 0 0-.708 0"/><path d="M17 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4m0 1a3 3 0 1 1 0-6a3 3 0 0 1 0 6m-4.5 3.25a2.5 2.5 0 0 0-2.5 2.5v1.3a.5.5 0 0 1-1 0v-1.3a3.5 3.5 0 0 1 7 0v1.3a.5.5 0 1 1-1 0v-1.3a2.5 2.5 0 0 0-2.5-2.5"/><path d="M12.5 14.75a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 1a3 3 0 1 0 0-6a3 3 0 0 0 0 6"/><path d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5m0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5"/></g></svg>
+                            <h5>Support Shared Living</h5>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                With the rising demand for affordable housing, we facilitate shared living arrangements. Our platform connects individuals looking for roommates or shared apartments, fostering collaboration and making housing more affordable for everyone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="heading-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 26 26"><g fill="none"><defs><mask id="pepiconsPencilHouseCircleFilled0"><path fill="#fff" d="M0 0h26v26H0z"/><g fill="#000" fill-rule="evenodd" clip-rule="evenodd"><path d="M4 13h1.389v7a.5.5 0 0 0 .5.5H19.11a.5.5 0 0 0 .5-.5v-7H21a.5.5 0 0 0 .33-.875l-8.5-7.5a.5.5 0 0 0-.66 0l-8.5 7.5A.5.5 0 0 0 4 13m1.889-1h-.567L12.5 5.667L19.678 12h-.567a.5.5 0 0 0-.5.5v7H6.39v-7a.5.5 0 0 0-.5-.5"/><path d="M13.708 14.5h-2.5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.5a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1m-2.5 5v-4h2.5v4z"/></g></mask></defs><circle cx="13" cy="13" r="13" fill="#fff" mask="url(#pepiconsPencilHouseCircleFilled0)"/></g></svg>
+                            <h5>Foster Convenience</h5>
+                        </div>
+
+                        <div class="text">
+                            <p>
+                                We prioritize convenience with features like virtual house tours that allow users to explore properties online. Additionally, our escrow services provide secure payment options, and appointment booking streamlines the process of in-person visits, saving users time and effort.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <section class="find-a-home">
+        <div>
+            <div class="text text-align-center">
+                <h4 class="heading--h4">Get Property Alerts From EasyHome</h4>
+            </div>
+            <div class="btn-cont text-align-center">
+                <button>
+                    Register
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="space--168">
         <div class="footer-content">

@@ -199,6 +199,10 @@
   flex-direction: row;
 }
 
+.flex-row--reverse{
+  flex-direction: row-reverse;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -298,6 +302,11 @@
 
 .gap--200 {
     gap: var(--size-200);
+}
+
+.margin-block--20 {
+  margin-block: clamp(2rem, 12rem, 12rem);
+
 }
 
 /* Headings */
