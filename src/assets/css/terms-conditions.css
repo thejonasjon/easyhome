@@ -42,7 +42,7 @@
 
 }
 
-.terms-and-conditions {
+.terms-and-conditions, .privacy-and-policy {
 
     & .static-bg {
         background-image: url(/src/assets/images/landing-slide-1.png);
