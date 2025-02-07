@@ -1,0 +1,184 @@
+/* Sign Up & Log In Style */
+
+.auth-section {
+    position: relative;
+    background-color: #e2deda;
+
+    & .empty {
+        background-image: url('/src/assets/images/landing-slide-4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 200rem;
+    }
+
+    & .left-right > * {
+        flex: 1 1;
+    }
+
+    & .empty {
+        flex-basis: 40%;
+    }
+
+    & .form-cont-text {
+        position: relative;
+        padding-block: var(--size-100) var(--size-100);
+        padding-inline: var(--size-100) 21rem;
+        flex-basis: 60%;
+
+        & .heading {
+            margin-block:  15rem 15rem;
+        }
+
+        & h4 {
+            font-family: poppins-regular;
+            font-size: var(--size-48);
+            line-height: var(--size-57);
+            font-weight: 700;
+            color: var(--primary-clr-901);
+        }
+
+        & p {
+            font-family: montserrat-default;
+            font-size: var(--size-19);
+            line-height: var(--size-23);
+            font-weight: 400;
+            color: var(--primary-clr-901);
+            margin-top: var(--size-16);
+        }
+
+        & a {
+            color: var(--accent-clr-601);
+            text-decoration: underline;
+        }
+    }
+
+    & .img-cont img {
+        transform: rotateX(360deg);
+    }
+
+    & .input-group label {
+        font-family: mulish-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        font-weight: 500;
+        color: var(--secondary-clr-1101);
+        margin-bottom: clamp(0.6rem, 1.4rem, 1.4rem);
+    }
+
+    & .input-group {
+        margin-bottom: clamp(2rem, 3rem, 3rem);
+    }
+
+    & .input-group input {
+        min-height: var(--size-60);
+        font-family: montserrat-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        font-weight: 500;
+        background-color: var(--primary-clr-401);
+        color: var(--white-clr-100);
+        outline: none;
+        border: none;
+        border-radius: var(--size-5);
+        padding: var(--size-10) var(--size-21);
+
+        &::placeholder {
+            font-family: montserrat-default;
+            font-size: var(--size-16);
+            line-height: var(--size-19);
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    & .input-group .password-show {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        & input {
+            width: 100%;
+        }
+
+        & button {
+            position: absolute;
+            right: var(--size-20);
+            background: none;
+            font-size: var(--size-16);
+            line-height: var(--size-19);
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            color:  var(--primary-clr-101);
+            text-decoration: underline;
+        }
+    }
+
+
+    & .btn-cont button{
+        width: 100%;
+        padding-block: var(--size-16);
+        padding-inline: var(--size-24);
+        font-family: mulish-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color: var(--accent-clr-601);
+        color: var(--primary-clr-101);
+        outline: none;
+        border: none;
+        border-radius: var(--size-5);
+        cursor: pointer;
+    }
+
+    & .or-cont {
+        display: flex;
+        align-items: center;
+        gap: var(--size-20);
+        margin-block: var(--size-60);
+    }
+
+    & .or-cont span {
+        font-family: mulish-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        color: #000;
+    }
+
+    & .or-cont::before, & .or-cont::after {
+        content: "";
+        flex-grow: 1;
+        height: 0.5px;
+        background-color: rgba(55, 58, 54, 0.302);
+    }
+
+    & .auth-cont div.flex {
+        max-width: 16.4rem;
+        border: 1px solid rgba(55, 58, 54, 0.302);
+        padding: var(--size-16) var(--size-24);
+        border-radius: var(--size-5);
+        cursor: pointer;
+    }
+
+    & .auth-cont p {
+        font-family: mulish-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        font-weight: 400;
+        text-align: center;
+        color: #000;
+    }
+
+    & .auth-cont svg {
+        width: var(--size-40);
+        height: auto;
+    }
+
+}
+
+footer {
+    & .section-one {
+        margin-block: 0 var(--size-80);
+    }
+}

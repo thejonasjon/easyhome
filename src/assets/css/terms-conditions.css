@@ -2,8 +2,12 @@
 
 .page-hero {
 
-    & .static-bg {
-        background-image: url(/src/assets/images/landing-slide-1.png);
+    & .static-bg--tc {
+        background-image: url(/src/assets/images/terms-and-condtions.png);
+    }
+
+    & .static-bg--pp {
+        background-image: url(/src/assets/images/privacy-and-policy.png);
     }
 
     header {

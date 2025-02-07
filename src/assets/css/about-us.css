@@ -1,5 +1,9 @@
 /* Terms and Conditions */
 
+.static-bg--au {
+    background-image: url(/src/assets/images/about-us.png);
+}
+
 .about-us {
     color: var(--secondary-clr-101);
     padding-block: var(--size-50) 0 ;
@@ -40,11 +44,21 @@
         justify-content: center;
         align-items: center;
         position: relative;
+
+        & img {
+            border-radius: var(--size-28);
+        }
     }
 
     & .overlap-image {
         position: relative;
         display: inline-block;
+
+        & img {
+            border-radius: var(--size-28);
+            width: 70%;
+            height: auto;
+        }
 
         & .image-one {
             position: relative;
