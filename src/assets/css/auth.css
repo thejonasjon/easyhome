@@ -5,7 +5,7 @@
     background-color: #e2deda;
 
     & .empty {
-        background-image: url('/src/assets/images/landing-slide-4.png');
+        background-image: url('/src/assets/images/login-or-signup.png');
         background-repeat: no-repeat;
         background-size: cover;
         flex-basis: 200rem;
