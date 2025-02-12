@@ -1,0 +1,12 @@
+@import url("/src/assets/css/terms-conditions.css");
+
+.frequently-asked-questions {
+
+    & .faq {
+        margin-bottom: clamp(1.5rem, 2rem, 2rem);
+    }
+
+    & .list-content .faq-q {
+        color: var(--accent-clr-601);
+    }
+}

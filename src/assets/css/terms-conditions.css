@@ -10,6 +10,10 @@
         background-image: url(/src/assets/images/privacy-and-policy.png);
     }
 
+    & .static-bg--fag {
+        background-color: var( --accent-clr-901);
+    }
+
     header {
         background-color: var(--primary-clr-1001);
         padding-inline: clamp(5rem, 10rem, 10rem);
