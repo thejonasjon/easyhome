@@ -84,34 +84,103 @@ body {
         }
           }
 
-      & .search-inputs button {
-        display: flex;
-        gap: max(var(--size-10));
-        align-items: center;
-        justify-content: center;
-        font-family: mulish-default;
-        font-size: var(--size-16);
-        line-height: var(--size-19);
-        font-weight: 500;
-        background-color: var(--primary-clr-101);
-        border-radius: var(--size-5);
-        padding: var(--size-12) var(--size-24);
-        border: none;
-        cursor: pointer;
+        & .search-inputs button {
+            display: flex;
+            gap: max(var(--size-10));
+            align-items: center;
+            justify-content: center;
+            font-family: mulish-default;
+            font-size: var(--size-16);
+            line-height: var(--size-19);
+            font-weight: 500;
+            background-color: var(--primary-clr-101);
+            border-radius: var(--size-5);
+            padding: var(--size-12) var(--size-24);
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
 
-        & svg {
-            width: var(--size-24);
-            height: var(--size-24);
-        }
+            &:hover {
+                background-color: var(--primary-clr-501);
+                color: var(--white-clr-100);
+            }
 
-        &.find {
-            background-color: var(--accent-clr-601);
-            color: var(--white-clr-100);
+            &.active {
+                background-color: var(--primary-clr-501);
+                color: var(--white-clr-100);
+            }
 
-            & svg path {
-                fill: var(--white-clr-100);
+            &:hover svg path {
+                stroke:  var(--white-clr-100);
+            }
+
+            & svg {
+                width: var(--size-24);
+                height: var(--size-24);
+
+                & path {
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+
+            &.find {
+                background-color: var(--accent-clr-601);
+                color: var(--white-clr-100);
+
+                & svg path {
+                    fill: var(--white-clr-100);
+                }
             }
         }
+
+        & .dropdown-option {
+            min-width: 18.6rem;
+            min-height: var(--size-50);
+            position: relative;
+
+            & button {
+                min-width: 100%;
+                min-height: var(--size-50);
+            }
+        }
+
+        & .dropdown-btn-group {
+            display: none;
+            position: absolute;
+            width: max-content;
+            min-width: 100%;
+            margin-top: 0.5rem;
+            z-index: 100;
+
+            & button {
+                width: 100%;
+                font-size: var(--size-16);
+                line-height: var(--size-19);
+                color: var(--primary--clr-901);
+                background-color: var(--white-clr-100);
+                border-radius: unset;
+                transition: all 0.3s ease-in-out;
+                justify-content: left;
+
+                &:hover {
+                    background-color: var(--accent-clr-101);
+                    color: var(--primary--clr-901);
+                }
+            }
+
+            & button:nth-of-type(1){
+                border-top-left-radius: var(--size-5);
+                border-top-right-radius: var(--size-5);
+            }
+
+            & button:last-of-type{
+                border-bottom-left-radius: var(--size-5);
+                border-bottom-right-radius: var(--size-5);
+            }
+
+            &.show {
+                display: flex;
+            }
           }
 
       & .text {
@@ -171,9 +240,10 @@ body {
 
 .services {
     position: relative;
-    top: -4rem;
+    bottom: -10rem;
     z-index: 100;
     padding-inline: clamp(4rem, 10vw, 10rem);
+
     & > * {
         flex: 1 1;
     }

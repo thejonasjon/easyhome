@@ -62,7 +62,7 @@
                             <li><a href="/src/pages/rent.html">Rent</a></li>
                             <li><a href="/src/pages/login.html">Post a Property</a></li>
                             <li>
-                                <div class="flex align-end  gap--4" style="position: relative;">
+                                <div class="navLink-dropdown-option flex align-end gap--4">
                                     <a href="#">Find a Roomate</a>
                                     <span class="flex">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -70,7 +70,7 @@
                                         </svg>
                                     </span>
 
-                                    <div style="display: none; position: absolute; top: 40px; left: -50%; width: 400px;">
+                                    <div class="navLink-dropdown">
                                         <ul role="list">
                                             <li><a href="#">Search for avalilable rooms</a></li>
                                             <li><a href="#">List your space</a></li>
@@ -94,7 +94,7 @@
                         <div class="light-dark flex justify-between">
                             <div class="flex gap--10">
                                 <div class="search-inputs">
-                                    <div class="input-group">
+                                    <div class="input-group dropdown-option">
                                         <button class="search-btn">
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px" fill="currentColor" class="size-6">
@@ -103,11 +103,17 @@
                                             </span>
                                             Filter by Purpose
                                         </button>
+
+                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                            <button>Rent</button>
+                                            <button>Find a roommate</button>
+                                            <button>Shortlet</button>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="search-inputs">
-                                    <div class="input-group">
+                                    <div class="input-group dropdown-option">
                                         <button>
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -116,11 +122,19 @@
                                             </span>
                                             Apartment Type
                                         </button>
+
+                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                            <button>Self Contain</button>
+                                            <button>Detached Bungalow</button>
+                                            <button>Mansion</button>
+                                            <button>Detached Duplex</button>
+                                            <button>Semi - Detached Duplex</button>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="search-inputs">
-                                    <div class="input-group">
+                                    <div class="input-group dropdown-option">
                                         <button>
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -129,11 +143,19 @@
                                                 </span>
                                             Location
                                         </button>
+
+                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                            <button>Abia</button>
+                                            <button>Abuja</button>
+                                            <button>Cross River</button>
+                                            <button>Imo</button>
+                                            <button>Lagos</button>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="search-inputs">
-                                    <div class="input-group">
+                                    <div class="input-group dropdown-option">
                                         <button>
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -142,6 +164,15 @@
                                             </span>
                                                 Price Range
                                             </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>20,000 - 100,000</button>
+                                                <button>100,001 - 300,000</button>
+                                                <button>300,001 - 600,000</button>
+                                                <button>600,001 - 1,200,000</button>
+                                                <button>1,200,001 - 5,000,000</button>
+                                                <button>5,000,00 - 100,000,000</button>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
