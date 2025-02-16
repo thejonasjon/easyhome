@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easyhome | Post a Propert</title>
+
+    <link rel="stylesheet" href="/src/assets/css/dashboard.css">
+</head>
+<body>
+    <main>
+        <div class="post-a-property">
+            <div class="content flex">
+                <!-- Sidebar -->
+                <section class="sidebar--dashboard">
+                    <div class="sidebar-container">
+                        <div class="brand-containter">
+                            <span>
+                                <img src="/src/assets/images/Group 3.svg" alt="easyhome Logo">
+                            </span>
+                        </div>
+
+                        <nav>
+                            <ul role="list" class="flex flex-column">
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M15 20v-7h7v7zm-4-9V4h11v7zm-9 9v-7h11v7zm0-9V4h7v7z" />
+                                        </svg>
+                                    </span>Dashboard</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M17 19.22H5V7h7V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7h-2z" />
+                                            <path fill="#fff" d="M19 2h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0V7h3V5h-3zM7 9h8v2H7zm0 3v2h8v-2h-3zm0 3h8v2H7z" />
+                                        </svg>
+                                    </span>Post a Property</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                            <g fill="#fff">
+                                                <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z" />
+                                                <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z" />
+                                            </g>
+                                        </svg>
+                                    </span>My Listings</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="size-5">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>Profile</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg class="perfomance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="#fff" stroke-width="2" d="M4.998 9V1H19.5L23 4.5V23H4M18 1v5h5M3 19l5-5l4 4l6.5-6.5M19 17v-6h-6" />
+                                        </svg>
+                                    </span>Performance</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z" />
+                                        </svg>
+                                    </span>Log Out</a></li>
+                            </ul>
+                        </nav>
+
+                        <a href="#">
+                            <div class="support">
+                                <p>Having troubles?</p>
+                                <p>Contact Our Support Team:</p>
+                                <p style="font-weight: 700;">Customercare@easyhome.ng</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+                <!-- Content -->
+                <section class="main-content">
+                    <div class="main-content-container flex flex-column gap--40">
+                        <div class="profile-search-logout flex justify-between">
+                            <div class="profile flex align-center gap--20">
+                                <div class="profile-photo">
+                                    <img src="/src/assets/images/landing-slide-1.png" alt="">
+                                </div>
+
+                                <div class="user-name">
+                                    <span>Hello Udokz,</span>
+                                </div>
+                            </div>
+
+                            <div class="search-notification-logout flex align-center">
+                                <div class="search-cont">
+                                    <div class="input-group flex align-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                                        </svg>
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <div class="notification">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                        <path fill="#fff" fill-rule="evenodd" d="M12 1a2 2 0 0 0-1.98 2.284A7 7 0 0 0 5 10v8H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2h-1v-8a7 7 0 0 0-5.02-6.716Q14 3.144 14 3a2 2 0 0 0-2-2m2 21a1 1 0 0 1-1 1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <div class="logout">
+                                    <ul role="list">
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v10m6.4-5.4a9 9 0 1 1-12.77.04" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-steps flex flex-column gap--60">
+                            <div class="steps flex justify-between">
+                                <button class="line active">Property Address</button>
+                                <button class="line">Property Info</button>
+                                <button>Uploads</button>
+                            </div>
+
+                            <div class="forms">
+                                <form action="#">
+                                    <div class="wrap" style="display: none;">
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Property Title<span>*</span></p>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Write title of your property">
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Purpose<span>*</span></p>
+                                            </div>
+                                            <div class="checkboxs flex gap--40">
+                                                <div class="input-group-sub flex align-center gap--4">
+                                                    <input type="checkbox" name="rent" checked>
+                                                    <label for="rent">Rent</label>
+                                                </div>
+                                                <div class="input-group-sub flex align-center gap--4" >
+                                                    <input type="checkbox" name="short-let">
+                                                    <label for="short-lot">Short Let</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section--seperated flex justify-between">
+                                            <div class="input-section">
+                                                <div class="checkboxs">
+                                                    <label for="type-of-purpose">Type of Property</label>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="flat-or-rent" checked>
+                                                        <label for="flat-or-rent">Flats/Apartment</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="short-let">
+                                                        <label for="short-lot">House</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-section">
+                                                <div class="section-heading">
+                                                    <p>Subtype Of Property<span>*</span></p>
+                                                </div>
+                                                <div class="input-group selection">
+                                                    <select name="type-of-property" id="typeOfPropert">
+                                                        <option value="volvo">Volvo</option>
+                                                        <option value="saab">Saab</option>
+                                                        <option value="mercedes">Mercedes</option>
+                                                        <option value="audi">Audi</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Address Details<span>*</span></p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="state">State</label>
+                                                    <input type="text" placeholder="Input state">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="state">LGA</label>
+                                                    <input type="text" placeholder="Input LGA">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="town">Town (Locality)</label>
+                                                    <input type="text" placeholder="Input Town">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="state">Street/Estate</label>
+                                                    <input type="text" placeholder="Input State / Estate">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="wrap step-2" style="display: none;">
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Property Info<span>*</span></p>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group selection">
+                                                    <label for="number-of-bedrooms">Numbers of Bedrooms</label>
+                                                    <select name="no-bedrooms" id="no-bedrooms">
+                                                        <option value="" disabled selected>-Select no of bedrooms</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6+">6+</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="input-group selection">
+                                                    <label for="number-of-bathrooms">Number of Bathrooms</label>
+                                                    <select name="no-bathrooms" id="no-bathrooms">
+                                                        <option value="" disabled selected>-Select no of Bathrooms</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6+">6+</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="input-group selection">
+                                                    <label for="number-of-toilets">Number of Toilets</label>
+                                                    <select name="no-toilets" id="no-toilets">
+                                                        <option value="" disabled selected>-Select no of Toilets</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6+">6+</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Property Features / Amenities<span>*</span></p>
+                                            </div>
+
+                                            <div class="flex justify-between">
+                                                <div class="checkboxs">
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="borehole">
+                                                        <label for="borehole">Borehole</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="serviced">
+                                                        <label for="serviced">Serviced</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="parking-space">
+                                                        <label for="parking-space">Parking Space</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="pets-allowed">
+                                                        <label for="pets-allowed">Pets Allowed</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="checkboxs">
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="prepaid">
+                                                        <label for="prepaid">Electricity (Prepaid Meter)</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="cctv">
+                                                        <label for="cctv">CCTV</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="swimming-pool">
+                                                        <label for="swimming-pool">Swimming Pool</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="fence">
+                                                        <label for="fence">Fence</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="checkboxs">
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="furnished">
+                                                        <label for="furnished">Furnished</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="generator">
+                                                        <label for="generator">Generator</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="security">
+                                                        <label for="security">Security</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="pop-ceiling">
+                                                        <label for="pop-ceiling">POP Ceiling</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="checkboxs">
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="newly-built">
+                                                        <label for="newly-built">Newly Built</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="air-conditioner">
+                                                        <label for="air-conditioner">Air Conditioners</label>
+                                                    </div>
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="network-access">
+                                                        <label for="network-access">Network Access</label>
+                                                    </div>
+
+
+                                                    <div class="input-group-sub flex align-center gap--4">
+                                                        <input type="checkbox" name="gated-houses">
+                                                        <label for="gated-houses">Gated House</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Property Description<span>*</span></p>
+                                            </div>
+
+                                            <div class="input-group flex flex-column">
+                                                <label for="description">Give a detailed description of your property pointing out all features and available amenities</label>
+                                                <textarea name="description" id="description" placeholder="Property description...."></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Pricing Info<span>*</span></p>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="price">Price</label>
+                                                    <input type="text" placeholder="#250,000">
+                                                </div>
+
+                                                <div class="input-group selection">
+                                                    <label for="duration">Duration</label>
+                                                    <select name="tduration" id="duration">
+                                                        <option value="" disabled selected>-Select-</option>
+                                                        <option value="daily">Daily</option>
+                                                        <option value="monthly">Monthly</option>
+                                                        <option value="yearly">Yearly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap step-3">
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Upload Property Images<span>*</span></p>
+                                            </div>
+
+                                            <div class="sub-section remove-margin flex">
+                                                <div class="input-group selection">
+                                                    <label for="upload-image">Add at least 6 images , the first image will be the title image for your property when it’s listed</label>
+
+                                                    <div class="upload-photo-group flex flex-wrap">
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>1</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>2</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>3</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>4</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>5</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="upload-image flex flex-column justify-center">
+                                                            <p>6</p>
+
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Add Image
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="btn-cont add-more">
+                                                        <button class="flex align-center" type="submit">Add More Images
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m.75-10.25a.75.75 0 0 0-1.5 0v4.69L6.03 8.22a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l2.5-2.5a.75.75 0 1 0-1.06-1.06L8.75 9.44z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="btn-cont">
+                                                        <button class="flex align-center" type="submit">Upload Images
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
+                                                                    <path fill="#fff" fill-rule="evenodd" d="M4.5 13a3.5 3.5 0 0 1-1.41-6.705a3.5 3.5 0 0 1 6.63-2.171q.37-.122.781-.124a2.5 2.5 0 0 1 2.417 3.143A3.001 3.001 0 0 1 12 13zm.72-5.03a.75.75 0 0 0 1.06 1.06l.97-.97v2.69a.75.75 0 0 0 1.5 0V8.06l.97.97a.75.75 0 1 0 1.06-1.06L8.53 5.72a.75.75 0 0 0-1.06 0z" clip-rule="evenodd" />
+                                                                </svg>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Upload Property Video<span>*</span></p>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group selection">
+                                                    <label for="property-video">Add a video of your property showing all the features of the property
+                                                        (Max Video size is 2gig) and also add a link to your video (Note: YouTube, Instagram or Google drive
+                                                        link is preferable)
+                                                    </label>
+
+                                                    <div class="upload-video-group flex flex-wrap justify-center">
+
+                                                        <div class="upload-video flex flex-column justify-center">
+                                                            <div class="svg-xl">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="#fff" d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3zm15.44 14.25l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06" />
+                                                                </svg>
+                                                            </div>
+
+                                                            <p class="add-text-svg flex align-center gap--4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
+                                                                </svg>
+                                                                Upload Video
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-section">
+                                                <div class="section-heading">
+                                                    <p>Add Property Video Link<span>*</span></p>
+                                                </div>
+
+                                                <div class="sub-section remove-margin">
+                                                    <div class="input-group selection">
+                                                        <label for="property-video-link">
+                                                            Add a link to your video, it can be a different video of the same property (Note: YouTube, Instagram or Google drive link is preferable)
+                                                        </label>
+
+                                                        <div class="input-group">
+                                                            <input type="text" placeholder="Paste Video Link Here">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="note">
+                                                        <p>Note: Properties will be listed after the verification of each property</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="terms-condition-privacy-policy">
+                                        <div class="input-group-sub flex align-center gap--4">
+                                            <input type="checkbox">
+                                            <label for="tc-pp">
+                                                By checking the box, you agree to Easy Home’s <a href="#">Terms and Conditions</a>  and <a href="#">Privacy Policy</a>.
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-cont">
+                                        <button type="submit">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

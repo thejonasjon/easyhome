@@ -488,6 +488,30 @@ svg {
   }
 }
 
+/* Main input group */
+.input-group.ig-main {
+  margin-bottom: var(--size-25);
+}
+
+.input-group.ig-main input,
+.input-group.ig-main textarea{
+  border-radius: var(--size-5);
+  background-color: transparent;
+}
+
+.input-group.ig-main textarea{
+  font-size: var(--size-16);
+  line-height: var(--size-19);
+  outline: none;
+  border: none;
+}
+
+.input-group.ig-main label{
+  font-size: var(--size-16);
+  line-height: var(--size-19);
+  color: var(--accent-clr-601);
+}
+
 /* Property cards */
 .property-cards-container {
   & {

@@ -1,0 +1,135 @@
+@import url("/src/assets/css/rent.css");
+
+.rent-details {
+
+    .heading {
+        padding-block: var(--size-60) var(--size-20);
+    }
+
+    & .heading h4 {
+        font-family: montserrat-default;
+        font-size: var(--size-28);
+        line-height: var(--size-34);
+        font-weight: 600;
+        color: var(--accent-clr-601);
+    }
+
+    & .profile {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--size-40);
+    }
+
+    & .profile-photo {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    & .profile h5 {
+        font-family: mulish-default;
+        font-size: var(--size-19);
+        line-height: var(--size-23);
+        font-weight: 600;
+        color: var(--accent-clr-601);
+    }
+
+    & .profile p {
+        font-family: mulish-default;
+        font-size: var(--size-13);
+        line-height: var(--size-16);
+        font-weight: 400;
+        color: var(--accent-clr-601);
+    }
+
+    & .contact-landlord-cont {
+        background-color: var(--primary-clr-701);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: var(--size-12);
+        padding: var(--size-32) var(--size-41);
+    }
+
+    & .input-group.ig-main input, .input-group.ig-main textarea{
+        background-color: var(--primary-clr-501);
+        padding: var(--size-16) var(--size-16);
+        color: rgba(255, 255, 255, 0.8);
+
+        &::placeholder {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: var(--size-24);
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    & .input-group.ig-main textarea{
+        min-height: 20.9rem;
+    }
+
+    & .btn-cont {
+        width: 100%;
+        height: auto;
+    }
+
+    & .mgr-btm--39 {
+        margin-bottom: clamp(1rem, 3.9rem, 3.9rem);
+    }
+
+    & .or-cont {
+        display: flex;
+        align-items: center;
+        gap: var(--size-20);
+        margin-block: var(--size-39);
+    }
+
+    & .or-cont span {
+        font-family: mulish-default;
+        font-size: var(--size-16);
+        line-height: var(--size-19);
+        color: var(--secondary-clr-501);
+    }
+
+    & .or-cont::before, & .or-cont::after {
+        content: "";
+        flex-grow: 1;
+        height: 0.5px;
+        background-color: var(--secondary-clr-101);
+    }
+
+    & .btn-cont button {
+        width: 100%;
+        background-color: var(--accent-clr-601);
+        font-family: poppins-regular;
+        font-size: var(--size-19);
+        line-height: var(--size-22);
+        font-weight: 300;
+        color: var(--white-clr-100);
+        border-radius: var(--size-5);
+        padding: var(--size-16) var(--size-16);
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &.whatsapp {
+            background-color: #34C759;
+        }
+    }
+
+    & .btn-cont svg {
+        width: var(--size-25);
+        height: auto;
+    }
+
+
+
+}
