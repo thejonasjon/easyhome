@@ -1,5 +1,41 @@
 @import url("/src/assets/css/common.css");
 
+body {
+    position: relative;
+
+    & .chatbot {
+        position: absolute;
+        position: fixed;
+        right: var(--size-60);
+        bottom: 14rem;
+        z-index: 1000;
+
+        & svg {
+            width: var(--size-65);
+            height: auto;
+        }
+
+        & .chatbox-cont {
+            background-color: var(--accent-clr-601);
+            padding: var(--size-10);
+            border-radius: var(--size-5);
+            cursor: pointer;
+            box-shadow: 8px 10px 22px 0px rgba(55,58,54,0.39);
+            -webkit-box-shadow: 8px 10px 22px 0px rgba(55,58,54,0.39);
+            -moz-box-shadow: 8px 10px 22px 0px rgba(55,58,54,0.39);
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                background-color: var(--accent-clr-701)
+            }
+
+            &:hover svg path{
+                fill: var(--secondary-clr-101);
+            }
+        }
+    }
+}
+
 .hero {
     .section-container {
       position: relative;
