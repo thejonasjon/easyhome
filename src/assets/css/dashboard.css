@@ -164,6 +164,7 @@ body {
             line-height: var(--size-19);
             font-weight: 500;
             color: var(--white-clr-100);
+            cursor: pointer;
             margin-bottom: clamp(0.5rem, 2rem, 2.1rem);
         }
 
@@ -209,8 +210,14 @@ body {
                 font-size: var(--size-16);
                 line-height: var(--size-19);
                 font-weight: 400;
-                color: var(--white-clr-100);
+                color: var(--primary-clr-101);
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    filter: brightness(1.1);
                 }
+            }
         }
 
         & .input-group > label::after, .checkboxs > label::after {
@@ -431,7 +438,6 @@ body {
 
 
     & .terms-condition-privacy-policy {
-
         & .input-group-sub > * {
             flex: 0 0 auto;
             min-width: unset
@@ -442,7 +448,13 @@ body {
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
-            color: var(--white-clr-100);
+            color: var(--primary-clr-101);
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                filter: brightness(1.1);
+            }
         }
 
         & label a {
@@ -450,8 +462,8 @@ body {
             font-size: var(--size-16);
             line-height: 1.92rem;
             color: var(--accent-clr-601);
+            text-decoration: underline;
         }
-
     }
 
     & .step-2 {

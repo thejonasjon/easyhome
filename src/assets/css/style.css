@@ -408,6 +408,15 @@ footer {
         & svg {
             width: var(--size-30);
             height: auto;
+
+            & path:nth-child(1) {
+                stroke: none;
+            }
+
+            & path:nth-child(2) {
+                fill: #000;
+                stroke: none;
+            }
         }
 
         &:hover {

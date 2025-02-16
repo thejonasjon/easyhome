@@ -2,7 +2,7 @@
 
 .auth-section {
     position: relative;
-    background-color: #e2deda;
+    background-color: #303230;
 
     & .empty {
         background-image: url('/src/assets/images/login-or-signup.png');
@@ -15,18 +15,29 @@
         flex: 1 1;
     }
 
+    & .left-right .sub-right {
+        background-color: rgba(88, 91, 87, 0.102);
+        border-radius: var(--size-5);
+        width: 80%;
+        height: fit-content;
+        margin: clamp(2rem, 15rem, 15rem) auto clamp(4rem, 15rem, 15rem) auto;
+    }
+
     & .empty {
         flex-basis: 40%;
     }
 
+    & .sub-right-block {
+        flex-basis: 60%;
+    }
+
     & .form-cont-text {
         position: relative;
-        padding-block: var(--size-100) var(--size-100);
-        padding-inline: var(--size-100) 21rem;
-        flex-basis: 60%;
+        padding-block: var(--size-80) var(--size-80);
+        padding-inline: var(--size-40) var(--size-40);
 
         & .heading {
-            margin-block:  15rem 15rem;
+            margin-block:  auto 10rem;
         }
 
         & h4 {
@@ -34,15 +45,17 @@
             font-size: var(--size-48);
             line-height: var(--size-57);
             font-weight: 700;
-            color: var(--primary-clr-901);
+            color: var(--primary-clr-101);
+            width: 60%;
         }
 
         & p {
+
             font-family: montserrat-default;
             font-size: var(--size-19);
             line-height: var(--size-23);
             font-weight: 400;
-            color: var(--primary-clr-901);
+            color: var(--primary-clr-101);
             margin-top: var(--size-16);
         }
 
@@ -56,27 +69,44 @@
         transform: rotateX(360deg);
     }
 
-    & .input-group label {
+    & .input-group label, .radio-btn-group label {
         font-family: mulish-default;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 500;
-        color: var(--secondary-clr-1101);
+        color: var(--primary-clr-101);
         margin-bottom: clamp(0.6rem, 1.4rem, 1.4rem);
     }
 
-    & .input-group {
+    & .radio-btn-group label {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: unset;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+
+    & .input-group, .radio-btn-group {
         margin-bottom: clamp(2rem, 3rem, 3rem);
     }
 
+    & .first-last-name {
+        & .input-group {
+            width: 100%;
+        }
+    }
+
     & .input-group input {
+        min-width: 100%;
         min-height: var(--size-60);
         font-family: montserrat-default;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 500;
-        background-color: var(--primary-clr-401);
-        color: var(--white-clr-100);
+        background-color: var(--secondary-clr-601);
+        color: var(--primary-clr-901);
         outline: none;
         border: none;
         border-radius: var(--size-5);
@@ -87,7 +117,7 @@
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(28, 29, 27, 0.5);
         }
     }
 
@@ -102,18 +132,28 @@
 
         & button {
             position: absolute;
-            right: var(--size-20);
+            right: var(--size-10);
             background: none;
             font-size: var(--size-16);
             line-height: var(--size-19);
             border: none;
             cursor: pointer;
-            font-size: 1rem;
-            color:  var(--primary-clr-101);
+            font-size: var(--size-15);
+            color: var(--primary-clr-901);
             text-decoration: underline;
         }
     }
 
+    & input[type="radio"] {
+        width: var(--size-24);
+        height: var(--size-24);
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:checked {
+            accent-color: var(--accent-clr-601);
+        }
+    }
 
     & .btn-cont button{
         width: 100%;
@@ -130,6 +170,11 @@
         border: none;
         border-radius: var(--size-5);
         cursor: pointer;
+        transition: background-color 0.4s ease-in-out;
+
+        &:hover {
+            background-color: var(--accent-clr-501);
+        }
     }
 
     & .or-cont {
@@ -143,14 +188,14 @@
         font-family: mulish-default;
         font-size: var(--size-16);
         line-height: var(--size-19);
-        color: #000;
+        color: var(--primary-clr-101);
     }
 
     & .or-cont::before, & .or-cont::after {
         content: "";
         flex-grow: 1;
         height: 0.5px;
-        background-color: rgba(55, 58, 54, 0.302);
+        background-color: rgba(215, 216, 215, 0.663);
     }
 
     & .auth-cont div.flex {
@@ -161,17 +206,18 @@
         cursor: pointer;
     }
 
-    & .auth-cont p {
+    & .auth-cont button {
         font-family: mulish-default;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 400;
         text-align: center;
         color: #000;
+        text-transform: uppercase;
     }
 
     & .auth-cont svg {
-        width: var(--size-40);
+        width: var(--size-28);
         height: auto;
     }
 
