@@ -46,11 +46,10 @@
             line-height: var(--size-57);
             font-weight: 700;
             color: var(--primary-clr-101);
-            width: 60%;
+            width: 80%;
         }
 
         & p {
-
             font-family: montserrat-default;
             font-size: var(--size-19);
             line-height: var(--size-23);
