@@ -508,4 +508,9 @@ footer {
 .hero .slide {
     flex: 0 0 100vw;
     animation: heroBgAnimation 18s ease-in-out infinite;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
 }
