@@ -28,7 +28,7 @@
                                             <path fill="#fff" d="M15 20v-7h7v7zm-4-9V4h11v7zm-9 9v-7h11v7zm0-9V4h7v7z" />
                                         </svg>
                                     </span>Dashboard</a></li>
-                                <li><a href="#">
+                                <li><a href="/src/pages/post-property.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path fill="#fff" d="M17 19.22H5V7h7V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7h-2z" />
@@ -44,7 +44,7 @@
                                             </g>
                                         </svg>
                                     </span>My Listings</a></li>
-                                <li><a href="#">
+                                <li><a href="/src/pages/profile.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="size-5">
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
@@ -117,7 +117,8 @@
                             </div>
                         </section>
 
-                        <div class="profile">
+                        <!-- Profil Display -->
+                        <section class="profile">
                             <div class="profile-content">
                                 <div class="section-info">
                                     <div class="heading">
@@ -278,7 +279,128 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
+                        <!-- Edit form -->
+                        <section>
+                            <div class="profile-edit">
+                                <form action="#">
+                                    <div class="wrap">
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Personal Information</p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="firstName">First Name</label>
+                                                    <input type="text" placeholder="Charles">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="LastName">Last Name</label>
+                                                    <input type="text" placeholder="Udokz">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" placeholder="charlesudokz@gmail.com">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="phoneNumber">Phone Number</label>
+                                                    <input type="text" placeholder="09036257618">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="occupation">Occupation</label>
+                                                    <input type="text" placeholder="UI/UX Egineer">
+                                                </div>
+                                                <div class="input-group">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Address</p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="country">Country</label>
+                                                    <input type="text" placeholder="Nigeria">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="state">State</label>
+                                                    <input type="text" placeholder="Lagos">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="lga">LGA</label>
+                                                    <input type="text" placeholder="Ikeja">
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="postCode">Postal Code</label>
+                                                    <input type="text" placeholder="100101">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="residentialAddress">Residential Address</label>
+                                                    <input type="text" placeholder="12, Adebolaji Street,">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Bank Account Details</p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="accountNumber">Account Number</label>
+                                                    <input type="text" placeholder="0027656511">
+                                                </div>
+
+                                                <div class="input-group">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="accountName">Account Name</label>
+                                                    <input type="text" placeholder="Charles Udokz Ifediora">
+                                                </div>
+                                                <div class="input-group">
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="bank">Bank</label>
+                                                    <input type="text" placeholder="Providus Bank">
+                                                </div>
+
+                                                <div class="input-group">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-cont">
+                                        <button type="submit">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
                     </div>
                 </section>
             </div>

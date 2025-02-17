@@ -116,7 +116,19 @@
 
     & .btn-cont button {
         width: fit-content;
-        padding-inline: var(--size-24);
+        padding: var(--size-14) var(--size-24);
         float: right;
+    }
+}
+
+.profile-edit {
+    & .sub-section {
+        gap: clamp(0.5rem, 4rem, 4rem);
+        margin-bottom: var(--size-30) !important;
+    }
+
+    & .input-group > label::after, .checkboxs > label::after {
+        content: "" !important;
+        color: unset !important;
     }
 }
