@@ -122,6 +122,18 @@
 }
 
 .profile-edit {
+    & .heading {
+        margin-bottom: var(--size-20);
+
+        & h4 {
+        font-family: Montserrat-default;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        font-weight: 700;
+        color: var(--white-clr-100);
+        }
+    }
+
     & .sub-section {
         gap: clamp(0.5rem, 4rem, 4rem);
         margin-bottom: var(--size-30) !important;
