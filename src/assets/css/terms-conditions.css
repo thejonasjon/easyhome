@@ -12,6 +12,10 @@
 
     & .static-bg--fag {
         background-color: var( --accent-clr-901);
+        background-image: url(/src/assets/images/faq-bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: calc(1px);
     }
 
     header {
@@ -31,7 +35,6 @@
             width: 100%;
 
             min-height: 100%;
-
             background: rgb(28,29,27);
             background: linear-gradient(90deg, rgba(28,29,27,0.248358718487395) 45%, rgba(28,29,27,0.04947916666666663) 80%, rgba(143,150,140,0) 100%);
 

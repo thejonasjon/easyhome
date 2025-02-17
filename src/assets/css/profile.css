@@ -1,0 +1,122 @@
+@import url("/src/assets/css/dashboard.css");
+
+/* Profile */
+.profile {
+    & .section-info {
+        background-color: var(--primary-clr-501);
+        color: var(--white-clr-100);
+        border-radius: var(--size-10);
+        padding: var(--size-28) var(--size-29);
+        margin-inline: auto;
+
+        & .info-grid {
+            gap: clamp(1rem, 20rem, 20rem);
+        }
+
+        & .heading {
+            margin-bottom: var(--size-20);
+        }
+
+        & .heading h5 {
+            font-family: mulish-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 500;
+        }
+
+        & .info-left, .info-right {
+            gap: clamp(1rem, 4rem, 4rem);
+        }
+
+        & .profile-info {
+            & > {
+                flex: 1 1 20rem;
+                background-color: red;
+            }
+        }
+
+        & .details {
+            & .sub-info {
+                display: flex;
+                flex-direction: column;
+                gap: clamp(0.5rem, 1.2rem, 1.2rem);
+
+                &.profile-photo {
+                    position: relative;
+                    display: inline-block;
+                    width: 10rem;
+                    height: 10rem;
+
+                    & span {
+                        position: absolute;
+                        bottom: 0px;
+                        right: -1.8rem;
+                        width: var(--size-40);
+                        height: var(--size-40);
+                    }
+
+                    & .profile-img {
+                        width: fit-content;
+                        height: fit-content;
+                        position: absolute;
+                    }
+                }
+
+                & span svg {
+                    width: var(--size-30);
+                    height: auto;
+                }
+
+                & span svg path {
+                    fill: var(--accent-clr-601);
+                }
+
+                & img {
+                    display: block;
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                }
+            }
+
+            & .profile-name {
+                font-family: mulish-default;
+                font-size: var(--size-19);
+                line-height: 2.28rem;
+                font-weight: 600;
+                color: var(--white-clr-100);
+            }
+
+            & .label {
+                font-family: mulish-default;
+                font-size: var(--size-19);
+                line-height: var(--size-19);
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            & .label-value {
+                font-family: mulish-default;
+                font-size: var(--size-16);
+                line-height: var(--size-19);
+                font-weight: 400;
+            }
+        }
+    }
+
+    & .section-info:not(:last-child) {
+        margin-bottom: var(--size-40);
+    }
+}
+
+.profile-edit-button {
+    & .btn-cont {
+        margin: 0 auto;
+    }
+
+    & .btn-cont button {
+        width: fit-content;
+        padding-inline: var(--size-24);
+        float: right;
+    }
+}

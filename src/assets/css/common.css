@@ -255,6 +255,10 @@
   text-align: center;
 }
 
+.margin-left--auto {
+  margin-left: auto;
+}
+
 /* Gap */
 .gap--1 {
     gap: var(--size-1);
