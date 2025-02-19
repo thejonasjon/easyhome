@@ -1,0 +1,236 @@
+@import url(/src/assets/css/dashboard.css);
+
+
+.property-my-listings {
+
+    & .page--heading > h4 {
+        font-family: montserrat-defaul;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        color: var(--white-clr-100);
+        font-weight: 700;
+        margin-block: var(--size-10) var(--size-25);
+    }
+
+    & .filter-listings-cont {
+        position: relative;
+        display: inline-block;
+
+        & .custom-filter-dropdown  {
+            width: 30rem;
+
+
+            & .dropdown-btn {
+            }
+
+            & .dropdown-menu {
+            }
+        }
+    }
+
+    & .my-linstings-main {
+        background-color: var(--primary-clr-501);
+        border-radius: var(--size-10);
+        padding: var(--size-35) var(--size-25);
+        margin-top: var(--size-30);
+    }
+
+    & .my-listing-empty-state {
+        display: none;
+        max-width: 70%;
+        padding: clamp(2rem, 15rem, 15rem) clamp(2rem, 15rem, 15rem);
+        margin: clamp(2rem, 10rem, 10rem) auto;
+        height: auto;
+        background-color: var(--primary-clr-601);
+        border-radius: var(--size-10);
+
+        & h4 {
+            font-family: montserrat-defaul;
+            font-size: var(--size-23);
+            line-height: 2.76rem;
+            color: var(--white-clr-100);
+            font-weight: 700;
+            color: var(--secondary-clr-101);
+            text-align: center;
+        }
+    }
+
+    & .my-linstings-main {
+
+        & .listing-nav {
+            width: 80%;
+            margin: 0 auto;
+            background-color: var(--accent-clr-301);
+            padding-inline: var(--size-4);
+            padding-block: var(--size-4);
+            border-radius: var(--size-8);
+        }
+
+        & .btn-cont {
+            margin: unset;
+        }
+
+        & button {
+            width: 100%;
+            border-radius: var(--size-8);
+            padding: var(--size-8) var(--size-16);
+            background-color: transparent;
+
+            &.active {
+                background-color: var(--accent-clr-601);
+            }
+        }
+    }
+
+    & .my-listings-cont {
+        flex-wrap: wrap;
+        gap: var(--size-16);
+        margin-block: clamp(1rem, 6rem, 6rem);
+
+        & > * {
+            flex: 1 1 calc(100% / 3 - var(--size-48));
+            width: 20rem;
+        }
+
+        & .text {
+            background-color: var(--accent-clr-601);
+            padding: var(--size-10);
+            border-bottom-left-radius: var(--size-5);
+            border-bottom-right-radius: var(--size-5);
+            gap: var(--size-15);
+        }
+
+        & .text .heading--h4 {
+            display: inline-block;
+            font-family: montserrat-defaul;
+            font-size: var(--size-13);
+            line-height: 1.56rem;
+            color: var(--primary-clr-1101);
+            font-weight: 700;
+        }
+
+        & .text .status {
+            background-color: var(--accent-clr-301);
+            max-width: fit-content;
+            border-radius: var(--size-5);
+            padding: var(--size-8) var(--size-16);
+
+            & span {
+                font-family: mulish-default;
+                font-size: var(--size-13);
+                line-height: 1.56rem;
+                font-weight: 600;
+                color: var(--primary-clr-601);
+            }
+        }
+
+        & .block {
+            & .image-cont {
+                position: relative;
+
+                & img {
+                    border-top-left-radius: var(--size-5);
+                    border-top-right-radius: var(--size-5);
+                }
+
+                & .location {
+                    position: absolute;
+                    top: var(--size-16);
+                    right: var(--size-16);
+                    background-color: var(--primary-clr-601);
+                    color: var(--secondary-clr-201);
+                    border-radius: var(--size-5);
+                    padding: var(--size-8) var(--size-16);
+                }
+            }
+        }
+
+        & .property-includes {
+            gap: var(--size-5);
+
+            & > * {
+                flex: 1 1;
+            }
+        }
+    }
+
+    & .includes {
+        display: flex;
+        justify-content: center;
+        gap: var(--size-5);
+        background-color: var(--accent-clr-201);
+        padding: var(--size-8) var(--size-16);
+        border-radius: var(--size-5);
+        color: var(--primary-clr-901);
+
+        & span {
+            font-family: mulish-default;
+            font-size: var(--size-13);
+            line-height: 1.56rem;
+        }
+    }
+
+    & .price-details-link {
+
+        & .price span {
+            font-family: montserrat-defaul;
+            font-size: var(--size-13);
+            line-height: 1.56rem;
+            color: var(--primary-clr-701);
+            font-weight: 200;
+
+            & strong {
+                display: block;
+                font-family: montserrat-defaul;
+                font-size: var(--size-23);
+                line-height: 2.56rem;
+                color: var(--primary-clr-1101);
+                font-weight: 600;
+            }
+        }
+
+        & .details-link {
+            background-color: var(--accent-clr-501);
+            border-radius: var(--size-5);
+            padding: var(--size-8) var(--size-16);
+
+            & a {
+                font-family: mulish-defaul;
+                font-size: var(--size-13);
+                line-height: 1.56rem;
+                color: var(--primary-clr-1101);
+                font-weight: 400;
+                color: var(--white-clr-100);
+            }
+        }
+    }
+
+    & .listings-pagination {
+        max-width: fit-content;
+        margin: 0 auto;
+
+
+        & button {
+            max-width: fit-content;
+            font-family: mulish-default;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            color: var(--secondary-clr-101);
+            padding: var(--size-10) var(--size-10);
+
+            & svg {
+                width: var(--size-24);
+                height: auto;
+            }
+
+            &.disabled {
+                cursor: not-allowed;
+
+                & svg path{
+                    stroke: #FAF9F899;
+                }
+            }
+        }
+    }
+
+}
