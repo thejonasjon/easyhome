@@ -492,9 +492,6 @@ svg {
   }
 }
 
-/* dropdown to be deleted */
-
-
 /*Navlink Dropdown */
 .navLink-dropdown-option {
   position: relative;
@@ -757,6 +754,14 @@ svg {
 
       &.active {
           border-left: var(--size-6) solid var(--accent-clr-601);
+      }
+
+      &.active a{
+        color: var(--secondary-clr-601);
+      }
+
+      &.active svg path{
+        fill: var(--secondary-clr-601);
       }
   }
 

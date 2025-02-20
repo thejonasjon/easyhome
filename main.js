@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const dropdownMenu = dropdown.querySelector(".dropdown-btn-group");
         const dropdownItems = dropdownMenu.querySelectorAll("button");
 
-        // Toggle dropdown show/hide
         dropdownBtn.addEventListener("click", (e) => {
             e.stopPropagation();
             closeAllDropdowns();
             dropdownMenu.classList.toggle("show");
+            dropdownBtn.style.backgroundColor = '#e3ab99'
         });
 
         dropdownItems.forEach(item => {

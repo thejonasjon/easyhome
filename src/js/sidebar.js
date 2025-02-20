@@ -5,32 +5,25 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sidebarLinks = document.querySelectorAll(".sidebar-container nav ul li a");
 
-    const savedActivePath = localStorage.getItem("activeSidebar");
-    const currentPath = window.location.pathname;
-
-    let hasActive = false;
+    // Get the saved active path or fallback to current path
+    const savedActivePath = localStorage.getItem("activeSidebar") || window.location.pathname;
 
     sidebarLinks.forEach((link) => {
+        const listItem = link.closest("li");
         const linkPath = new URL(link.href).pathname;
 
-        if (!hasActive && (linkPath === savedActivePath || linkPath === currentPath)) {
-            link.closest("li").classList.add("active");
-            hasActive = true;
-        } else {
-            link.closest("li").classList.remove("active");
+        // Remove active from all items
+        listItem.classList.remove("active");
+
+        // Set active if it matches saved or current path
+        if (linkPath === savedActivePath) {
+            listItem.classList.add("active");
         }
 
-        link.addEventListener("click", (e) => {
-            sidebarLinks.forEach((el) => el.closest("li").classList.remove("active"));
-
-            let target = e.target.closest("li");
-            if (target) {
-                target.classList.add("active");
-                localStorage.setItem("activeSidebar", linkPath);
-            }
+        // Click event to update active link
+        link.addEventListener("click", function () {
+            localStorage.setItem("activeSidebar", linkPath);
         });
     });
 });
-
-
 
