@@ -127,3 +127,18 @@
     }
 
 }
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Medium mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+
+}

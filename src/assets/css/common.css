@@ -894,3 +894,59 @@ svg {
   }
 
 }
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .main-nav li:nth-last-of-type(3) {
+    width: 100%;
+  }
+
+  .navLink-dropdown-option {
+    width: 100%;
+    margin-bottom: 10rem;
+
+
+    & .navLink-dropdown {
+      display: block;
+      width: 100%;
+      top: 40px;
+      left: 0px;
+
+      & ul li {
+        border: none;
+      }
+    }
+  }
+}
+
+/* Tablet screen */
+@media (max-width: 1024px) {
+
+  .main-nav li:nth-last-of-type(3) {
+    width: 100%;
+  }
+
+  .navLink-dropdown-option {
+    width: 100%;
+    margin-bottom: 10rem;
+
+
+    & .navLink-dropdown {
+      display: block;
+      width: 100%;
+      top: 40px;
+      left: 0px;
+
+      & ul li {
+        border: none;
+      }
+    }
+  }
+}
+
+
+
+
+

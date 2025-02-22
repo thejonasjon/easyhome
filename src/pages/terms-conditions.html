@@ -21,31 +21,60 @@
                             </a>
                         </div>
 
-                        <ul role="list" class="main-nav flex gap--40">
-                            <li><a href="#">Property Listings</a></li>
-                            <li><a href="/src/pages/rent.html">Rent</a></li>
-                            <li><a href="/src/pages/login.html">Post a Property</a></li>
-                            <li>
-                                <div class="navLink-dropdown-option flex align-end gap--4">
-                                    <a href="#">Find a Roomate</a>
-                                    <span class="flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </span>
-
-                                    <div class="navLink-dropdown">
-                                        <ul role="list">
-                                            <li><a href="#">Search for avalilable rooms</a></li>
-                                            <li><a href="#">List your space</a></li>
-                                        </ul>
-                                    </div>
+                        <div class="navbar">
+                            <div class="hamburger-menu" id="hamburger">
+                                <div id="menu-open">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.5" d="M16 26h40M16 36h40M16 46h40" />
+                                    </svg>
                                 </div>
-                            </li>
-                            <li><a href="/src/pages/about-us.html">About Us</a></li>
-                            <li><a href="/src/pages/signup.html">Sign Up</a></li>
-                            <li><a href="/src/pages/login.html">Login</a></li>
-                        </ul>
+                                <div class="hidden" id="menu-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul role="list" class="main-nav flex flex-wrap" id="nav-menu">
+                                <li><a href="">Property Listings</a></li>
+                                <li><a href="/src/pages/rent.html">Rent</a></li>
+                                <li><a href="/src/pages/login.html">Post a Property</a></li>
+                                <li>
+                                    <div class="navLink-dropdown-option flex align-end gap--4">
+                                        <a href="#">Find a Roomate</a>
+                                        <span class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </span>
+
+                                        <div class="navLink-dropdown">
+                                            <ul role="list">
+                                                <li><a href="/src/pages/login.html">Search for avalilable rooms</a></li>
+                                                <li><a href="/src/pages/login.html">List your space</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="/src/pages/login.html">Login</a></li>
+                                <li>
+                                    <div class="navLink-dropdown-option flex align-end gap--4">
+                                        <a>Sign Up</a>
+                                        <!-- <span class="flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                            </svg>
+                                        </span> -->
+
+                                        <div class="navLink-dropdown">
+                                            <ul role="list">
+                                                <li><a href="/src/pages/signup.html">As Homeowner</a></li>
+                                                <li><a href="/src/pages/signup.html">As Tenant</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </nav>
                 </header>
 
@@ -227,20 +256,20 @@
                             <input type="email" placeholder="Enter Your Email Address For Alert">
                             <button class="flex align-center justify-center">
                                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                                    <title>send_line</title>
                                     <g id="send_line" fill='none' fill-rule='evenodd'>
                                         <path d='M24 0v24H0V0zM12.594 23.258l-.012.002-.071.035-.02.004-.014-.004-.071-.036c-.01-.003-.019 0-.024.006l-.004.01-.017.428.005.02.01.013.104.074.015.004.012-.004.104-.074.012-.016.004-.017-.017-.427c-.002-.01-.009-.017-.016-.018m.264-.113-.014.002-.184.093-.01.01-.003.011.018.43.005.012.008.008.201.092c.012.004.023 0 .029-.008l.004-.014-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014-.034.614c0 .012.007.02.017.024l.015-.002.201-.093.01-.008.003-.011.018-.43-.003-.012-.01-.01z'/>
                                         <path fill='#09244BFF' d='M17.991 6.01 5.399 10.563l4.195 2.428 3.699-3.7a1 1 0 0 1 1.414 1.415l-3.7 3.7 2.43 4.194L17.99 6.01Zm.323-2.244c1.195-.433 2.353.725 1.92 1.92l-5.282 14.605c-.434 1.198-2.07 1.344-2.709.241l-3.217-5.558-5.558-3.217c-1.103-.639-.957-2.275.241-2.709z'/>
                                     </g>
                                 </svg>
-                            </div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="f-two">
                 <div class="section-two flex justify-between">
-                    <div class=" flex flex-column justify-between">
+                    <div class="brand-social flex flex-column justify-between">
                         <div>
                             <div class="brand-containter">
                                 <a href="/">
@@ -295,7 +324,7 @@
                             <li><a href="/src/pages/fag.html" target="_blank">FAQs</a></li>
                             <li><a href="/src/pages/terms-conditions.html" target="_blank">Terms & Conditions</a></li>
                             <li><a href="/src/pages/privacy-policy.html" target="_blank">Privacy & Policy</a></li>
-                            <li><a href="#">Find A Roommate</a></li>
+                            <li><a href="/src/pages/login.html">Find A Roommate</a></li>
                         </ul>
                     </div>
 
@@ -335,5 +364,6 @@
     </footer>
 
     <script src="/main.js"></script>
+    <script src="/src/js/hamburger.js"></script>
 </body>
 </html>
