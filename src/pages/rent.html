@@ -12,7 +12,7 @@
         <div class="section-container">
             <div class="content static-bg--rent flex flex-column">
                 <header>
-                    <nav class="flex justify-between">
+                    <nav class="flex justify-between align-center">
                         <div class="brand-containter">
                             <a href="/">
                                 <span>
@@ -83,16 +83,110 @@
                         <h2 class="heading--h2">Find Your Next Home..</h2>
                     </div>
 
+                    <div class="search-container--bottom">
+                        <div class="light-dark flex justify-between">
+                            <div class="search-inputs-group flex gap--10">
+                                <div class="search-inputs">
+                                    <div class="input-group dropdown-option">
+                                        <label for="propertyType">Property Type</label>
+                                        <button class="search-btn">
+                                            Select Property Type
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                            </span>
+                                        </button>
+
+                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                            <button>Self Contain</button>
+                                            <button>Detached Bungalow</button>
+                                            <button>Mansion</button>
+                                            <button>Detached Duplex</button>
+                                            <button>Semi - Detached Duplex</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="search-inputs">
+                                    <div class="input-group dropdown-option">
+                                        <label for="bedroom">Bedrooms</label>
+                                        <button class="search-btn">
+                                            Select Number Of bedroom
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                            </span>
+                                        </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>1</button>
+                                                <button>2</button>
+                                                <button>3</button>
+                                                <button>4</button>
+                                                <button>5</button>
+                                                <button>6+</button>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="search-inputs">
+                                    <div class="input-group dropdown-option">
+                                        <label for="minPrice">Min Price</label>
+                                        <button class="search-btn">
+                                            Select Min Price
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                            </span>
+                                        </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>20,000 - 100,000</button>
+                                                <button>100,001 - 300,000</button>
+                                                <button>300,001 - 600,000</button>
+                                                <button>600,001 - 1,200,000</button>
+                                                <button>1,200,001 - 5,000,000</button>
+                                                <button>5,000,00 - 100,000,000</button>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="search-inputs">
+                                    <div class="input-group dropdown-option">
+                                        <label for="maxPrice">Max Price</label>
+                                        <button class="search-btn">
+                                            Select Max Price
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                            </span>
+                                        </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>20,000 - 100,000</button>
+                                                <button>100,001 - 300,000</button>
+                                                <button>300,001 - 600,000</button>
+                                                <button>600,001 - 1,200,000</button>
+                                                <button>1,200,001 - 5,000,000</button>
+                                                <button>5,000,00 - 100,000,000</button>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="search-container--top">
-                        <div class="flex gap--10">
+                        <div class="search-inputs-group flex gap--10">
                             <div class="search-inputs">
-                                <div class="input-group">
+                                <div class="input-group dropdown-option">
                                     <button class="search-btn rent">
                                         Rent
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
                                         </span>
                                     </button>
+
+                                    <div class="dropdown-btn-group flex flex-column gap--2">
+                                        <button>Rent</button>
+                                        <button>Shortlet</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -123,61 +217,6 @@
                         </div>
                     </div>
 
-                    <div class="search-container--bottom">
-                        <div class="light-dark flex justify-between">
-                            <div class="flex gap--10">
-                                <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="property-type">Property Type</label>
-                                        <button class="search-btn">
-                                            Select Property Type
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="min-price">Min Price</label>
-                                        <button class="search-btn">
-                                            Select Min Price
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="max-price">Max Price</label>
-                                        <button class="search-btn">
-                                            Select Max Price
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="min-price">Bedrooms</label>
-                                        <button class="search-btn">
-                                            Select Number Of bedrooms
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1324,8 +1363,7 @@
         </div>
     </footer>
 
-    <script src="/main.js">
-
-    </script>
+    <script src="/main.js"></script>
+    <script src="/src/js/hamburger.js"></script>
 </body>
 </html>

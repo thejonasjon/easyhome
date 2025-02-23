@@ -545,7 +545,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-block: clamp(2rem, 20vw, 20rem) clamp(2rem, 5vw, 3.5rem);
+        padding-block: clamp(1rem, 20vh, 20rem) clamp(1rem, 5vh, 3.5rem);
         padding-inline: clamp(2rem, 10vw, 10rem);
     }
 
@@ -721,7 +721,7 @@ footer {
 
     & img {
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
 }
 
@@ -736,6 +736,7 @@ footer {
 
         & .section-three {
             background-image: url('/src/assets/images/footer-gb-left.png');
+            background-size: cover;
         }
 
         & .input-group {
@@ -882,7 +883,7 @@ footer {
 
         & .input-group {
             input {
-              min-width: 42rem;
+              min-width: clamp(10rem, 50vw, 42rem);
             }
 
         }
@@ -921,6 +922,10 @@ footer {
             min-height: fit-content;
             width: 100vw;
         }
+
+        & .content {
+            background-color: #2E302D;
+        }
     }
 
     nav .navbar {
@@ -944,9 +949,10 @@ footer {
         }
 
         & .main-nav {
+            flex-direction: column;
             background-color: #2E302D;
             width: 100vw;
-            height: 100vh;
+            height: 100%;
             position: absolute;
             padding: 5vw;
             left: 0;
@@ -975,10 +981,10 @@ footer {
 
     .hero-text {
         & .search-input-cont {
+            flex-wrap: wrap;
             & > * {
-                flex: 1 1 100%;
-                min-width: fit-content;
-
+                flex: 1 1 calc(100% / 2 - 10px);
+                min-width: unset;
             }
         }
 
@@ -1003,6 +1009,14 @@ footer {
     footer {
         & .section-one {
             justify-content: center;
+        }
+
+        .section-three {
+            min-height: 200px;
+            background-image: url('/src/assets/images/footer-gb-left.png');
+            background-repeat: repeat-x;
+            background-position: center;
+            background-size: cover;
         }
     }
 }

@@ -13,11 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const dropdownMenu = dropdown.querySelector(".dropdown-btn-group");
         const dropdownItems = dropdownMenu.querySelectorAll("button");
 
+
+
         dropdownBtn.addEventListener("click", (e) => {
             e.stopPropagation();
             closeAllDropdowns();
             dropdownMenu.classList.toggle("show");
-            dropdownBtn.style.backgroundColor = '#e3ab99'
+            console.log(dropdownBtn.innerText)
+            dropdownBtn.innerText === "Rent" || "Shortlet" ? dropdownBtn.style.backgroundColor = '#4D4B4A'
+            : dropdownBtn.style.backgroundColor = '#e3ab99'
         });
 
         dropdownItems.forEach(item => {
