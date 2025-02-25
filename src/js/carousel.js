@@ -1,42 +1,67 @@
 // script for slideshows
-'use strict'
+"use strict";
+// Code need to be improved
+document.querySelectorAll(".carouselTarget").forEach((section) => {
+    const carousel = section.querySelector(".carousel");
+    const prevBtn = section.querySelector(".prev");
+    const nextBtn = section.querySelector(".next");
+    const slides = carousel.querySelectorAll(".slide");
 
-const carousel = document.querySelector(".carousel");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+    let index = 0;
+    let slidesLength = slides.length;
+    let slideWidth, extraSpace;
 
-const slides = document.querySelectorAll(".carousel .slide");
-const slideWidth = 530;
-const extraSpace = 200;
-let index = 0;
+    if (section.id === "property-rent--home"){
+        slideWidth = 530;
+        extraSpace = 200;
 
-function updateCarousel() {
-    const totalSlides = slides.length;
-    let translateX = -index * slideWidth;
+    } else if (section.id === "property-rent--available"){
+        slideWidth = 350;
+        extraSpace = 200;
 
-    if (index === totalSlides - 3) {
-        translateX -= extraSpace;
+    } else if(section.id === "property-rent--newly-rented") {
+        slideWidth = 280;
+        extraSpace = 100;
     }
 
-    carousel.style.transform = `translateX(${translateX}px)`;
 
-    prevBtn.style.opacity = index === 0 ? "0" : "1";
+    function updateCarousel() {
+        let translateX = -index * slideWidth;
+        if (index === slidesLength - 3) {
+            translateX -= extraSpace;
+        }
 
-    nextBtn.style.opacity = index >= totalSlides - 3 ? "0" : "1";
-}
+        carousel.style.transform = `translateX(${translateX}px)`;
 
-nextBtn.addEventListener("click", () => {
-    if (index < slides.length - 3) {
-        index++;
-        updateCarousel();
+        if (section.id === "property-rent--home"){
+            prevBtn.style.opacity = index === 0 ? "0" : "1";
+            nextBtn.style.opacity = index >= slidesLength - 3 ? "0" : "1";
+        }
+
+        if (section.id === "property-rent--available"){
+            prevBtn.style.opacity = index === 0 ? "0" : "1";
+            nextBtn.style.opacity = index >= slidesLength - 3 ? "0" : "1";
+        }
+
+        if (section.id === "property-rent--newly-rented"){
+            prevBtn.style.opacity = index === 0 ? "0" : "1";
+            nextBtn.style.opacity = index >= slidesLength - 3 ? "0" : "1";
+        }
     }
+
+    nextBtn.addEventListener("click", () => {
+        if (index < slidesLength - 3) {
+            index++;
+            updateCarousel();
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            updateCarousel();
+        }
+    });
+
+    updateCarousel();
 });
-
-prevBtn.addEventListener("click", () => {
-    if (index > 0) {
-        index--;
-        updateCarousel();
-    }
-});
-
-updateCarousel();

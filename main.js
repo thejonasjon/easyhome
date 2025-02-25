@@ -7,21 +7,27 @@ document.querySelector("#footer-date").innerHTML = currentYear;
 // Dropdown funtionalities
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownOptions = document.querySelectorAll(".dropdown-option");
+    const homePage = document.querySelector(".search-container--home")
 
     dropdownOptions.forEach(dropdown => {
         const dropdownBtn = dropdown.querySelector("button");
         const dropdownMenu = dropdown.querySelector(".dropdown-btn-group");
         const dropdownItems = dropdownMenu.querySelectorAll("button");
 
-
-
         dropdownBtn.addEventListener("click", (e) => {
             e.stopPropagation();
             closeAllDropdowns();
             dropdownMenu.classList.toggle("show");
             console.log(dropdownBtn.innerText)
-            dropdownBtn.innerText === "Rent" || "Shortlet" ? dropdownBtn.style.backgroundColor = '#4D4B4A'
-            : dropdownBtn.style.backgroundColor = '#e3ab99'
+
+            if (homePage) {
+                console.log(homePage)
+                dropdownBtn.style.backgroundColor = '#e3ab99';
+            } else {
+                dropdownBtn.style.backgroundColor = '#4D4B4A';
+                dropdownBtn.style.color = '#fff'
+            }
+
         });
 
         dropdownItems.forEach(item => {

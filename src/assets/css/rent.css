@@ -6,8 +6,6 @@ body {
 }
 
 .page-hero--rent {
-
-
     & .static-bg--rent {
         background-image: url(/src/assets/images/terms-and-condtions.png);
     }
@@ -69,8 +67,10 @@ body {
             }
 
             &.active {
+                position: relative;
                 background-color: var(--primary-clr-501);
                 color: var(--white-clr-100);
+                z-index: 10;
             }
 
             &:hover svg path {
@@ -122,7 +122,6 @@ body {
             width: max-content;
             min-width: 100%;
             margin-top: 0.5rem;
-            z-index: 5;
 
             & button {
                 width: 100%;
@@ -141,8 +140,10 @@ body {
             }
 
             &.show {
+                position: absolute;
                 display: flex;
             }
+
         }
 
         .light-dark {
@@ -250,6 +251,65 @@ body {
         width: var(--size-26);
         height: auto;
     }
+
+
+}
+
+.pnc{
+    /* & .slide-wrapper {
+        gap: clamp(2rem, 20vw, 6.8rem);
+    } */
+
+    & .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
+.pnc {
+    position: relative;
+
+    & .slide-navigation {
+        width: 100%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 100;
+        height: auto;
+
+        & button.hidden {
+            display: none;
+        }
+
+        & .next {
+            margin-top: -30px;
+            margin-right: var(--size-30);
+        }
+
+        & .prev {
+            margin-top: -30px;
+            margin-left: var(--size-30);
+        }
+
+        & .prev, .next {
+            width: clamp(2.5rem, 15vw, 7.6rem);
+            height: clamp(2.5rem, 15vw, 7.6rem);
+            border-radius: 50%;
+            background-color: var(--primary-clr-701);
+            box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.25);
+            -webkit-box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 12px 22px 0px rgba(0,0,0,0.75);
+            margin-top: -20%;
+        }
+
+        & svg {
+            width: clamp(1.5rem, 10vw, 2.6rem);
+            height: auto;
+        }
+        & svg path {
+            stroke: var(--white-clr-100);
+        }
+    }
 }
 
 .property-rent {
@@ -258,7 +318,7 @@ body {
         align-items: center;
         background-color: var(--primary-clr-901);
         height: 15vh;
-        padding-inline: clamp(5rem, 10rem, 10rem);
+        padding-inline: clamp(2rem, 10vw, 10rem);
     }
 
     & .section-heading .heading--h3 {
@@ -266,8 +326,11 @@ body {
     }
 
     & .property-rent-content {
-        padding-inline: clamp(5rem, 10rem, 10rem);
-        padding-block: 0 clamp(2rem, 4rem, 4rem);
+        max-width: 92%;
+        overflow: hidden;
+        padding-inline: clamp(2rem, 10vw, 4rem);
+        padding-block: clamp(1rem, 5vw, 2rem) clamp(2rem, 5vw, 4rem);
+        margin-inline: auto;
 
         & .heading--h4 {
             font-family: montserrat-defaul;
@@ -280,8 +343,7 @@ body {
     }
 
     & .property-cards-container {
-        overflow-x: hidden;
-        gap: clamp(0.5rem, 2rem, 2rem);
+        gap: clamp(0.5rem, 5vw, 2rem);
 
         & .text .heading--h4 {
             font-family: montserrat-defaul;
@@ -311,8 +373,8 @@ body {
 
 .all-listings {
     background-color: var(--primary-clr-901);
-    padding-inline: clamp(5rem, 5rem, 5rem);
-    padding-block: clamp(1rem, 2rem, 2rem);
+    padding-inline: clamp(2rem, 10vw, 5rem);
+    padding-block: clamp(1rem, 10vw, 3rem);
 
     & .text .heading--h4 {
         font-family: montserrat-defaul;
@@ -336,7 +398,7 @@ body {
         }
 
         & > * {
-            flex: 1 1;
+            flex: 1 1 calc(100% / 3 - 10px);
         }
 
         & .property-includes {
@@ -349,7 +411,8 @@ body {
     }
 
     & .block {
-        min-width: 40rem;
+        max-width: 40rem;
+        min-width: 20rem;
         & .image-cont {
             & img {
                 width: 100%;
@@ -372,6 +435,37 @@ body {
             font-family: mulish-default;
             font-size: var(--size-12);
             line-height: 1.56rem;
+        }
+    }
+
+    & .price-details-link {
+        flex-wrap: wrap;
+        gap: var(--size-10);
+    }
+
+    & .pagination {
+        justify-content: center;
+        display: flex;
+        gap: var(--size-10);
+        margin-top: clamp(2rem, 10vw, 5rem);
+
+        & > * {
+            flex: 0 1 4rem;
+        }
+
+        & button {
+            font-family: mulish-default;
+            font-size: var(--size-12);
+            line-height: 1.56rem;
+            background-color: transparent;
+            color: var(--white-clr-100);
+            border: 1px solid var(--accent-clr-601);
+            border-radius: var(--size-5);
+            padding: 1rem 1rem;
+
+            &.active {
+                background-color: var(--accent-clr-601);
+            }
         }
     }
 }
@@ -406,15 +500,6 @@ body {
             min-width: clamp(18rem, 30vw, 29rem);
         }
 
-        /* & .search-inputs-group > * {
-            flex: 1 1 calc(100% / 4 - 10px);
-        } */
-
-        /* & .search-container--top, .search-container--bottom, .text {
-            position: relative;
-            z-index: 2;
-        } */
-
         & .search-container--top .search-inputs-group {
             & > * {
                 flex: 1 1 auto;
@@ -445,7 +530,6 @@ body {
                 height: auto;
             }
         }
-
     }
 }
 

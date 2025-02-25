@@ -409,6 +409,11 @@ svg {
     z-index: 10;
 }
 
+/* Brand Logo */
+.brand-containter img {
+  width: clamp(10rem, 15vw, 100%);
+}
+
 /* Hero button */
 .input-group label {
   display: block;
@@ -669,6 +674,7 @@ svg {
           font-size: var(--size-13);
           line-height: 1.56rem;
           font-weight: 400;
+
       }
   }
 
