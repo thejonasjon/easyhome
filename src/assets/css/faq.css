@@ -3,7 +3,7 @@
 .frequently-asked-questions {
 
     & .faq {
-        margin-bottom: clamp(1.5rem, 2rem, 2rem);
+        margin-bottom: clamp(1.5rem, 5vw, 2rem);
     }
 
     & .list-content .faq-q {

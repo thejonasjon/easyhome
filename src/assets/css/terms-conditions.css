@@ -13,9 +13,11 @@
     & .static-bg--fag {
         background-color: var( --accent-clr-901);
         background-image: url(/src/assets/images/faq-bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-    & .static-bg--tc, .static-bg--pp .static-bg--fag {
+    & .static-bg--tc, .static-bg--pp {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100%;
