@@ -14,14 +14,13 @@
                 <!-- Sidebar -->
                 <section class="sidebar--dashboard">
                     <div class="sidebar-container">
-                        <div class="brand-containter">
-                            <span class="logo-text">
-                                <img src="/src/assets/images/Group 3.svg" alt="easyhome Logo">
-                            </span>
+                        <div class="brand-containter top flex align-center gap--10">
                             <span class="logo-icon">
-                                <img src="/src/assets/images/easyhome-logo.png" alt="easyhome Logo">
+                                <img src="/src/assets/images/easyhome-logoicon.svg" alt="easyhome Logo Icon">
                             </span>
-
+                            <span class="logo-text">
+                                <img src="/src/assets/images/Group 3.svg" alt="easyhome Logo Text">
+                            </span>
                         </div>
 
                         <nav>
@@ -126,14 +125,14 @@
 
                         <div class="form-steps flex flex-column gap--60">
                             <div class="steps flex justify-between">
-                                <button class="line active">Property Address</button>
-                                <button class="line">Property Info</button>
-                                <button>Uploads</button>
+                                <button step-data = "1" class="active">Property Address</button>
+                                <button step-data = "2"  class="">Property Info</button>
+                                <button step-data = "3" >Uploads</button>
                             </div>
 
                             <div class="forms">
                                 <form action="#">
-                                    <div class="wrap" style="display: none;">
+                                    <div class="wrap step-1">
                                         <div class="input-section">
                                             <div class="section-heading">
                                                 <p>Property Title<span>*</span></p>
@@ -150,12 +149,12 @@
                                             </div>
                                             <div class="checkboxs flex gap--40">
                                                 <div class="input-group-sub flex align-center gap--4">
-                                                    <input type="checkbox" name="rent" checked>
+                                                    <input type="checkbox" name="rent" checked id="rent">
                                                     <label for="rent">Rent</label>
                                                 </div>
                                                 <div class="input-group-sub flex align-center gap--4" >
-                                                    <input type="checkbox" name="short-let">
-                                                    <label for="short-lot">Short Let</label>
+                                                    <input type="checkbox" name="shortLet" id="shortLet">
+                                                    <label for="shortLet">Short Let</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,31 +162,41 @@
                                         <div class="input-section--seperated flex justify-between">
                                             <div class="input-section">
                                                 <div class="checkboxs">
-                                                    <label for="type-of-purpose">Type of Property</label>
+                                                    <label for="typeOfProperty">Type of Property</label>
 
                                                     <div class="input-group-sub flex align-center gap--4">
-                                                        <input type="checkbox" name="flat-or-rent" checked>
-                                                        <label for="flat-or-rent">Flats/Apartment</label>
+                                                        <input type="checkbox" name="flat-or-rent" id="flatOrRent" checked>
+                                                        <label for="flatOrRent">Flats/Apartment</label>
                                                     </div>
 
                                                     <div class="input-group-sub flex align-center gap--4">
-                                                        <input type="checkbox" name="short-let">
-                                                        <label for="short-lot">House</label>
+                                                        <input type="checkbox" name="short-let" id="house">
+                                                        <label for="house">House</label>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="input-section">
                                                 <div class="section-heading">
-                                                    <p>Subtype Of Property<span>*</span></p>
+                                                    <p>Subtype of Property<span>*</span></p>
                                                 </div>
-                                                <div class="input-group selection">
-                                                    <select name="type-of-property" id="typeOfPropert">
-                                                        <option value="volvo">Volvo</option>
-                                                        <option value="saab">Saab</option>
-                                                        <option value="mercedes">Mercedes</option>
-                                                        <option value="audi">Audi</option>
-                                                    </select>
+                                                <div class="search-inputs">
+                                                    <div class="input-group dropdown-option">
+                                                        <button>
+                                                            Select sub type
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                            </span>
+                                                        </button>
+
+                                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                                            <button>Shared Apartment</button>
+                                                            <button>Mini-Flat</button>
+                                                            <button>Self Contain</button>
+                                                            <button>Serviced Apartment</button>
+                                                            <button>Blocks of Flats</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -199,28 +208,27 @@
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="state">State</label>
-                                                    <input type="text" placeholder="Input state">
+                                                    <input type="text" placeholder="Input state" id="state">
                                                 </div>
 
                                                 <div class="input-group">
-                                                    <label for="state">LGA</label>
-                                                    <input type="text" placeholder="Input LGA">
+                                                    <label for="LGA">LGA</label>
+                                                    <input type="text" placeholder="Input LGA" id="LGA">
                                                 </div>
                                             </div>
 
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="town">Town (Locality)</label>
-                                                    <input type="text" placeholder="Input Town">
+                                                    <input type="text" placeholder="Input Town" id="town">
                                                 </div>
 
                                                 <div class="input-group">
-                                                    <label for="state">Street/Estate</label>
-                                                    <input type="text" placeholder="Input State / Estate">
+                                                    <label for="streetEstate">Street/Estate</label>
+                                                    <input type="text" placeholder="Input State / Estate" id="streetEstate">
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
 
                                     <div class="wrap step-2">
@@ -232,41 +240,69 @@
                                             <div class="sub-section flex">
                                                 <div class="input-group selection">
                                                     <label for="number-of-bedrooms">Numbers of Bedrooms</label>
-                                                    <select name="no-bedrooms" id="no-bedrooms">
-                                                        <option value="" disabled selected>-Select no of bedrooms</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6+">6+</option>
-                                                    </select>
+                                                    <div class="search-inputs">
+                                                        <div class="input-group dropdown-option">
+                                                            <button id="noOfBedroom">
+                                                                -Select no of bedrooms
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                                </span>
+                                                            </button>
+
+                                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                                <button>1</button>
+                                                                <button>2</button>
+                                                                <button>3</button>
+                                                                <button>4</button>
+                                                                <button>5</button>
+                                                                <button>6+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="input-group selection">
                                                     <label for="number-of-bathrooms">Number of Bathrooms</label>
-                                                    <select name="no-bathrooms" id="no-bathrooms">
-                                                        <option value="" disabled selected>-Select no of Bathrooms</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6+">6+</option>
-                                                    </select>
+                                                    <div class="search-inputs">
+                                                        <div class="input-group dropdown-option">
+                                                            <button id="noOfBathroom">
+                                                                -Select no of Bathrooms
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                                </span>
+                                                            </button>
+
+                                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                                <button>1</button>
+                                                                <button>2</button>
+                                                                <button>3</button>
+                                                                <button>4</button>
+                                                                <button>5</button>
+                                                                <button>6+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="input-group selection">
                                                     <label for="number-of-toilets">Number of Toilets</label>
-                                                    <select name="no-toilets" id="no-toilets">
-                                                        <option value="" disabled selected>-Select no of Toilets</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6+">6+</option>
-                                                    </select>
+                                                    <div class="input-group dropdown-option">
+                                                        <button id="noOfToilet">
+                                                            -Select no of Toilets
+                                                            <span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                            </span>
+                                                        </button>
+
+                                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                                            <button>1</button>
+                                                            <button>2</button>
+                                                            <button>3</button>
+                                                            <button>4</button>
+                                                            <button>5</button>
+                                                            <button>6+</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -338,31 +374,31 @@
                                                     </div>
 
                                                     <div class="input-group-sub flex align-center gap--8">
-                                                        <input type="checkbox" name="pop-ceiling" id="pop-ceiling">
-                                                        <label for="pop-ceiling">POP Ceiling</label>
+                                                        <input type="checkbox" name="popCeiling" id="popCeiling">
+                                                        <label for="popCeiling">POP Ceiling</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="checkboxs">
                                                     <div class="input-group-sub flex align-center gap--8">
-                                                        <input type="checkbox" name="newly-built" id="newly-built">
-                                                        <label for="newly-built">Newly Built</label>
+                                                        <input type="checkbox" name="newlyBuilt" id="newlyBuilt">
+                                                        <label for="newlyBuilt">Newly Built</label>
                                                     </div>
 
                                                     <div class="input-group-sub flex align-center gap--8">
-                                                        <input type="checkbox" name="air-conditioner" id="air-conditioner">
-                                                        <label for="air-conditioner">Air Conditioners</label>
+                                                        <input type="checkbox" name="airConditioner" id="airConditioner">
+                                                        <label for="airConditioner">Air Conditioners</label>
                                                     </div>
 
                                                     <div class="input-group-sub flex align-center gap--8">
-                                                        <input type="checkbox" name="network-access" id="network-access">
-                                                        <label for="network-access">Network Access</label>
+                                                        <input type="checkbox" name="networkAccess" id="networkAccess">
+                                                        <label for="networkAccess">Network Access</label>
                                                     </div>
 
 
                                                     <div class="input-group-sub flex align-center gap--8">
-                                                        <input type="checkbox" name="gated-houses" id="gated-houses">
-                                                        <label for="gated-houses">Gated House</label>
+                                                        <input type="checkbox" name="gatedHouses" id="gatedHouses">
+                                                        <label for="gatedHouses">Gated House</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -387,17 +423,27 @@
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="price">Price</label>
-                                                    <input type="text" placeholder="#250,000">
+                                                    <input type="text" placeholder="#250,000" id="price">
                                                 </div>
 
                                                 <div class="input-group selection">
                                                     <label for="duration">Duration</label>
-                                                    <select name="tduration" id="duration">
-                                                        <option value="" disabled selected>-Select-</option>
-                                                        <option value="daily">Daily</option>
-                                                        <option value="monthly">Monthly</option>
-                                                        <option value="yearly">Yearly</option>
-                                                    </select>
+                                                    <div class="search-inputs">
+                                                        <div class="input-group dropdown-option">
+                                                            <button id="duration">
+                                                                -Select duration
+                                                                <span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                                </span>
+                                                            </button>
+
+                                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                                <button>Daily</button>
+                                                                <button>Monthly</button>
+                                                                <button>Yearly</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -518,7 +564,7 @@
                                                     </div>
 
                                                     <div class="btn-cont add-more">
-                                                        <button class="flex align-center" type="submit">Add More Images
+                                                        <button class="flex align-center" type="button">Add More Images
                                                             <span>
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
                                                                     <path fill="#fff" fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14m.75-10.25a.75.75 0 0 0-1.5 0v4.69L6.03 8.22a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l2.5-2.5a.75.75 0 1 0-1.06-1.06L8.75 9.44z" clip-rule="evenodd" />
@@ -591,7 +637,6 @@
                                                     <div class="note">
                                                         <p>Note: Properties will be listed after the verification of each property</p>
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -599,18 +644,18 @@
 
                                     <div class="terms-condition-privacy-policy">
                                         <div class="input-group-sub flex align-center gap--4">
-                                            <input type="checkbox" id="tc-pp">
-                                            <label for="tc-pp">
+                                            <input type="checkbox" id="TCPP">
+                                            <label for="TCPP">
                                                 By checking the box, you agree to Easy Home’s
                                                 <a href="/src/pages/terms-conditions.html" target="_blank">Terms and Conditions</a> and <a href="/src/pages/privacy-policy.html" target="_blank">Privacy Policy</a>.
                                             </label>
                                         </div>
-
                                     </div>
 
                                     <div class="btn-cont">
-                                        <button type="submit">Continue</button>
+                                        <button id="continue" type="button">Continue</button>
                                     </div>
+
                                 </form>
                             </div>
                         </div>
@@ -620,5 +665,8 @@
         </div>
     </main>
 
+    <script src="/src/js/sidebar.js"></script>
+    <script src="/main.js"></script>
+    <script src="/src/js/property.js"></script>
 </body>
 </html>

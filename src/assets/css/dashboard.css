@@ -279,8 +279,24 @@ body {
 
     /* Steps */
     & .steps {
+        position: relative;
         width: 85%;
         margin: 0 auto;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 85%;
+            height: var(--size-3);
+            margin: 0 auto;
+            background-color: var(--secondary-clr-901);
+            left: 0;
+            right: 0;
+            top: 50%;
+            bottom: 0;
+            z-index: -1;
+        }
     }
 
     & .steps button {
@@ -332,6 +348,7 @@ body {
 
 
     & .terms-condition-privacy-policy {
+        display: none;
         & .input-group-sub > * {
             flex: 0 0 auto;
             min-width: unset
@@ -360,7 +377,12 @@ body {
         }
     }
 
+    & .step-1 {
+        display: none;
+    }
+
     & .step-2 {
+        display: none;
        & .checkboxs > * {
         flex: 1 1 auto;
        }
@@ -376,6 +398,7 @@ body {
     }
 
     & .step-3 {
+        display: none;
 
         & .upload-photo-group {
             gap: clamp(1rem, 4rem, 4rem);
@@ -520,5 +543,19 @@ body {
 
 /* Large tablets */
 @media (max-width: 1024px) {
+    .post-a-property .content {
+        width: 100vw;
+        padding-right: var(--size-20);
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: var(--size-20);
+    }
+
+
+    .main-content {
+        width: 89vw;
+        margin-left: auto;
+    }
 
 }

@@ -411,8 +411,9 @@ svg {
 
 /* Brand Logo */
 .brand-containter img {
-  width: clamp(10rem, 15vw, 100%);
+  /* width: clamp(40rem, 15vw, 100%); */
 }
+
 
 /* Hero button */
 .input-group label {
@@ -563,6 +564,60 @@ svg {
   color: var(--accent-clr-601);
 }
 
+/* Dropdown select dashboard*/
+.input-section {
+  & .dropdown-option {
+    min-width: 100%;
+    min-height: var(--size-50);
+    position: relative;
+
+    & button {
+        display: flex;
+        justify-content: space-between;
+        min-width: 100%;
+        min-height: var(--size-55);
+        background-color: #7a7c79;
+        color: rgba(255, 255, 255, 0.5);
+
+        & svg path{
+          stroke: rgba(255, 255, 255, 0.5);
+        }
+    }
+  }
+
+  & .dropdown-btn-group {
+    display: none;
+    position: absolute;
+    width: max-content;
+    min-width: 100%;
+    margin-top: 0.5rem;
+    background-color: #bcbdbc;
+    border-radius: var(--size-5);
+    z-index: 100;
+
+    & button {
+        width: 100%;
+        font-size: var(--size-14);
+        line-height: var(--size-19);
+        color: var(--primary--clr-901);
+        background-color: var(--primary--clr-401);
+        border-radius: unset;
+        transition: all 0.3s ease-in-out;
+        justify-content: left;
+
+        &:hover {
+            background-color: var(--accent-clr-601);
+            color: var(--primary--clr-901);
+        }
+    }
+
+    &.show {
+        display: flex;
+    }
+  }
+}
+
+
 /* Property cards */
 .property-cards-container {
   & {
@@ -674,7 +729,6 @@ svg {
           font-size: var(--size-13);
           line-height: 1.56rem;
           font-weight: 400;
-
       }
   }
 
@@ -718,24 +772,20 @@ svg {
 
 /* Sidebar */
 .sidebar-container {
-  max-width: 29.5rem;
+  position: relative;
+  /* width: 36rem !important; */
   background-color: var(--primary-clr-601);
   border-radius: var(--size-10);
   padding: var(--size-34) 0 var(--size-100) 0;
   box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
   -webkit-box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
   -moz-box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
+  transition: width 0.5s ease-in-out;
 
   & .brand-containter {
-      padding-inline: clamp(1.5rem, 10vw, 3.4rem);
+      padding-inline: clamp(1.5rem, 1vw, 3.4rem);
       margin-left: auto;
       margin-right: auto;
-  }
-
-  & .brand-containter .logo-icon {
-      display: none;
-      width: var(--size-26);
-      height: auto;
   }
 
   & nav {
@@ -784,8 +834,9 @@ svg {
       font-family: poppins-regular;
       font-size: 1.92rem;
       line-height: 2.88rem;
+      opacity: 1;
       color: var(--secondary-clr-801);
-      transition: color 0.4s ease-in-out;
+      transition: color 0.4s ease-in-out, font-size 0.6s ease, opacity 0.6s ease;
 
       & span {
           display: flex;
@@ -833,6 +884,20 @@ svg {
       &:hover {
           background-color: var(--primary-clr-701);
       }
+  }
+
+}
+
+.brand-containter .logo-text {
+  transform: rotate(0deg);
+  transform-origin: left top;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.brand-containter .logo-icon {
+  justify-content: center;
+  & img {
+    min-width: var(--size-25);
   }
 
 }
@@ -935,22 +1000,51 @@ svg {
 
 /* Tablet screen */
 @media (max-width: 1024px) {
+
   .sidebar--dashboard {
     margin-left: unset;
     margin-right: unset;
-    float: left;
+    position: relative;
 
-    & .brand-containter .logo-text {
-      display: none;
-  }
 
-  & .brand-containter .logo-icon {
-      display: block;
-  }
+    & .sidebar-container {
+      position: absolute;
+      left: 0;
+      z-index: 2;
+    }
+
+    & .brand-containter {
+      text-align: center;
+      padding: unset;
+      padding-inline: 2.5rem;
+      justify-content: center;
+
+    }
+
+    .brand-containter .logo-text {
+      opacity: 0;
+      transform: rotate(90deg);
+      transform-origin: left top;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+    }
+
+    & .brand-containter {
+
+      & nav a {
+        font-size: 0;
+        text-align: center;
+        justify-content: center;
+      }
+    }
 
     & nav li a {
         font-size: 0;
-        justify-content: center;
     }
 
     & .support {

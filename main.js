@@ -2,12 +2,18 @@
 
 // Footer current date
 const currentYear = new Date().getFullYear();
-document.querySelector("#footer-date").innerHTML = currentYear;
+document.addEventListener("DOMContentLoaded", function () {
+    const footerDate = document.querySelector("#footer-date");
+    if (footerDate) {
+        footerDate.textContent = new Date().getFullYear();
+    }
+});
 
 // Dropdown funtionalities
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownOptions = document.querySelectorAll(".dropdown-option");
-    const homePage = document.querySelector(".search-container--home")
+    const homePage = document.querySelector(".search-container--home");
+    const postPropertyPage = document.querySelector(".post-a-property");
 
     dropdownOptions.forEach(dropdown => {
         const dropdownBtn = dropdown.querySelector("button");
@@ -28,14 +34,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 dropdownBtn.style.color = '#fff'
             }
 
+            if (postPropertyPage) {
+                dropdownBtn.style.border = '1px solid #e3ab99';
+                dropdownBtn.style.backgroundColor = 'transparent';
+
+            } else {
+                // dropdownBtn.style.backgroundColor = '#4D4B4A';
+                dropdownBtn.style.color = '#fff'
+            }
+
         });
 
         dropdownItems.forEach(item => {
             item.addEventListener("click", (e) => {
                 e.stopPropagation();
 
-                dropdownBtn.innerText = e.target.innerText;
+                // dropdownBtn.innerText = e.target.innerText;
+                const btnTextNode = dropdownBtn.childNodes[0];
+                if (btnTextNode.nodeType === Node.TEXT_NODE) {
+                    btnTextNode.textContent = e.target.innerText.trim() + " ";
+                }
                 dropdownMenu.classList.remove("show");
+
+                if (postPropertyPage) {
+                    dropdownBtn.style.border = 'unset';
+                    dropdownBtn.style.backgroundColor = '#7a7c79';
+                }
             });
         });
     });

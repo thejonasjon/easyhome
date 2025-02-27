@@ -45,9 +45,9 @@ body {
         min-height: 100vh;
         width: 100vw;
 
-      & .brand-containter img {
+      /* & .brand-containter--page img {
         width: clamp(10rem, 15vw, 100%);
-    }
+    } */
 
       &::before {
         content: "";
