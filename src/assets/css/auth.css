@@ -247,10 +247,139 @@
         height: auto;
     }
 
+    & .modal-block {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: #00000041;
+
+        & .content {
+            height: 100%;
+            & .empty-void {
+                flex-basis: none;
+            }
+
+            &> * {
+                flex: 0 0 40rem;
+            }
+        }
+    }
+
+    & .modal{
+        background-color: var(--secondary-clr-501);
+        padding: clamp(1rem, 10vw, 5rem) clamp(1rem, 10vw, 5rem);
+        border-radius: var(--size-5);
+
+        & .text {
+            text-align: center;
+        }
+
+        & .text p{
+            font-family: montserrat-default;
+            font-size: 1.6rem;
+            line-height: 2.16rem;
+            font-weight: 300;
+            color: #1C1D1B;
+
+            &.email {
+                font-weight: 600;
+            }
+        }
+
+        & .modal-input-group .email{
+            font-weight: 600;
+        }
+
+        .dnt p {
+            font-family: montserrat-default;
+            font-size: 1.3rem;
+            line-height: 1.92rem;
+            font-weight: 300;
+            color: #1C1D1B;
+        }
+
+        .dnt p button {
+            font-family: montserrat-default;
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+        }
+
+        .dnt p .timer {
+            font-family: montserrat-default;
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+            color: var(--accent-clr-601);
+        }
+
+        & .input-btn-dntCode .btn-cont button {
+            font-family: poppins-regular;
+            font-size: 1.3rem;
+            line-height: 2rem;
+            font-weight: 300;
+            color: #000;
+        }
+
+        & .modal-input-group input{
+            min-width: var(--size-45);
+            max-width: var(--size-45);
+            background-color: transparent;
+            height: auto;
+            border: none;
+            outline: none;
+            border-bottom: 0.5px solid #000;
+            padding-block: var(--size-5) var(--size-5);
+            font-family: montserrat-default;
+            font-size: var(--size-28);
+            line-height: 3.36rem;
+            text-align: center;
+
+            &:focus {
+                border: none;
+                outline: none;
+                border-bottom: 0.5px solid #000;
+            }
+
+            &:active {
+                border: none;
+                border-bottom: 0.5px solid #000;
+            }
+        }
+
+    }
+
 }
 
 footer {
     & .section-one {
         margin-block: 0 var(--size-80);
+    }
+}
+
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Medium mobile */
+@media (max-width: 768px) {
+    .auth-section {
+        & .heading p {
+            flex-wrap: wrap;
+            gap: clamp(1rem, 10vw, 2rem);
+        }
+    }
+
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .auth-section {
+        & .first-last-name {
+            flex-wrap: wrap;
+            gap: clamp(1rem, 10vw, 2rem);
+        }
     }
 }

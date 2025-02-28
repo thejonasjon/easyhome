@@ -139,7 +139,7 @@
                                             </div>
 
                                             <div class="input-group">
-                                                <input type="text" placeholder="Write title of your property">
+                                                <input type="text" placeholder="Write title of your property" required>
                                             </div>
                                         </div>
 
@@ -208,24 +208,24 @@
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="state">State</label>
-                                                    <input type="text" placeholder="Input state" id="state">
+                                                    <input type="text" placeholder="Input state" id="state" required>
                                                 </div>
 
                                                 <div class="input-group">
                                                     <label for="LGA">LGA</label>
-                                                    <input type="text" placeholder="Input LGA" id="LGA">
+                                                    <input type="text" placeholder="Input LGA" id="LGA" required>
                                                 </div>
                                             </div>
 
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="town">Town (Locality)</label>
-                                                    <input type="text" placeholder="Input Town" id="town">
+                                                    <input type="text" placeholder="Input Town" id="town" required>
                                                 </div>
 
                                                 <div class="input-group">
                                                     <label for="streetEstate">Street/Estate</label>
-                                                    <input type="text" placeholder="Input State / Estate" id="streetEstate">
+                                                    <input type="text" placeholder="Input State / Estate" id="streetEstate" required>
                                                 </div>
                                             </div>
                                         </div>
@@ -312,7 +312,7 @@
                                                 <p>Property Features / Amenities<span>*</span></p>
                                             </div>
 
-                                            <div class="flex justify-between">
+                                            <div class="property-furnitures flex justify-between">
                                                 <div class="checkboxs">
                                                     <div class="input-group-sub flex align-center gap--8">
                                                         <input type="checkbox" name="borehole" id="borehole">
@@ -411,7 +411,7 @@
 
                                             <div class="input-group flex flex-column">
                                                 <label for="description">Give a detailed description of your property pointing out all features and available amenities</label>
-                                                <textarea name="description" id="description" placeholder="Property description...."></textarea>
+                                                <textarea name="description" id="description" placeholder="Property description...." required></textarea>
                                             </div>
                                         </div>
 
@@ -423,7 +423,7 @@
                                             <div class="sub-section flex">
                                                 <div class="input-group">
                                                     <label for="price">Price</label>
-                                                    <input type="text" placeholder="#250,000" id="price">
+                                                    <input type="text" placeholder="#250,000" id="price" required>
                                                 </div>
 
                                                 <div class="input-group selection">
@@ -644,7 +644,7 @@
 
                                     <div class="terms-condition-privacy-policy">
                                         <div class="input-group-sub flex align-center gap--4">
-                                            <input type="checkbox" id="TCPP">
+                                            <input type="checkbox" name="TCPP" id="TCPP" required>
                                             <label for="TCPP">
                                                 By checking the box, you agree to Easy Home’s
                                                 <a href="/src/pages/terms-conditions.html" target="_blank">Terms and Conditions</a> and <a href="/src/pages/privacy-policy.html" target="_blank">Privacy Policy</a>.

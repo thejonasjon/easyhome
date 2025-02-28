@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Dropdown funtionalities
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const dropdownOptions = document.querySelectorAll(".dropdown-option");
     const homePage = document.querySelector(".search-container--home");
     const postPropertyPage = document.querySelector(".post-a-property");
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // NaviLink Dropdown funtionalities
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const dropdownOptions = document.querySelectorAll(".navLink-dropdown-option");
 
     dropdownOptions.forEach(option => {
@@ -106,3 +106,81 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// User role selection functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const userRoleOptions = document.querySelectorAll(".navLink-dropdown.signup li a");
+
+    const roleMapping = {
+        "As Homeowner": "userTypeLandlord",
+        "As Tenant": "userTypeTenant"
+    };
+
+    console.log(roleMapping["As Tenant"])
+
+    if (userRoleOptions) {
+        userRoleOptions.forEach((role) => {
+            role.addEventListener("click", (event) => {
+                event.preventDefault();
+                const selectedRoleText = event.target.textContent.trim();
+
+                if (roleMapping[selectedRoleText]) {
+                    sessionStorage.setItem("selectedUserRole", roleMapping[selectedRoleText]);
+
+                    // Redirect to signup page
+                    window.location.href = "/src/pages/signup.html";
+                }
+            });
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const emailInput = document.querySelector(".footer-content input[type='email']");
+    const submitButton = document.querySelector(".footer-content .input-group button");
+    const sectionCont = document.querySelector(".footer-content .shift-right");
+
+    submitButton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const emailValue = emailInput.value.trim();
+
+        removeMessage();
+
+        if (!emailValue) {
+            emailInput.style.border = "0.5px solid red";
+            displayMessage("Email is required!", "red");
+        } else {
+            emailInput.style.border = "0.5px solid green";
+            displayMessage("Success! You will receive alerts.", "green");
+        }
+    });
+
+    function displayMessage(message, color) {
+        const msgElement = document.createElement("p");
+        msgElement.classList.add("message");
+        msgElement.textContent = message;
+        msgElement.style.color = color;
+        msgElement.style.fontSize = "1.4rem";
+        msgElement.style.marginTop = "0.5rem";
+        sectionCont.appendChild(msgElement);
+    }
+
+    function removeMessage() {
+        const existingMessage = sectionCont.querySelector(".message");
+        if (existingMessage) {
+            existingMessage.remove();
+        }
+    }
+
+    emailInput.addEventListener("input", () => {
+        emailInput.style.border = "1px solid #ccc";
+        removeMessage();
+    });
+});
+
+
+
+
+
+

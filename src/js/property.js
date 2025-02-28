@@ -166,70 +166,180 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Form steps funtionalities
+// Form steps funtionalityd
 document.addEventListener("DOMContentLoaded", () => {
     let currentStep = 1;
     const totalSteps = 3;
     const steps = document.querySelectorAll(".steps button");
     const btnContinue = document.querySelector("#continue");
+    const tcCheckbox = document.querySelector("#TCPP");
+    const TCPP = document.querySelector(".terms-condition-privacy-policy")
+
+
+    // Load data
+    let propertyList = JSON.parse(localStorage.getItem("propertyList")) || [];
+    let activeProperty = JSON.parse(localStorage.getItem("activeProperty")) || {};
+
+    function validateStep(step) {
+        let isValid = true;
+        let requiredFields = [];
+        let requiredDropdowns = [];
+        let checkBoxGroups = [];
+
+        if (step === 1) {
+            TCPP.style.display = "none"
+            requiredFields = document.querySelectorAll(".step-1 input[required]");
+            requiredDropdowns = document.querySelectorAll(".step-1 .dropdown-option button");
+            checkBoxGroups = [
+                document.querySelectorAll(".step-1 input[name='rent'], .step-1 input[name='shortLet']"),
+                document.querySelectorAll(".step-1 input[name='flat-or-rent'], .step-1 input[name='short-let']")
+            ];
+        } else if (step === 2) {
+            TCPP.style.display = "flex"
+            requiredFields = document.querySelectorAll(".step-2 input[required], .step-2 textarea");
+            requiredDropdowns = document.querySelectorAll(".step-2 .dropdown-option button");
+            checkBoxGroups = [
+                document.querySelectorAll(".step-2 input[name='borehole'], .step-2 input[name='serviced'], .step-2 input[name='parking-space'], .step-2 input[name='pets-allowed']"),
+                document.querySelectorAll(".step-2 input[name='prepaid'], .step-2 input[name='cctv'], .step-2 input[name='swimming-pool'], .step-2 input[name='fence']"),
+                document.querySelectorAll(".step-2 input[name='furnished'], .step-2 input[name='generator'], .step-2 input[name='security'], .step-2 input[name='popCeiling']")
+            ];
+        } else if (step === 3) {
+            requiredFields = document.querySelectorAll(".step-3 input[required]");
+            if (!tcCheckbox.checked) {
+                alert("You must agree to the Terms & Conditions before submitting.");
+                isValid = false;
+            }
+        }
+
+        requiredFields.forEach((field) => {
+            if (field.offsetParent !== null && !field.value.trim()) {
+                field.style.border = "1px solid red";
+                isValid = false;
+            } else {
+                field.style.border = "1px solid #ccc";
+            }
+
+            field.addEventListener("input", () => {
+                field.style.border = "unset";
+            });
+        });
+
+        requiredDropdowns.forEach((dropdown) => {
+            if (dropdown.textContent.includes("Select")) {
+                dropdown.style.border = "1px solid red";
+                isValid = false;
+            } else {
+                dropdown.style.border = "none";
+            }
+        });
+
+        checkBoxGroups.forEach((group) => {
+            if (group.length > 0 && !Array.from(group).some((checkbox) => checkbox.checked)) {
+                group.forEach((checkbox) => (checkbox.style.outline = "1px solid red"));
+                isValid = false;
+            } else {
+                group.forEach((checkbox) => (checkbox.style.outline = "none"));
+            }
+        });
+
+        return isValid;
+    }
+
+    function saveActiveProperty(step) {
+        if (step === 1) {
+            activeProperty.propertyTitle = document.querySelector(".step-1 input[type='text']").value;
+            activeProperty.purpose = Array.from(document.querySelectorAll(".step-1 input[name='rent'], .step-1 input[name='shortLet']"))
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.name);
+            activeProperty.propertyType = Array.from(document.querySelectorAll(".step-1 input[name='flat-or-rent'], .step-1 input[name='short-let']"))
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.name);
+            activeProperty.subType = document.querySelector(".step-1 .dropdown-option button").textContent.trim();
+            activeProperty.state = document.querySelector("#state").value;
+            activeProperty.lga = document.querySelector("#LGA").value;
+            activeProperty.town = document.querySelector("#town").value;
+            activeProperty.streetEstate = document.querySelector("#streetEstate").value;
+        } else if (step === 2) {
+            activeProperty.noOfBedroom = document.querySelector("#noOfBedroom").textContent.trim();
+            activeProperty.noOfBathroom = document.querySelector("#noOfBathroom").textContent.trim();
+            activeProperty.noOfToilet = document.querySelector("#noOfToilet").textContent.trim();
+            activeProperty.features = Array.from(document.querySelectorAll(".step-2 input[type='checkbox']"))
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.name);
+            activeProperty.description = document.querySelector("#description").value;
+            activeProperty.price = document.querySelector("#price").value;
+            activeProperty.duration = document.querySelector("#duration").textContent.trim();
+        } else if (step === 3) {
+            activeProperty.tcPP = tcCheckbox.checked;
+        }
+
+        localStorage.setItem("activeProperty", JSON.stringify(activeProperty));
+    }
+
+    function resetForm() {
+        location.reload();
+    }
 
     function showStep(step) {
-        document.querySelector(`.steps [step-data="${step}"]`).classList.add("active")
+        document.querySelectorAll(".steps button").forEach((btn) => btn.classList.remove("active"));
+        document.querySelector(`.steps [step-data="${step}"]`).classList.add("active");
 
-        if (step === 1){
-            document.querySelector(".step-1").style.display = "block";
-            document.querySelector(".step-2").style.display = "none";
-            document.querySelector(".step-3").style.display = "none";
-        } else if(step === 2) {
-            document.querySelector(".step-1").style.display = "none";
-            document.querySelector(".step-2").style.display = "block";
-            document.querySelector(".step-3").style.display = "none";
-        } else if(step === 3) {
-            document.querySelector(".step-1").style.display = "none";
-            document.querySelector(".step-2").style.display = "none";
-            document.querySelector(".step-3").style.display = "block";
-        } else {
-            alert("Something went wrong!")
-        }
+        document.querySelectorAll(".wrap").forEach((wrap) => (wrap.style.display = "none"));
+        document.querySelector(`.step-${step}`).style.display = "block";
 
         btnContinue.textContent = step === totalSteps ? "Submit" : "Continue";
         btnContinue.type = step === totalSteps ? "submit" : "button";
+
+        if (step === 1 && activeProperty.propertyTitle) document.querySelector(".step-1 input[type='text']").value = activeProperty.propertyTitle;
+        if (step === 2 && activeProperty.noOfBedroom) document.querySelector("#noOfBedroom").textContent = activeProperty.noOfBedroom;
+        if (step === 3 && activeProperty.tcPP) tcCheckbox.checked = true;
     }
 
-    btnContinue.addEventListener("click", () => {
+    document.querySelectorAll(".dropdown-option .dropdown-btn-group button").forEach((option) => {
+        option.addEventListener("click", (e) => {
+            const button = e.target.closest(".dropdown-option").querySelector("button");
+            button.textContent = e.target.textContent;
+            button.style.border = "none";
+        });
+    });
+
+    btnContinue.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        if (!validateStep(currentStep)) {
+            alert("Please fill all required fields.");
+            return;
+        }
+
+        saveActiveProperty(currentStep);
+
         if (currentStep < totalSteps) {
             currentStep++;
-            steps.forEach((stp) => {
-                const stepNumber = parseInt(stp.getAttribute("step-data"));
-                if (stepNumber === currentStep) {
-                    stp.classList.add("active");
-                } else {
-                    stp.classList.remove("active");
-                }
-            });
             showStep(currentStep);
         } else {
-            alert("Form submitted!");
+            propertyList.push(activeProperty);
+            localStorage.setItem("propertyList", JSON.stringify(propertyList));
+            alert("Property submitted successfully!");
+            resetForm();
         }
     });
 
     steps.forEach((step) => {
         step.addEventListener("click", () => {
             const stepNumber = parseInt(step.getAttribute("step-data"));
-            currentStep < stepNumber ? currentStep++ : currentStep--;
-
-            steps.forEach((stp) => {
-                if (stp === currentStep) {
-                    stp.classList.add("active");
-                } else {
-                    stp.classList.remove("active");
-                }
-            });
-            showStep(currentStep);
+            if (stepNumber < currentStep) {
+                currentStep = stepNumber;
+                showStep(currentStep);
+            }
         });
     });
 
     showStep(currentStep);
 });
+
+
+
+
+
 
 

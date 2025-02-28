@@ -27,23 +27,23 @@
                             <div class="first-last-name flex gap--40">
                                 <div class="input-group flex flex-column gap--2">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" id="firstName" placeholder="Charles">
+                                    <input type="text" id="firstName" placeholder="Charles" required>
                                 </div>
 
                                 <div class="input-group flex flex-column gap--2">
                                     <label for="LastName">Last Name</label>
-                                    <input type="text" id="LastName" placeholder="Udoka">
+                                    <input type="text" id="LastName" placeholder="Udoka" required>
                                 </div>
                             </div>
                             <div class="input-group flex flex-column gap--2">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" placeholder="charlesudokz@gmail.com">
+                                <input type="email" id="email" placeholder="charlesudokz@gmail.com" required>
                             </div>
 
                             <div class="input-group flex flex-column gap--2">
                                 <label for="password">Password</label>
                                 <div class="password-show">
-                                    <input type="password" id="password" placeholder="chareklejdhcnc">
+                                    <input type="password" id="password" placeholder="chareklejdhcnc" required>
                                     <button type="button" id="toggle-password">
                                         <span id="toggle-icon">Show</span>
                                     </button>
@@ -95,6 +95,41 @@
                 </div>
 
             </div>
+            <!-- Modal  -->
+            <section class="modal-block">
+                <div class="content flex justify-center align-center gap--20">
+                    <div class="empty-void">
+
+                    </div>
+
+                    <div class="modal flex flex-column gap--20 align-center justify-center">
+                        <div class="text">
+                            <p>We've sent a 6-digits code to your email:</p>
+                            <p class="email"></p>
+                            <p>--Please enter it</p>
+                        </div>
+
+                        <div class="input-btn-dntCode flex flex-column gap--15">
+                            <div class="modal-input-group flex gap--10">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                                <input type="number" id="numberInput" required maxlength="1" min="1">
+                            </div>
+
+                            <div class="dnt">
+                                <p>Didn’t get the code? <button id="resendBtn">Resend Code</button> <span class="timer"></span></p>
+                            </div>
+
+                            <div class="btn-cont">
+                                <button id="continueBtn">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
@@ -220,5 +255,6 @@
     </footer>
 
     <script src="/src/js/auth.js"></script>
+    <script src="/src/js/signup.js"></script>
 </body>
 </html>
