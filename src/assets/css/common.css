@@ -902,6 +902,164 @@ svg {
 
 }
 
+/* Logout Modal */
+.logout-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #00000062;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  & .modal-content {
+
+    width: 54.7rem !important;
+    margin: 0 auto;
+
+    gap: clamp(3rem, 10vw, 10rem);
+    background-color: #383a36;
+    border-radius: var(--size-8);
+    padding: clamp(2rem, 10vw, 6.5rem) clamp(2rem, 10vw, 8.7rem);
+    transition: top 0.6s ease-in-out, opacity 0.5s ease-in-out;
+
+  }
+
+  & .modal-content .lm-text h4 {
+    font-family: montserrat-default;
+    font-size: var(--size-23);
+    line-height: 2.76rem;
+    font-weight: 400;
+    color: var(--white-clr-100);
+  }
+
+  & .modal-content .btn-group {
+    gap: clamp(1rem, 5vw, 6rem);
+
+    & button {
+      font-family: poppins-regular;
+      font-size: var(--size-13);
+      line-height: 1.9rem;
+      font-weight: 300;
+      color: var(--white-clr-100);
+
+      padding: var(--size-8) var(--size-16);
+      border-radius: var(--size-3);
+      border: 1px solid var(--accent-clr-601);
+      background-color: transparent;
+      transition: opacity 0.5s ease-in-out;
+
+      &.logout-yes {
+        background-color: var(--accent-clr-601);
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &.prompt {
+    display: flex;
+  }
+}
+
+/* Newsletter Modal */
+.newsletter-subscription-modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+
+  & .newletter-content  {
+    gap: clamp(2rem, 5vw, 5rem);
+    width: 47.9rem;
+    height: 34.9rem;
+    background-color: var(--secondary-clr-201);
+
+    padding: clamp(2rem, 10vw, 7.2rem) clamp(2rem, 10vw, 8rem);
+    border-radius: var(--size-5);
+
+    margin: 0 auto;
+    & > * {
+      flex: 1 1 100%;
+    }
+
+  }
+
+  &.newsLetterPrompt {
+    display: flex;
+  }
+
+  & .newletter-content .text-icon {
+    gap: clamp(0.5rem, 3vw, 1rem);
+  }
+
+  & .newletter-content .text-icon {
+
+    & span {
+      width: var(--size-60);
+      height: var(--size-60);
+      background-color: var(--accent-clr-601);
+      padding: var(--size-10) var(--size-10);
+      border-radius: 50%;
+    }
+
+
+    & svg {
+      width: var(--size-54);
+      height: var(--size-54);
+
+      & path {
+        fill: var(--white-clr-100);
+      }
+    }
+  }
+
+  & .newletter-content .text-icon p {
+    font-family: mulish-default;
+    font-size: var(--size-20);
+    line-height: var(--size-30);
+    font-weight: 400;
+    color: #404040;
+  }
+
+  & .newletter-content .btn-group {
+    width: 68%;
+
+    & button {
+      width: 100%;
+      font-family: poppins-regular;
+      font-size: var(--size-16);
+      line-height: 2.28rem;
+      font-weight: 200;
+      color: var(--primary-clr-901);
+
+      padding: var(--size-8) var(--size-16);
+      border-radius: var(--size-3);
+      border: 1px solid var(--accent-clr-601);
+      background-color: var(--accent-clr-601);
+      transition: opacity 0.5s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
 /* Custom dropdow */
 .custom-filter-dropdown {
   position: relative;

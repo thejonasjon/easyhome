@@ -1,0 +1,215 @@
+@import url("/src/assets/css/dashboard.css");
+
+.landlord-dashboard {
+    & .dashboard-card-cont {
+        gap: clamp(1rem, 10vw, 5rem);
+
+        & > * {
+            flex: 1 1;
+        }
+    }
+
+    & .dasbord-card {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.5rem, 5vw, 2rem);
+        background-color: var(--primary-clr-601);
+        padding: clamp(0.5rem, 5vw, 2rem) clamp(1rem, 5vw, 2rem);
+    }
+
+    & .dasbord-card .heading h4{
+        font-family: poppins-regular;
+        font-size: 2.304rem;
+        line-height: 3.456rem;
+        font-weight: 500;
+        color: var(--white-clr-100);
+    }
+
+    & .dasbord-card .stats-cont h2{
+        font-family: poppins-regular;
+        font-size: 4.778rem;
+        line-height: 7.167rem;
+        font-weight: 600;
+        color: var(--accent-clr-601);
+        text-align: center;
+    }
+
+    & .dasbord-card .btn-cnt {
+        align-self: flex-end;
+    }
+
+    & .dasbord-card .btn-cnt button{
+        background-color: var(--primary-clr-501);
+        font-family: mulish-default;
+        font-size: var(--size-14);
+        line-height: 1.56rem;
+        font-weight: 400;
+        color: var(--white-clr-100);
+        padding: var(--size-10);
+        border-radius: var(--size-5);
+    }
+
+    & .dasbord-card .heading > span > svg {
+        width: var(--size-37);
+        height: auto;
+    }
+
+}
+
+/* Rent Overview */
+.perfomance-container {
+    background-color: #1c1c1c;
+    padding: var(--size-20);
+    border-radius: var(--size-20);
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    & .performance-header {
+        margin-bottom: 10px;
+
+        & h3 {
+            font-family: poppins-regular;
+            font-size: 2.304rem;
+            line-height: 3.456rem;
+            font-weight: 400;
+            color: var(--secodary-clr-101);
+        }
+
+        & .legend span {
+            font-family: poppins-regular;
+            font-size: 1.92rem;
+            line-height: 2.88rem;
+            font-weight: 400;
+            color: var(--white-clr-100);
+        }
+
+        & .legend-color {
+            width: var(--size-25);
+            height: var(--size-25);
+            display: inline-block;
+            border-radius: var(--size-2);
+
+            &.rent {
+                background-color: #66ff66;
+            }
+
+            &.short-let {
+                background-color: #ff5733;
+            }
+        }
+    }
+
+    & .chart-cont {
+        position: relative;
+        width: 100%;
+        height: 250px;
+
+        & .y-axis {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
+
+        & .y-axis span {
+            color: #fff;
+            font-size: var(--size-12);
+        }
+
+        & .x-axis {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--size-10);
+            font-size: var(--size-14);
+        }
+
+        & .chart-lines {
+            border-top: 1px dashed var(--secondary-clr-101);
+            width: 100%;
+        }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
+            grid-template-rows: repeat(4, 1fr);
+            gap: 0;
+            width: 100%;
+            height: 200px;
+            background-color: transparent; /* Grid background */
+            position: relative;
+        }
+
+        .chart-grid div {
+            background-color: transparent; /* Slightly visible boxes */
+            border: 1px dashed rgba(255, 255, 255, 0.3); /* Grid lines */
+        }
+
+        & .chart-data {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    /* Y-Axis */
+
+
+
+
+    /* X-Axis */
+
+
+
+
+
+    /* Chart Data (Simulated Lines) */
+
+
+    /* & .rent-line {
+        position: absolute;
+        width: 50%;
+        height: 60%;
+        top: 40%;
+        left: 0;
+        border: 2px solid #66ff66;
+        border-radius: 5px;
+    }
+
+    & .short-let-line {
+        position: absolute;
+        width: 50%;
+        height: 70%;
+        top: 30%;
+        left: 50%;
+        border: 2px solid #ff5733;
+        border-radius: 5px;
+    } */
+
+}
+
+
+.post-property-cont {
+
+    & .btn-cont {
+        width: fit-content !important;
+        margin: unset;
+        float: right;
+        margin-left: auto;
+    }
+
+    & .btn-cont button {
+        width: fit-content;
+        font-family: poppins-regular;
+        font-size: var(--size-16);
+        line-height: 1.92rem;
+        font-weight: 500;
+        color: var(--primary-clr-1001);
+        padding-inline: var(--size-30);
+    }
+}

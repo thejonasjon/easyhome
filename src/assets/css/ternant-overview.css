@@ -1,0 +1,209 @@
+@import url("/src/assets/css/dashboard.css");
+
+.ternant-dashboard {
+    & .dashboard-card-cont {
+        width: 80%;
+
+        &.flex > * {
+            flex: 1 1 calc(100% / 2 - 10px);
+        }
+    }
+
+    & .dasbord-card {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.5rem, 5vw, 2rem);
+        background-color: var(--primary-clr-601);
+        padding: clamp(0.5rem, 5vw, 2rem) clamp(1rem, 5vw, 2rem);
+    }
+
+    & .dasbord-card .heading h4{
+        font-family: poppins-regular;
+        font-size: 2.304rem;
+        line-height: 3.456rem;
+        font-weight: 500;
+        color: var(--white-clr-100);
+    }
+
+    & .dasbord-card .stats-cont h2{
+        font-family: poppins-regular;
+        font-size: 4.778rem;
+        line-height: 7.167rem;
+        font-weight: 600;
+        color: var(--accent-clr-601);
+        text-align: center;
+    }
+
+    & .dasbord-card .btn-cnt {
+        align-self: flex-end;
+    }
+
+    & .dasbord-card .btn-cnt button{
+        background-color: var(--primary-clr-501);
+        font-family: mulish-default;
+        font-size: var(--size-14);
+        line-height: 1.56rem;
+        font-weight: 400;
+        color: var(--white-clr-100);
+        padding: var(--size-10);
+        border-radius: var(--size-5);
+    }
+
+    & .dasbord-card .tool-tips-cont svg {
+        width: var(--size-20);
+        height: auto;
+
+
+        & circle:first-child {
+            stroke: var(--primary-clr-401);
+        }
+
+        & path {
+            stroke: var(--primary-clr-401);
+        }
+
+        & circle:last-child {
+            stroke: var(--primary-clr-401);
+            fill: var(--primary-clr-401);
+        }
+    }
+
+    & .dasbord-card .heading > span > svg {
+        width: var(--size-37);
+        height: auto;
+    }
+
+    & .dasbord-card .tool-tips-cont {
+        position: relative;
+
+        & span {
+            cursor: pointer;
+
+            &:hover .tool-tips {
+                opacity: 1;
+            }
+        }
+    }
+
+    & .dasbord-card .tool-tips {
+        font-family: poppins-regular;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 200;
+        color: #d7d8d7;
+        position: absolute;
+        left: var(--size-4);
+        top: var(--size-20);
+        width: 20rem;
+        background-color: #595b5854;
+        padding: var(--size-10);
+        border-radius: var(--size-2);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        z-index: 200;
+    }
+
+}
+
+/* Rent Overview */
+.rent-overview {
+
+    & .overview-content table {
+        tab-size: 100%;
+        width: 100%;
+        border-spacing: 0 var(--size-12);
+        background-color: var(--primary-clr-601);
+        padding: var(--size-20) var(--size-20);
+        border-radius: var(--size-5);
+    }
+
+    & .overview-content table {
+        /* tab-size: 100%; */
+        width: 100%;
+
+        & thead tr th {
+            padding: var(--size-12) 0;
+        }
+
+        & thead tr {
+            gap: 1rem;
+            background-color: transparent;
+        }
+
+        & tr {
+            background-color: var(--primary-clr-801);
+            border-radius: var(--size-5);
+        }
+
+        & td {
+            padding: var(--size-25) var(--size-20);
+        }
+
+        & th {
+            width: 10rem;
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 600;
+            color: var(--accent-clr-601);
+            border-inline: 1px solid var(--primary-clr-501);
+        }
+
+        & td {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+
+            &:first-child {
+                border-top-left-radius: var(--size-5);
+                border-bottom-left-radius: var(--size-5);
+            }
+
+            &:last-child {
+                border-top-right-radius: var(--size-5);
+                border-bottom-right-radius: var(--size-5);
+            }
+        }
+
+        & tbody tr td a {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 500;
+            color: var(--primary-clr-101);
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.rent-renew-cont {
+
+    & .text p {
+        display: none;
+        font-family: poppins-regular;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        font-weight: 500;
+        color: var(--white-clr-100);
+    }
+
+    & .btn-cont {
+        width: fit-content !important;
+        margin: unset;
+        float: right;
+        margin-left: auto;
+    }
+
+    & .btn-cont button {
+        width: fit-content;
+        font-family: poppins-regular;
+        font-size: var(--size-16);
+        line-height: 1.92rem;
+        font-weight: 500;
+        color: var(--primary-clr-1001);
+        padding-inline: var(--size-30);
+    }
+}

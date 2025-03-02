@@ -2,7 +2,11 @@
 /* @import url(/src/assets/css/common.css); */
 
 body {
-    background-color: var(--primary-clr-701);
+    background-color: var(--primary-clr-801);
+}
+
+.post-a-property {
+    position: relative;;
 }
 
 .post-a-property .content {

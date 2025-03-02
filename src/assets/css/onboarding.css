@@ -248,6 +248,85 @@
             }
         }
     }
+
+    & .step--1, .step--2, .step--3, .step--4 {
+        display: none;
+    }
+
+    & .step--2-of--1, .step--2-of--2, .step--2-of--3 {
+        display: none;
+    }
+
+    .input-group input[type="date"] {
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        font-weight: 300;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KCTxnIGZpbGw9IiNmZmYiPgoJCTxwYXRoIGQ9Ik0xMi43NSAxMi43NWEuNzUuNzUgMCAxIDEtMS41IDBhLjc1Ljc1IDAgMCAxIDEuNSAwbS01LjI1IDNhLjc1Ljc1IDAgMSAwIDAtMS41YS43NS43NSAwIDAgMCAwIDEuNW0uNzUgMS41YS43NS43NSAwIDEgMS0xLjUgMGEuNzUuNzUgMCAwIDEgMS41IDBtMS41LTEuNWEuNzUuNzUgMCAxIDAgMC0xLjVhLjc1Ljc1IDAgMCAwIDAgMS41bS43NSAxLjVhLjc1Ljc1IDAgMSAxLTEuNSAwYS43NS43NSAwIDAgMSAxLjUgMG0xLjUtMS41YS43NS43NSAwIDEgMCAwLTEuNWEuNzUuNzUgMCAwIDAgMCAxLjVtLjc1IDEuNWEuNzUuNzUgMCAxIDEtMS41IDBhLjc1Ljc1IDAgMCAxIDEuNSAwbTEuNS0xLjVhLjc1Ljc1IDAgMSAwIDAtMS41YS43NS43NSAwIDAgMCAwIDEuNW0uNzUgMS41YS43NS43NSAwIDEgMS0xLjUgMGEuNzUuNzUgMCAwIDEgMS41IDBtMS41LTEuNWEuNzUuNzUgMCAxIDAgMC0xLjVhLjc1Ljc1IDAgMCAwIDAgMS41bS0xLjUtM2EuNzUuNzUgMCAxIDEtMS41IDBhLjc1Ljc1IDAgMCAxIDEuNSAwbTEuNS43NWEuNzUuNzUgMCAxIDAgMC0xLjVhLjc1Ljc1IDAgMCAwIDAgMS41IiAvPgoJCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTYuNzUgMi4yNUEuNzUuNzUgMCAwIDEgNy41IDN2MS41aDlWM0EuNzUuNzUgMCAwIDEgMTggM3YxLjVoLjc1YTMgMyAwIDAgMSAzIDN2MTEuMjVhMyAzIDAgMCAxLTMgM0g1LjI1YTMgMyAwIDAgMS0zLTNWNy41YTMgMyAwIDAgMSAzLTNINlYzYS43NS43NSAwIDAgMSAuNzUtLjc1bTEzLjUgOWExLjUgMS41IDAgMCAwLTEuNS0xLjVINS4yNWExLjUgMS41IDAgMCAwLTEuNSAxLjV2Ny41YTEuNSAxLjUgMCAwIDAgMS41IDEuNWgxMy41YTEuNSAxLjUgMCAwIDAgMS41LTEuNXoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgLz4KCTwvZz4KPC9zdmc+'); /* Change to your icon */
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: var(--size-20);
+    }
+
+    .input-group input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .input-group input[type="date"]:valid + ::before {
+        display: none;
+    }
+
+    & .phone-input {
+        font-family: montserrat-default;
+        font-size: var(--size-19);
+        font-weight: 300;
+        border: 0.5px solid var(--white-clr-100);
+        margin-bottom: unset;
+
+
+        & span {
+            min-height: max-content;
+            padding-inline: var(--size-10);
+            border-right: 1.5px solid var(--white-clr-100);
+        }
+    }
+
+    & .input-group.custom-group input {
+        margin-bottom: unset !important;
+        border: none !important;
+    }
+
+
+    /* Overide css */
+
+    .input-section {
+        & .dropdown-btn-group {
+            background-color: #383a36;
+            border-radius: var(--size-5);
+            padding: var(--size-8);
+            z-index: 100;
+        }
+    }
+
+    .input-section {
+        & .dropdown-btn-group {
+            & button {
+                background-color: #383a36;
+                border-radius: var(--size-5);
+
+                &:hover {
+                    background-color: var(--accent-clr-601);
+                }
+            }
+
+
+        }
+    }
+
 }
 
 
@@ -308,6 +387,7 @@
 }
 
 .user-verification {
+    display: none;
     & .content {
         width: 60%;
         margin-block: 16.8rem 16.8rem;

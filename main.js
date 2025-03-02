@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdownOptions = document.querySelectorAll(".dropdown-option");
     const homePage = document.querySelector(".search-container--home");
     const postPropertyPage = document.querySelector(".post-a-property");
+    const onboardingPage = document.querySelector(".onboarding");
 
     dropdownOptions.forEach(dropdown => {
         const dropdownBtn = dropdown.querySelector("button");
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             e.stopPropagation();
             closeAllDropdowns();
             dropdownMenu.classList.toggle("show");
-            console.log(dropdownBtn.innerText)
+            // console.log(dropdownBtn.innerText)
 
             if (homePage) {
                 console.log(homePage)
@@ -43,6 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 dropdownBtn.style.color = '#fff'
             }
 
+            if (onboardingPage) {
+                dropdownBtn.style.color = '#bcbdbc';
+                dropdownBtn.style.backgroundColor = '#000';
+
+            } else {
+                dropdownBtn.style.color = '#fff'
+                dropdownBtn.style.backgroundColor = '#000';
+            }
+
         });
 
         dropdownItems.forEach(item => {
@@ -59,6 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (postPropertyPage) {
                     dropdownBtn.style.border = 'unset';
                     dropdownBtn.style.backgroundColor = '#7a7c79';
+                }
+
+                if (onboardingPage) {
+                    dropdownBtn.style.color = '#383838';
+                    dropdownBtn.style.backgroundColor = '#db9680';
                 }
             });
         });
@@ -135,11 +150,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Newsletter Funtionality
 document.addEventListener("DOMContentLoaded", () => {
     const emailInput = document.querySelector(".footer-content input[type='email']");
     const submitButton = document.querySelector(".footer-content .input-group button");
     const sectionCont = document.querySelector(".footer-content .shift-right");
 
+    const newsletterModal = document.querySelector(".newsletter-subscription-modal");
+    const newletterBtn = document.querySelector("#newletterBtn");
+
+    const body = document.querySelector("body");
+
+    console.log(body)
+
+    // newsLetterPrompt
     submitButton.addEventListener("click", (e) => {
         e.preventDefault();
 
@@ -149,12 +173,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!emailValue) {
             emailInput.style.border = "0.5px solid red";
-            displayMessage("Email is required!", "red");
+            displayMessage("Email is required!", "#300101");
         } else {
-            emailInput.style.border = "0.5px solid green";
-            displayMessage("Success! You will receive alerts.", "green");
+            newsletterModal.classList.toggle("newsLetterPrompt");
+            body.style.overflow = newsletterModal.classList.contains("newsLetterPrompt") ? "hidden" : "auto";
         }
     });
+
+    if (newletterBtn) {
+        newletterBtn.addEventListener("click", () => {
+            emailInput.value = ""
+            newsletterModal.classList.toggle("newsLetterPrompt");
+            body.style.overflow = newsletterModal.classList.contains("newsLetterPrompt") ? "hidden" : "auto";
+        });
+    }
 
     function displayMessage(message, color) {
         const msgElement = document.createElement("p");
@@ -174,10 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     emailInput.addEventListener("input", () => {
-        emailInput.style.border = "1px solid #ccc";
+        emailInput.style.border = "unset";
         removeMessage();
     });
 });
+
 
 
 

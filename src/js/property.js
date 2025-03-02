@@ -337,6 +337,14 @@ document.addEventListener("DOMContentLoaded", () => {
     showStep(currentStep);
 });
 
+document.activeElement("DOMContentLoaded", () => {
+    const postProperty = document.querySelector("#postProperty");
+
+    postProperty.addEventListener("click", () => {
+        window.location.href = "/src/pages/post-property.html"
+    })
+})
+
 
 
 

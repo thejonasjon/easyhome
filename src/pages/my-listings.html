@@ -22,7 +22,7 @@
 
                         <nav>
                             <ul role="list" class="flex flex-column">
-                                <li><a href="#">
+                                <li><a href="/src/pages/landlord.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path fill="#fff" d="M15 20v-7h7v7zm-4-9V4h11v7zm-9 9v-7h11v7zm0-9V4h7v7z" />
@@ -35,7 +35,7 @@
                                             <path fill="#fff" d="M19 2h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0V7h3V5h-3zM7 9h8v2H7zm0 3v2h8v-2h-3zm0 3h8v2H7z" />
                                         </svg>
                                     </span>Post a Property</a></li>
-                                <li><a href="/src/pages/my-listings.html">
+                                <li class="active"><a href="/src/pages/my-listings.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                             <g fill="#fff">
@@ -537,6 +537,19 @@
                         </section>
                     </div>
                 </section>
+            </div>
+
+            <div class="logout-modal" id="logoutModal">
+                <div class="modal-content flex flex-column justify-center align-center">
+                    <div class="lm-text">
+                        <h4>Are you sure you want to log out?</4>
+                    </div>
+
+                    <div class="btn-group flex align-center">
+                        <button class="logout-no" id="logOutNo">No</button>
+                        <button class="logout-yes" id="logOutYes">Yes</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

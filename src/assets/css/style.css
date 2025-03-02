@@ -497,6 +497,10 @@ body {
 footer {
     color: var(--white-clr-100);
 
+    & .f-one {
+        position: relative;
+    }
+
     .section-two {
       gap: clamp(2rem, 12vw, 12rem);
       flex-wrap: wrap;

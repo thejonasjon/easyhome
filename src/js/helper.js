@@ -40,5 +40,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Logout functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const logoutIcon = document.querySelector(".logout a");
+    const logoutModal = document.querySelector("#logoutModal");
+    const btns = document.querySelectorAll(".btn-group button");
+    const logoutbtn = document.querySelector("nav li:last-child a");
+
+    if (logoutIcon) {
+        logoutIcon.addEventListener("click", toggleModal);
+    }
+
+    if (logoutbtn) {
+        logoutbtn.addEventListener("click", toggleModal);
+    }
+
+    function toggleModal() {
+        if (logoutModal) {
+            logoutModal.classList.toggle("prompt");
+        }
+    }
+
+    btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            if (e.target.id === "logOutYes") {
+                window.location.href = "/src/pages/login.html";
+            } else if (logoutModal) {
+                logoutModal.classList.toggle("prompt");
+            }
+        });
+    });
+});
+
+
+
 
 
