@@ -201,6 +201,14 @@
         & .input-group {
             margin-bottom: var(--size-80);
         }
+
+        & .input-group .bank-icon {
+            & svg {
+                & path {
+                    fill: var(--white-clr-100);
+                }
+            }
+        }
     }
 
     & .step--1, .step--2, .step--3 {
@@ -254,6 +262,10 @@
     }
 
     & .step--2-of--1, .step--2-of--2, .step--2-of--3 {
+        display: none;
+    }
+
+    & .step--4-of--1, .step--4-of--2 {
         display: none;
     }
 
@@ -408,6 +420,7 @@
     }
 
     & .heading p{
+        /* display: none; */
         font-family: montserrat-default;
         font-size: var(--size-28);
         line-height: 3.36rem;

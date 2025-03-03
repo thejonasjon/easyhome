@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (savedUserRole) {
         userTypeRadios.forEach((radio) => {
-            console.log(radio.id)
 
             if (radio.id === savedUserRole) {
                 radio.checked = true;
@@ -33,6 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// OTP Funtionality, jump to next input at max value
+document.querySelectorAll(".otp-input").forEach((input, index, inputs) => {
+    input.addEventListener("input", (e) => {
+        if (e.target.value && index < inputs.length - 1) {
+            inputs[index + 1].focus();
+        }
+    });
+
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && index > 0 && !e.target.value) {
+            inputs[index - 1].focus();
+        }
+    });
+});
+
 
 // Signup validation, to be added later when head is calm
 
@@ -57,6 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// SSO fFuntionality
+document.addEventListener("DOMContentLoaded", () => {
+    const authContBtns = document.querySelectorAll(".auth-cont button");
+
+    authContBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            alert("Social Login integration will be available soon, Kindly login or signup with credentials. Thank You!");
+        });
+    });
+});
+
+
 
 
 

@@ -116,24 +116,26 @@ document.addEventListener("DOMContentLoaded", () => {
         let isOtpFilled = true;
 
         otpInputs.forEach((input) => {
+            // input.value.trim() !== "" ? input.style.border = "none" : input.style.border = "none";
             if (!input.value.trim()) {
-                input.style.border = "0.5px solid red";
+                input.style.border = "0.1px solid red";
                 isOtpFilled = false;
             } else {
-                input.style.border = "1px solid #ccc";
+                input.style.border = "0.1px solid green";
                 otpValue += input.value;
             }
         });
 
         if (!isOtpFilled) {
             alert("Please enter the 6-digit code.");
+            input.style.border = "0.1px solid red";
             return;
         }
 
         if (otpValue === "123456") {
             window.location.href = "onboarding.html";
         } else {
-            alert("Invalid OTP. Please try again.");
+            alert("TEST MODE: Invalid OTP. Kinly try 123456.");
         }
     });
 });

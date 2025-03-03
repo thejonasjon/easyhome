@@ -161,8 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const body = document.querySelector("body");
 
-    console.log(body)
-
     // newsLetterPrompt
     submitButton.addEventListener("click", (e) => {
         e.preventDefault();

@@ -159,6 +159,7 @@
                                                     <button>Male</button>
                                                     <button>Female</button>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -319,25 +320,28 @@
 
                                     <div class="input-group input-group-file">
                                         <label for="govermentID">Government Issued ID</label>
-                                        <div class="sub-input-group-file flex" id="govermentID">
-                                            <button class="choose-file">Choose File</button>
-                                            <button class="no-file-chose">No File Chosen</button>
+                                        <div class="sub-input-group-file flex">
+                                            <button class="choose-file" type="button">Choose File</button>
+                                            <button class="no-file-chose" disabled>No File Chosen</button>
+                                            <input type="file" class="file-input" style="display: none" accept=".jpg, .png, .pdf">
                                         </div>
                                     </div>
 
                                     <div class="input-group input-group-file">
                                         <label for="selfiePhoto">Selfie Photo</label>
-                                        <div class="sub-input-group-file flex" id="selfiePhoto">
-                                            <button class="choose-file">Choose File</button>
-                                            <button class="no-file-chose">No File Chosen</button>
+                                        <div class="sub-input-group-file flex">
+                                            <button class="choose-file" type="button">Choose File</button>
+                                            <button class="no-file-chose" disabled>No File Chosen</button>
+                                            <input type="file" class="file-input" style="display: none" accept=".jpg, .png, .pdf">
                                         </div>
                                     </div>
 
                                     <div class="input-group input-group-file">
                                         <label for="businessCAC">Business CAC Document <span>* for homeowners</span></label>
-                                        <div class="sub-input-group-file flex" id="businessCAC">
-                                            <button class="choose-file">Choose File</button>
-                                            <button class="no-file-chose">No File Chosen</button>
+                                        <div class="sub-input-group-file flex">
+                                            <button class="choose-file" type="button">Choose File</button>
+                                            <button class="no-file-chose" disabled>No File Chosen</button>
+                                            <input type="file" class="file-input" style="display: none" accept=".jpg, .png, .pdf">
                                         </div>
                                     </div>
                                 </div>
@@ -394,7 +398,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="step--4-of--2" style="display: none;">
+                                    <div class="step--4-of--2">
                                         <div class="section-heading flex justify-between">
                                             <p>Bank Account Details<span>*</span></p>
                                             <p>2/2</p>
@@ -406,13 +410,35 @@
 
                                         <div class="input-group selection">
                                             <label for="bankName">Bank Name</label>
-                                            <select name="bankName" id="bankName">
-                                                <option value="" disabled selected>Select Bank</option>
-                                                <option value="uba">UBA</option>
-                                                <option value="gtb">GTB</option>
-                                                <option value="access">Acess Bank</option>
-                                                <option value="others">Others</option>
-                                            </select>
+                                            <div class="search-inputs">
+                                                <div class="input-group dropdown-option">
+                                                    <button id="bankName">
+                                                        <!-- <div class="flex align-center gap--10">
+                                                            <span class="bank-icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                                    <g fill="#fff">
+                                                                        <path d="M11.584 2.376a.75.75 0 0 1 .832 0l9 6a.75.75 0 1 1-.832 1.248L12 3.901L3.416 9.624a.75.75 0 0 1-.832-1.248z" />
+                                                                        <path fill-rule="evenodd" d="M20.25 10.333v9.917H21a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5h.75v-9.917a.75.75 0 0 1 .634-.741A49 49 0 0 1 12 9c2.59 0 5.134.202 7.616.592a.75.75 0 0 1 .634.74m-7.5 2.417a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0zm3-.75a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0v-6.75a.75.75 0 0 1 .75-.75M9 12.75a.75.75 0 0 0-1.5 0v6.75a.75.75 0 0 0 1.5 0z" clip-rule="evenodd" />
+                                                                        <path d="M12 7.875a1.125 1.125 0 1 0 0-2.25a1.125 1.125 0 0 0 0 2.25" />
+                                                                    </g>
+                                                                </svg>
+                                                            </span>
+                                                        Select Bank
+                                                        </div> -->
+                                                        Select Bank
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                        </span>
+                                                    </button>
+
+                                                    <div class="dropdown-btn-group flex flex-column gap--2">
+                                                        <button>UBA</button>
+                                                        <button>GTB</button>
+                                                        <button>Access Bank</button>
+                                                        <button>Others</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="input-group">
@@ -447,12 +473,12 @@
                                 </svg>
                             </button>
 
-                            <button id="skipBtn" class="flex align-center gap--10 skip" type="button">
+                            <!-- <button id="skipBtn" class="flex align-center gap--10 skip" type="button">
                                 Skip
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                                     <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5" />
                                 </svg>
-                            </button>
+                            </button> -->
                         </div>
                     </div>
                 </div>

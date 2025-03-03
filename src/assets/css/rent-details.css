@@ -2,6 +2,147 @@
 
 .rent-details {
 
+    & .property-rent {
+        & .links {
+            background-color: var(--primary-clr-901);
+            padding: var(--size-20) clamp(2rem, 10vw, 10rem);
+        }
+
+        & .links p {
+            font-family: mulish-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+        }
+
+        & .links svg {
+            width: var(--size-24);
+            height: var(--size-24);
+        }
+
+        & .links .title {
+            font-family: mulish-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 500;
+            color: var(--accent-clr-601);
+        }
+    }
+
+    & .property-rent-content {
+        & .text {
+            padding-block: var(--size-25);
+        }
+
+        & .text .heading--h4 {
+            font-family: poppins-regular;
+            font-size: var(--size-33);
+            line-height: 3.96rem;
+            font-weight: 600;
+            /* color: var(--white-clr-100); */
+            margin: unset;
+            margin-bottom: var(--size-12);
+        }
+
+        & .text p {
+            font-family: mulish-default;
+            font-size: var(--size-20);
+            line-height: var(--size-30);
+            font-weight: 400;
+            color: var(--white-clr-100);
+        }
+    }
+
+    & .property-details-cont {
+        & .photos-heading h4 {
+            font-family: montserrat-default;
+            font-size: var(--size-23);
+            line-height: 2.76rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+            margin-bottom: var(--size-12);
+        }
+
+        & .details .price {
+            font-family: montserrat-default;
+            font-size: var(--size-23);
+            line-height: 2.76rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+
+            & span {
+                font-family: poppins-regular;
+                font-size: var(--size-33);
+                line-height: 3.96rem;
+                font-weight: 700;
+                color: var(--accent-clr-601);
+            }
+        }
+
+
+        & .slide-cont {
+            background-color: var(--primary-clr-901);
+            padding-block: var(--size-5);
+            padding-inline: var(--size-50);
+            margin-bottom: var(--size-20);
+        }
+
+        & .slide-cont p {
+            font-family: mulish-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 400;
+            color: var(--white-clr-100);
+        }
+
+        & .property-includes {
+
+            & span {
+                font-family: mulish-default;
+                font-size: var(--size-20);
+                line-height: var(--size-30);
+                font-weight: 400;
+                color: var(--white-clr-100);
+            }
+
+            & svg {
+                fill: var(--white-clr-100);
+                width: var(--size-24);
+                height: var(--size-24);
+
+                & path {
+                    fill: var(--white-clr-100);
+                }
+            }
+        }
+
+        & .description-details {
+            margin-block: clamp(2rem, 10vw, 5rem);
+            & .desc-heading h5 {
+                font-family: montserrat-default;
+                font-size: var(--size-23);
+                line-height: 2.76rem;
+                font-weight: 500;
+                color: var(--white-clr-100);
+                margin-bottom: var(--size-10);
+            }
+
+            & .desc-heading p {
+                font-family: mulish-default;
+                font-size: var(--size-20);
+                line-height: var(--size-30);
+                font-weight: 500;
+                color: var(--white-clr-100);
+            }
+        }
+
+    }
+
+    & .video-tour, .videos {
+        margin-top: clamp(2rem, 10vw, 10rem);
+    }
+
     .heading {
         padding-block: var(--size-60) var(--size-20);
     }
@@ -129,7 +270,5 @@
         width: var(--size-25);
         height: auto;
     }
-
-
 
 }

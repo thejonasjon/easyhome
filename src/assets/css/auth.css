@@ -118,6 +118,17 @@
             font-weight: 500;
             color: rgba(28, 29, 27, 0.5);
         }
+
+        &:focus {
+            border: 1px solid var(--accent-clr-601);
+        }
+    }
+
+    & .input-group p.error-message {
+        font-family: montserrat-default;
+        font-size: var(--size-26);
+        line-height: var(--size-19);
+        color: rgba(28, 29, 27, 0.5);
     }
 
     & .input-group .password-show {
@@ -283,6 +294,11 @@
             font-weight: 300;
             color: #1C1D1B;
 
+            &.please {
+                color: var(--primary-clr-501);
+                margin-top: var(--size-5);
+            }
+
             &.email {
                 font-weight: 600;
             }
@@ -324,6 +340,7 @@
         & .modal-input-group input{
             min-width: var(--size-45);
             max-width: var(--size-45);
+            width: 100%;
             background-color: transparent;
             height: auto;
             border: none;

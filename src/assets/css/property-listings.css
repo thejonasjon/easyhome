@@ -1,0 +1,183 @@
+@import url("/src/assets/css/rent.css");
+
+.property-listings {
+    background-color: #262625;
+    padding-inline: unset;
+
+    & .property-overview {
+        background-color: var(--primary-clr-901);
+        padding: clamp(2rem, 10vw, 5rem) var(--size-20);
+
+        & .img-cont {
+            width: 80%;
+            margin: var(--size-20) auto;
+
+        }
+
+        & .text-cn {
+            text-align: center;
+        }
+
+        & .text-cn h3 {
+            font-family: poppins-regulary;
+            font-size: var(--size-48);
+            line-height: 5.76rem;
+            font-weight: 600;
+            color: var(--primary-clr-201);
+            margin: 0 !important;
+        }
+
+        & .text-cn h4 {
+            font-family: poppins-regulary;
+            font-size: var(--size-33);
+            line-height: 3.96rem;
+            font-weight: 600;
+            color: var(--primary-clr-101);
+        }
+    }
+
+    & .listings-cont {
+        justify-content: center;
+    }
+
+    & .all-listings .text {
+        text-align: center;
+        margin-block: clamp(2rem, 10vw, 5rem);
+
+        & .heading--h4 {
+            font-family: poppins-regulary;
+            font-size: var(--size-40);
+            line-height: var(--size-48);
+            font-weight: 600;
+            color: var(--white-clr-100);
+            margin: 0 !important;
+        }
+
+        & p {
+            font-family: montserrat-default;
+            font-size: var(--size-28);
+            line-height: 3.36rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+        }
+    }
+}
+
+.top-property-companies {
+    background-color: #1C1D1B;
+    margin-block: clamp(2rem, 10vw, 5rem);
+
+    & .tpc-content {
+        padding: clamp(1rem, 5vw, 5rem) clamp(1rem, 5vw, 4rem);
+        gap: clamp(1rem, 10vw, 10rem);
+    }
+
+    & .tpc-content .brands-cont {
+        width: 100%;
+        gap: clamp(0.5rem, 10vw, 1rem);
+        justify-content: space-between;
+
+        & > * {
+            flex: 1 1 calc(100% / 3 - 10px);
+            border-right: 0.5px solid var(--primary-clr-401);
+        }
+
+        & .brand {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(0.5rem, 5vw, 2rem);
+        }
+
+        & .brand-i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36.1rem;
+            height: 36.1rem;
+            justify-content: center;
+            border-radius: 50%;
+
+            & svg {
+                width: 21rem;
+                height: 21rem;
+            }
+
+
+            &.openda {
+                background-color: #CC6987;
+            }
+
+            &.jj {
+                background-color: #E2AB99;
+            }
+
+            &.vk {
+                background-color: #3B0A19;
+
+                & svg path {
+                    fill: var(--white-clr-100);
+                }
+            }
+        }
+    }
+
+    & .tpc-content .brand h4 {
+        font-family: montserrat-default;
+        font-size: var(--size-28);
+        line-height: 3.36rem;
+        font-weight: 500;
+        color: var(--white-clr-100);
+        text-align: center;
+    }
+
+    & .tpc-content .text h3 {
+        font-family: poppins-regular;
+        font-size: var(--size-48);
+        line-height: 5.76rem;
+        font-weight: 600;
+        color: var(--white-clr-100);
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Medium mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+
+}
+
+/* Large tablets */
+@media (max-width: 1152px) {
+    .top-property-companies {
+        & .brand {
+            flex-wrap: wrap;
+        }
+
+        & .brand-i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 36.1rem;
+            min-width: 5rem;
+            height: auto;
+            justify-content: center;
+            border-radius: 50%;
+
+            & svg {
+                max-width: 21rem;
+                min-width: 5rem;
+                height: auto;
+            }
+        }
+    }
+}

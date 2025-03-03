@@ -31,7 +31,7 @@
         & .profile-info {
             & > {
                 flex: 1 1 20rem;
-                background-color: red;
+                /* background-color: red; */
             }
         }
 
@@ -122,11 +122,12 @@
 }
 
 .profile-edit {
+    display: none;
     & .heading {
         margin-bottom: var(--size-20);
 
         & h4 {
-        font-family: Montserrat-default;
+        font-family: montserrat-default;
         font-size: var(--size-23);
         line-height: 2.76rem;
         font-weight: 700;
@@ -143,4 +144,26 @@
         content: "" !important;
         color: unset !important;
     }
+}
+
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Medium mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+
+    .profile {
+        & .info-grid  {
+            flex-wrap: wrap;
+        }
+    }
+
 }

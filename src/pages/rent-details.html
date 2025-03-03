@@ -36,7 +36,7 @@
                             </div>
                             <ul role="list" class="main-nav flex flex-wrap" id="nav-menu">
                                 <li><a href="">Property Listings</a></li>
-                                <li><a href="/src/pages/rent.html">Rent</a></li>
+                                <li class="active"><a href="/src/pages/rent.html">Rent</a></li>
                                 <li><a href="/src/pages/login.html">Post a Property</a></li>
                                 <li>
                                     <div class="navLink-dropdown-option flex align-end gap--4">
@@ -47,7 +47,7 @@
                                             </svg>
                                         </span>
 
-                                        <div class="navLink-dropdown signup">
+                                        <div class="navLink-dropdown">
                                             <ul role="list">
                                                 <li><a href="/src/pages/login.html">Search for avalilable rooms</a></li>
                                                 <li><a href="/src/pages/login.html">List your space</a></li>
@@ -65,7 +65,7 @@
                                             </svg>
                                         </span> -->
 
-                                        <div class="navLink-dropdown">
+                                        <div class="navLink-dropdown signup">
                                             <ul role="list">
                                                 <li><a href="/src/pages/signup.html">As Homeowner</a></li>
                                                 <li><a href="/src/pages/signup.html">As Tenant</a></li>
@@ -85,70 +85,108 @@
 
                     <div class="search-container--bottom">
                         <div class="light-dark flex justify-between">
-                            <div class="flex gap--10">
+                            <div class="search-inputs-group flex gap--10">
                                 <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="property-type">Property Type</label>
+                                    <div class="input-group dropdown-option" style="z-index: 400;">
+                                        <label for="propertyType">Property Type</label>
                                         <button class="search-btn">
                                             Select Property Type
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
                                             </span>
                                         </button>
+
+                                        <div class="dropdown-btn-group flex flex-column gap--2">
+                                            <button>Self Contain</button>
+                                            <button>Detached Bungalow</button>
+                                            <button>Mansion</button>
+                                            <button>Detached Duplex</button>
+                                            <button>Semi - Detached Duplex</button>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="min-price">Min Price</label>
+                                    <div class="input-group dropdown-option" style="z-index: 300;">
+                                        <label for="bedroom">Bedrooms</label>
+                                        <button class="search-btn">
+                                            Select Number Of bedroom
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                            </span>
+                                        </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>1</button>
+                                                <button>2</button>
+                                                <button>3</button>
+                                                <button>4</button>
+                                                <button>5</button>
+                                                <button>6+</button>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="search-inputs">
+                                    <div class="input-group dropdown-option" style="z-index: 200;">
+                                        <label for="minPrice">Min Price</label>
                                         <button class="search-btn">
                                             Select Min Price
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
                                             </span>
                                         </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>20,000 - 100,000</button>
+                                                <button>100,001 - 300,000</button>
+                                                <button>300,001 - 600,000</button>
+                                                <button>600,001 - 1,200,000</button>
+                                                <button>1,200,001 - 5,000,000</button>
+                                                <button>5,000,00 - 100,000,000</button>
+                                            </div>
                                     </div>
                                 </div>
 
                                 <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="max-price">Max Price</label>
+                                    <div class="input-group dropdown-option" style="z-index: 100;">
+                                        <label for="maxPrice">Max Price</label>
                                         <button class="search-btn">
                                             Select Max Price
                                             <span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
                                             </span>
                                         </button>
+
+                                            <div class="dropdown-btn-group flex flex-column gap--2">
+                                                <button>20,000 - 100,000</button>
+                                                <button>100,001 - 300,000</button>
+                                                <button>300,001 - 600,000</button>
+                                                <button>600,001 - 1,200,000</button>
+                                                <button>1,200,001 - 5,000,000</button>
+                                                <button>5,000,00 - 100,000,000</button>
+                                            </div>
                                     </div>
                                 </div>
-
-                                <div class="search-inputs">
-                                    <div class="input-group">
-                                        <label for="min-price">Bedrooms</label>
-                                        <button class="search-btn">
-                                            Select Number Of bedrooms
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
 
                     <div class="search-container--top">
-                        <div class="flex gap--10">
+                        <div class="search-inputs-group flex gap--10">
                             <div class="search-inputs">
-                                <div class="input-group">
+                                <div class="input-group dropdown-option">
                                     <button class="search-btn rent">
                                         Rent
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
                                         </span>
                                     </button>
+
+                                    <div class="dropdown-btn-group flex flex-column gap--2">
+                                        <button>Rent</button>
+                                        <button>Shortlet</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -182,8 +220,6 @@
                 </div>
             </div>
         </div>
-
-
     </section>
 
     <main class="rent-details">
@@ -193,19 +229,19 @@
                 <div class="">
                     <div class="links">
                         <p class="flex align-center gap--4">Rent
-                            <span>
+                            <!-- <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                                     <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                                   </svg>
                             </span>
-                             New Listing
-                             <span>
+                             New Listing -->
+                             <span class="flex justify-center align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
                                     <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                                   </svg>
                              </span>
-                             <span class="">Two Bedroom Crescent Apartment</span>
-                            </p>
+                             <span class="title">Two Bedroom Crescent Apartment</span>
+                        </p>
                     </div>
                     <div class="property-rent-content">
                         <div class="text">
@@ -214,13 +250,13 @@
                             </h4>
 
                             <div>
-                                <p>
+                                <p class="flex align-center gap--5">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#D48166" class="size-5">
                                             <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
                                         </svg>
                                     </span>
-                                    ikoyi, Lagos  State
+                                    Ikoyi, Lagos  State
                                 </p>
                             </div>
                         </div>
@@ -238,27 +274,31 @@
                             </div>
 
                             <div class="slide-cont">
-                                <p>
-                                    <span></span>
+                                <p class="flex align-center justify-end gap--10">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#fff" fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879l.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0zm10.125-7.81a1.125 1.125 0 1 1 2.25 0a1.125 1.125 0 0 1-2.25 0" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
                                     1/6
                                 </p>
                             </div>
 
-                            <div class="details">
+                            <div class="details flex justify-between">
                                 <div class="price">
-                                    <p>Price: <span>₦1,000,000/year</span></p>
+                                    <p class="flex align-center gap--10">Price: <span>₦1,000,000/year</span></p>
                                 </div>
 
-                                <div class="property-includes flex gap--10">
-                                    <div class="includes">
+                                <div class="property-includes flex gap--40">
+                                    <div class="includes flex align-center gap--10">
                                         <svg fill="#000000" width="64px" height="64px" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M 5.2892 21.9935 L 10.9031 21.9935 L 10.9031 18.8154 C 10.9031 16.7507 12.0630 15.6372 14.1508 15.6372 L 22.3861 15.6372 C 24.4739 15.6372 25.6338 16.7507 25.6338 18.8154 L 25.6338 21.9935 L 30.6446 21.9935 L 30.6446 18.8154 C 30.6446 16.7507 31.8045 15.6372 34.0084 15.6372 L 41.7333 15.6372 C 43.9373 15.6372 45.0970 16.7507 45.0970 18.8154 L 45.0970 21.9935 L 50.7108 21.9935 L 50.7108 15.6604 C 50.7108 11.5544 48.5305 9.4665 44.5402 9.4665 L 11.4598 9.4665 C 7.4930 9.4665 5.2892 11.5544 5.2892 15.6604 Z M 0 44.8668 C 0 46.0035 .7423 46.7226 1.9022 46.7226 L 3.2013 46.7226 C 4.3380 46.7226 5.0803 46.0035 5.0803 44.8668 L 5.0803 41.5726 C 5.3355 41.6422 6.0779 41.6886 6.6114 41.6886 L 49.4118 41.6886 C 49.9454 41.6886 50.6647 41.6422 50.9198 41.5726 L 50.9198 44.8668 C 50.9198 46.0035 51.6619 46.7226 52.7988 46.7226 L 54.1210 46.7226 C 55.2579 46.7226 56 46.0035 56 44.8668 L 56 31.6670 C 56 27.4682 53.6573 25.1716 49.4118 25.1716 L 6.5883 25.1716 C 2.3430 25.1716 0 27.4682 0 31.6670 Z"></path></g></svg>
                                         <span>2 Bedrooms</span>
                                     </div>
-                                    <div class="includes">
+                                    <div class="includes flex align-center gap--10">
                                         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000" stroke-width="1.5"><path d="M21 13V16C21 18.2091 19.2091 20 17 20H7C4.79086 20 3 18.2091 3 16V13.6C3 13.2686 3.26863 13 3.6 13H21Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 20L17 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20L7 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 13V7C21 4.79086 19.2091 3 17 3H12" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.4 8H8.60003C8.26865 8 8.00393 7.7317 8.04019 7.4023C8.18624 6.07539 8.86312 3 12 3C15.1369 3 15.8138 6.07539 15.9598 7.4023C15.9961 7.73169 15.7314 8 15.4 8Z" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                                         <span>2 Bathrooms</span>
                                     </div>
-                                    <div class="includes">
+                                    <div class="includes flex align-center gap--10">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                             <path fill="#000" d="M5.039 19.346q-.214 0-.357-.143q-.144-.143-.144-.357v-1H4q-.846 0-1.423-.577T2 15.846v-5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434Q5 10.214 5 10.846v3.5h14v-3.5q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434q.434.434.434 1.066v5q0 .846-.577 1.423T20 17.846h-.538v1q0 .194-.134.347t-.328.153q-.213 0-.357-.143q-.143-.144-.143-.357v-1H5.539v1q0 .214-.144.357q-.143.143-.357.143m.962-6v-2.5q0-.932-.559-1.664Q4.883 8.45 4 8.346V7.231q0-.846.577-1.423T6 5.23h12q.846 0 1.423.577T20 7.23v1.115q-.889.1-1.444.828Q18 9.902 18 10.846v2.5z" />
                                         </svg>
@@ -268,10 +308,42 @@
                             </div>
 
                             <div class="description-details">
-                                div.des
+                                <div class="desc-heading">
+                                    <h5>Description</h5>
+                                    <p>Modern Two-Bedroom Crescent Apartment – Fully Furnished with Parking Space
+                                        Discover comfort and convenience in this stylish two-bedroom apartment, perfectly situated in a serene crescent. Fully furnished with contemporary décor, this home offers a spacious living area, a well-equipped kitchen, and cozy bedrooms designed for relaxation. Enjoy hassle-free living with dedicated parking space, high-speed internet, and essential amenities. Whether you're a professional, couple, or small family, this apartment provides the perfect blend of comfort and accessibility.</p>
+                                </div>
                             </div>
 
                            </div>
+                        </div>
+
+                        <div class="property-details-cont videos">
+                            <div class="photos-heading">
+                                 <h4>Video</h4>
+                            </div>
+
+                            <div class="photos">
+                             <div class="slider-wraper">
+                                 <div class="slide">
+                                     <img src="/src/assets/images/landing-slide-1.png" alt="">
+                                 </div>
+                             </div>
+                            </div>
+                        </div>
+
+                        <div class="property-details-cont video-tour">
+                            <div class="photos-heading">
+                                <h4>Virtual Tour</h4>
+                            </div>
+
+                            <div class="photos">
+                             <div class="slider-wraper">
+                                 <div class="slide">
+                                     <img src="/src/assets/images/landing-slide-1.png" alt="">
+                                 </div>
+                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -367,9 +439,9 @@
                             <div class="block slide">
                                 <div class="image-cont">
                                     <div class="location">
-                                        <span>Ikeja, Lagos</span>
+                                        <span>Gbagada, Lagos</span>
                                     </div>
-                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                    <img src="https://s3-alpha-sig.figma.com/img/4a11/a950/df723bf3ea6eff6eef27186e96268a1d?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dCm-sCMScPkcW4B9gcXDPr5I6F77LkibUHJwfyLjCHqsGKKMdbe2xh8MsMIkxZN5j-EoDfd3EBa7i38ZuNHyIQePcrzSfiuKAyOacjVZfy~W5~8GWPkpsQR-oINEOkF-J6JJD9OF42leVvTAz5I2diuGYJH5rbO953We1yVx8eH1rlYqW5UjXouNl4nmq6s8HpheL7hre1hbsemGwiL7d8anI591UcEDeTxOgy9OIb3NBMWP8hm4gi1svqiXI6NrQO25I1dwoqqcL0GpPpjR4cbQ3cuVJ-JRSvlN~eF4Pt2SjkIU6gLQbKO0dxPhCMkjKPR9H8hB59CONTY8TkFZEw__" alt="Featured House Slide 1">
                                 </div>
 
                                 <div class="text">
@@ -416,9 +488,9 @@
                             <div class="block slide">
                                 <div class="image-cont">
                                     <div class="location">
-                                        <span>Ikeja, Lagos</span>
+                                        <span>Maryland, Lagos</span>
                                     </div>
-                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                    <img src="https://s3-alpha-sig.figma.com/img/595d/6a68/ad66e1f53997ab2b78e3728e736d72de?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=riWNieUz2Oojr-Ck~t-FNxcf7c-MHgZQ5EZ8fkIUnWuMU5HiplMH~cpto7UicjFWtzCXvtJsu5a9xP8f4ehw~UupF2DuxI4OujbiZcVf~Vf3MwIp6HUgbVk4PYVMvA3s3jFRZ~YXS~BAp66c8ueMJN-r1OIBhSPKVaxQmimiK~l2Gy95Eb22LcOIqjxbxAVKOFZOBalrMqSt85w1Dp4gXytSQQqWAAYZtp6CG1lYfXPiL9GOipwFCsyxsIBaHYVe-tOecOAYRgYs9Fldqlg6lRyuEZ7VI4ONxW4yfCyaWBkoE2CnyAxDjo-3VgJPKHsSoZczUgbHlpheRtZ9MoYcew__" alt="Featured House Slide 2">
                                 </div>
 
                                 <div class="text">
@@ -467,7 +539,7 @@
                                     <div class="location">
                                         <span>Ikeja, Lagos</span>
                                     </div>
-                                    <img src="/src/assets/images/feature-house.png" alt="Featured House Image">
+                                    <img src="https://s3-alpha-sig.figma.com/img/47be/4258/7d52da3e850a09818b57ea4a1ce371b4?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=k4ZSCvyafIuqfHt4rWO82hHytAJQAq9dCemT03HkEv77OBUj7Ry~PUqHf1-Nr-aSb2353QFgWsS-9MClNa~WWIOTgar0v2VFP0rlPBOlEzVD4fmbblIl3C7eMOsLU5IOVWyU27js02txBbrhr8eJ6mrWX3D~sHK5akI-s1RDpND3fFrWNUrzac13mV5pCXPiQfxafTRvejnCHYBK0WvwdXa7Ezs1x8oErvuSMkyVTpnHT84EhZRU4AtzchsMSWN6Yq5HPsBe2izfjGkt3lr1shC~Uy-H7FXu7yScwhp58V~~yypDgUzX2qA6tUqVU2zT7Ce1TCPzy5yJ--tPXYSjhw__" alt="Featured House Slide 3">
                                 </div>
 
                                 <div class="text">

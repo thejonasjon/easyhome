@@ -276,6 +276,10 @@ body {
     stroke: var(--accent-clr-601);
 }
 
+.main-nav li.active a {
+    color: var(--accent-clr-601);
+}
+
 /* Services */
 .services {
     position: relative;
