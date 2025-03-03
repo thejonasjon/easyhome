@@ -13,6 +13,10 @@
         gap: clamp(1rem, 10vw, 4rem);
     }
 
+    & .request-form {
+        gap: clamp(1rem, 10vw, 4rem);
+    }
+
     & .ment-heading h3 {
         font-family: montserrat-default;
         font-size: var(--size-23);
@@ -156,6 +160,147 @@
     }
 
 }
+
+/* My request */
+.my-request {
+    & .overview-content table {
+        tab-size: 100%;
+        width: 100%;
+        border-spacing: 0 var(--size-12);
+        background-color: var(--primary-clr-601);
+        padding: var(--size-20) var(--size-20);
+        border-radius: var(--size-5);
+
+        & .status {
+            /* width: 20px; */
+            padding: var(--size-8);
+            background-color: var(--primary-clr-301);
+            color: var(--primary-clr-701);
+
+            &.in-progress {
+                background-color: #1c1d1b;
+                color: var(--primary-clr-101);
+            }
+
+            &.resolved {
+                background-color: #771431;
+                color: var(--white-clr-100);
+
+            }
+        }
+    }
+
+    & .overview-content table {
+        /* display: none; */
+        /* tab-size: 100%; */
+        width: 100%;
+        & thead tr th {
+            padding: var(--size-12) 0;
+        }
+        & thead tr {
+            gap: 1rem;
+            background-color: transparent;
+        }
+        & tr {
+            background-color: var(--primary-clr-801);
+            border-radius: var(--size-5);
+
+            & td:nth-of-type(3), td:nth-of-type(4) {
+                text-align: center;
+            }
+        }
+        & td {
+            padding: var(--size-25) var(--size-20);
+        }
+        & th {
+            width: 10rem;
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 600;
+            color: var(--accent-clr-601);
+            border-inline: 1px solid var(--primary-clr-501);
+        }
+        & td {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 500;
+            color: var(--white-clr-100);
+            &:first-child {
+                border-top-left-radius: var(--size-5);
+                border-bottom-left-radius: var(--size-5);
+            }
+            &:last-child {
+                border-top-right-radius: var(--size-5);
+                border-bottom-right-radius: var(--size-5);
+            }
+        }
+        & tbody tr td a {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 500;
+            color: var(--primary-clr-101);
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+.maintenance-policies {
+    background-color: var(--white-clr-100);
+    /* display: none; */
+
+    & .mp-content .heading {
+        & h3 {
+            font-family: poppins-regular;
+            font-size: var(--size-28);
+            line-height: 2.92rem;
+            font-weight: 600;
+            color: var(--primary-clr-901);
+            margin-bottom: clamp(0.5rem, 1vw, 2rem);
+        }
+
+        & p {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 400;
+            color: var(--primary-clr-901);
+        }
+    }
+
+    & .mp-content {
+        padding: clamp(1rem, 5vw, 3rem) clamp(1rem, 5vw, 3rem);
+        gap: clamp(0.5rem, 5vw, 2rem);
+    }
+
+    & .section .section-heading {
+        margin-bottom: clamp(0.2rem, 1vw, 0.8rem);
+
+        & h4 {
+            font-family: poppins-regular;
+            font-size: var(--size-19);
+            line-height: 2.4rem;
+            font-weight: 500;
+            color: var(--primary-clr-901);
+        }
+    }
+
+    & .section {
+        & ul li {
+            font-family: poppins-regular;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 400;
+            color: var(--primary-clr-901);
+        }
+    }
+}
+
+
 
 /* Issue Modal */
 .issue-modal {

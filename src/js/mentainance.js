@@ -22,3 +22,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navButtons = document.querySelectorAll(".nav-btns button");
+    const sections = [
+        document.querySelector(".mentainance-cont .ment-step"),
+        document.querySelector(".my-request"),
+        document.querySelector(".maintenance-policies")
+    ];
+
+    function showSection(index) {
+        sections.forEach((section, i) => {
+            if (section) {
+                section.style.display = i === index ? "block" : "none";
+            }
+        });
+    }
+
+    showSection(0);
+    navButtons[0].classList.add("active");
+
+    navButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            navButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            showSection(index);
+        });
+    });
+});

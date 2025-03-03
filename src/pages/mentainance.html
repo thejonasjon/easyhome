@@ -78,6 +78,15 @@
                     <div class="profile-search-logout flex justify-between">
 
                         <div class="search-notification-logout flex align-center justify-self-right margin-left--auto">
+                            <div class="search-cont">
+                                <div class="input-group flex align-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                        <path fill="#fff" d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                                    </svg>
+                                    <input type="text" placeholder="Search">
+                                </div>
+                            </div>
+
                             <div class="notification">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                                     <path fill="#fff" fill-rule="evenodd" d="M12 1a2 2 0 0 0-1.98 2.284A7 7 0 0 0 5 10v8H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2h-1v-8a7 7 0 0 0-5.02-6.716Q14 3.144 14 3a2 2 0 0 0-2-2m2 21a1 1 0 0 1-1 1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1" clip-rule="evenodd" />
@@ -112,47 +121,146 @@
                                 </div>
                             </div>
 
-                            <div class="issue-type">
-                                <div class="input-group selection">
-                                    <div class="search-inputs">
-                                        <div class="input-group dropdown-option">
-                                            <button class="flex justify-between align-center" id="issueType">
-                                                Select Issue Type
-                                                <span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
-                                                </span>
-                                            </button>
+                            <!-- Section -->
+                            <div class="ment-step">
+                                <div class="request-form flex flex-column">
+                                    <div class="issue-type">
+                                        <div class="input-group selection">
+                                            <div class="search-inputs">
+                                                <div class="input-group dropdown-option">
+                                                    <button class="flex justify-between align-center" id="issueType">
+                                                        Select Issue Type
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m19.5 8.25l-7.5 7.5l-7.5-7.5"/></svg>
+                                                        </span>
+                                                    </button>
 
-                                            <div class="dropdown-btn-group flex flex-column gap--2">
-                                                <button>Plumbing</button>
-                                                <button>Electrical</button>
-                                                <button>Others</button>
+                                                    <div class="dropdown-btn-group flex flex-column gap--2">
+                                                        <button>Plumbing</button>
+                                                        <button>Electrical</button>
+                                                        <button>Others</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="issue-description">
-                                <div class="input-group">
-                                    <textarea name="issueDescription" id="issueDescription"
-                                    placeholder="Describe the issue..."
-                                    ></textarea>
-                                </div>
-                            </div>
+                                    <div class="issue-description">
+                                        <div class="input-group">
+                                            <textarea name="issueDescription" id="issueDescription"
+                                            placeholder="Describe the issue..."
+                                            ></textarea>
+                                        </div>
+                                    </div>
 
-                            <div class="file-selection">
-                                <div class="input-group input-group-file">
-                                    <div class="sub-input-group-file flex">
-                                        <button class="choose-file" type="button">Choose File</button>
-                                        <button class="no-file-chose" disabled>No File Chosen</button>
-                                        <input type="file" class="file-input" style="display: none" accept=".jpg, .png, .pdf">
+                                    <div class="file-selection">
+                                        <div class="input-group input-group-file">
+                                            <div class="sub-input-group-file flex">
+                                                <button class="choose-file" type="button">Choose File</button>
+                                                <button class="no-file-chose" disabled>No File Chosen</button>
+                                                <input type="file" class="file-input" style="display: none" accept=".jpg, .png, .pdf">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-cont">
+                                        <button id="submitIssue">Submit Request</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="btn-cont">
-                                <button id="submitIssue">Submit Request</button>
+                            <!-- Section -->
+                            <div class="my-request ment-step">
+                                <div class="rent-overview">
+                                    <div class="overview-content">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Issue Type</th>
+                                                    <th>Description</th>
+                                                    <th>Status</th>
+                                                    <th>Date Reported</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Plumbing</td>
+                                                    <td>My toilet pipe is leaking</td>
+                                                    <td><span class="status pending">Pending</span></td>
+                                                    <td>12/04/23</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Electrical</td>
+                                                    <td>Kitchen light is not working</td>
+                                                    <td><span class="status in-progress">In Progress</span></td>
+                                                    <td>12/04/23</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Others</td>
+                                                    <td>Some of the point on the walls in the master bedroom is warn out</td>
+                                                    <td><span class="status resolved">Resolved</span></td>
+                                                    <td>12/04/23</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section -->
+                            <div class="maintenance-policies ment-step">
+                                <div class="mp-content flex flex-column gap--10">
+                                    <div class="heading">
+                                        <h3>Maintenance Policies</h3>
+                                        <p>Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                                    </div>
+
+                                    <div class="section">
+                                        <div class="section-heading">
+                                            <h4>Types of Maintenance Requests</h4>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="section">
+                                        <div class="section-heading">
+                                            <h4>Do's and Don'ts</h4>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="section">
+                                        <div class="section-heading">
+                                            <h4>Request Submission Process</h4>
+                                        </div>
+
+                                        <div>
+                                            <ul>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
