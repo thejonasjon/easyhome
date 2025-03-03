@@ -1,6 +1,7 @@
 // Mentainance
 'use-strict'
 
+// Submit request
 document.addEventListener("DOMContentLoaded", () => {
     const navButtons = document.querySelectorAll(".nav-btns button");
 
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Navigate performance tabs funtionalities
 document.addEventListener("DOMContentLoaded", () => {
     const navButtons = document.querySelectorAll(".nav-btns button");
     const sections = [
