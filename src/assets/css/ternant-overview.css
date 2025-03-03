@@ -75,13 +75,14 @@
 
     & .dasbord-card .tool-tips-cont {
         position: relative;
+        transition: opacity 0.5s ease-in-out;
 
         & span {
             cursor: pointer;
+        }
 
-            &:hover .tool-tips {
-                opacity: 1;
-            }
+        &:hover .tool-tips {
+            opacity: 1;
         }
     }
 
