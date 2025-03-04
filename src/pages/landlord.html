@@ -193,43 +193,19 @@
                                 </div>
                             </div>
 
-                            <div class="perfomance-container">
-                                <div class="performance-header flex align-center gap--40">
-                                    <h3>Performance</h3>
-                                    <div class="legend flex align-center gap--40">
-                                        <span class="legend-item flex align-center gap--20">
-                                            <span class="legend-color rent"></span> Rent
-                                        </span>
-                                        <span class="legend-item flex align-center gap--20">
-                                            <span class="legend-color short-let"></span> Short Let
-                                        </span>
+                            <div class="performance-dashboard">
+                                <div class="chart-container">
+                                    <div class="legend">
+                                        <div class="legend-item">
+                                            <div class="color-box rent"></div>
+                                            <span class="legend-text">Rent</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="color-box short-let"></div>
+                                            <span class="legend-text">Short Let</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="chart-cont flex flex-column">
-                                    <div class="y-axis">
-                                        <span>100</span>
-                                        <span>80</span>
-                                        <span>60</span>
-                                        <span>40</span>
-                                        <span>20</span>
-                                        <span>0</span>
-                                    </div>
-
-                                    <div class="chart-grid">
-                                        <div class="chart-lines"></div>
-                                        <div class="chart-lines"></div>
-                                        <div class="chart-lines"></div>
-                                        <div class="chart-lines"></div>
-                                        <div class="chart-lines"></div>
-                                    </div>
-                                    <div class="chart-data">
-                                        <div class="rent-line"></div>
-                                        <div class="short-let-line"></div>
-                                    </div>
-                                    <div class="x-axis">
-                                        <span>Jan 2025</span>
-                                        <span>Feb 2025</span>
-                                    </div>
+                                    <canvas id="performanceChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -256,5 +232,7 @@
     <script src="/main.js"></script>
     <script src="/src/js/property.js"></script>
     <script src="/src/js/helper.js"></script>
+    <script src="/src/js/dashboard.js"></script>
+
 </body>
 </html>

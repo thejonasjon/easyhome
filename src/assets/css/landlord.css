@@ -57,140 +57,48 @@
 }
 
 /* Rent Overview */
-.perfomance-container {
-    background-color: #1c1c1c;
-    padding: var(--size-20);
-    border-radius: var(--size-20);
-    width: 100%;
-    margin: auto;
+.performance-dashboard {
+    background-color: #1E1E1E;
     color: white;
     font-family: Arial, sans-serif;
 
-    & .performance-header {
+    .chart-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        background: #282828;
+        border-radius: 10px;
+    }
+
+    .legend {
+        display: flex;
+        gap: 20px;
         margin-bottom: 10px;
-
-        & h3 {
-            font-family: poppins-regular;
-            font-size: 2.304rem;
-            line-height: 3.456rem;
-            font-weight: 400;
-            color: var(--secodary-clr-101);
-        }
-
-        & .legend span {
-            font-family: poppins-regular;
-            font-size: 1.92rem;
-            line-height: 2.88rem;
-            font-weight: 400;
-            color: var(--white-clr-100);
-        }
-
-        & .legend-color {
-            width: var(--size-25);
-            height: var(--size-25);
-            display: inline-block;
-            border-radius: var(--size-2);
-
-            &.rent {
-                background-color: #66ff66;
-            }
-
-            &.short-let {
-                background-color: #ff5733;
-            }
-        }
     }
 
-    & .chart-cont {
-        position: relative;
-        width: 100%;
-        height: 250px;
-
-        & .y-axis {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            position: absolute;
-            left: 0;
-        }
-
-        & .y-axis span {
-            color: #fff;
-            font-size: var(--size-12);
-        }
-
-        & .x-axis {
-            display: flex;
-            justify-content: space-between;
-            margin-top: var(--size-10);
-            font-size: var(--size-14);
-        }
-
-        & .chart-lines {
-            border-top: 1px dashed var(--secondary-clr-101);
-            width: 100%;
-        }
-        .chart-grid {
-            display: grid;
-            grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
-            grid-template-rows: repeat(4, 1fr);
-            gap: 0;
-            width: 100%;
-            height: 200px;
-            background-color: transparent; /* Grid background */
-            position: relative;
-        }
-
-        .chart-grid div {
-            background-color: transparent; /* Slightly visible boxes */
-            border: 1px dashed rgba(255, 255, 255, 0.3); /* Grid lines */
-        }
-
-        & .chart-data {
-            position: absolute;
-            top: 0;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-        }
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-
-    /* Y-Axis */
-
-
-
-
-    /* X-Axis */
-
-
-
-
-
-    /* Chart Data (Simulated Lines) */
-
-
-    /* & .rent-line {
-        position: absolute;
-        width: 50%;
-        height: 60%;
-        top: 40%;
-        left: 0;
-        border: 2px solid #66ff66;
-        border-radius: 5px;
+    .color-box {
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
     }
 
-    & .short-let-line {
-        position: absolute;
-        width: 50%;
-        height: 70%;
-        top: 30%;
-        left: 50%;
-        border: 2px solid #ff5733;
-        border-radius: 5px;
-    } */
+    .rent {
+        background-color: #66FF66;
+    }
 
+    .short-let {
+        background-color: #FF5733;
+    }
+
+    .legend-text {
+        font-size: 18px;
+    }
 }
 
 

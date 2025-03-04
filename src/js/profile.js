@@ -1,14 +1,8 @@
 // Profile
 'use-strict'
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const profileEditBtn = document.querySelector("editProfile");
-
-
-
-// })
 // Prefill profile
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const userProfile = JSON.parse(localStorage.getItem("userProfile"));
 
     if (userProfile) {

@@ -642,6 +642,8 @@ svg {
       min-width: 43rem;
 
       & .image-cont {
+        height: 29.7rem;
+
           & img {
               width: 100%;
               height: 100%;
