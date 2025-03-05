@@ -377,7 +377,6 @@ footer {
 
 /* Small mobile */
 @media (max-width: 480px) {
-
 }
 
 /* Medium mobile */
@@ -397,6 +396,10 @@ footer {
         & .first-last-name {
             flex-wrap: wrap;
             gap: clamp(1rem, 10vw, 2rem);
+        }
+
+        & .empty {
+            display: none;
         }
     }
 }
