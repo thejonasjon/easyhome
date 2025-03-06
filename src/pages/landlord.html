@@ -6,6 +6,7 @@
     <title>easyhome | Landlord</title>
 
     <link rel="stylesheet" href="/src/assets/css/landlord.css">
+    <script src="/src/js/authenticate.js"></script>
 </head>
 <body>
     <main>
@@ -53,7 +54,7 @@
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
                                         </svg>
                                     </span>Profile</a></li>
-                                <li><a href="#">
+                                <li><a href="/src/pages/performance.html">
                                     <span>
                                         <svg class="perfomance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path fill="none" stroke="#fff" stroke-width="2" d="M4.998 9V1H19.5L23 4.5V23H4M18 1v5h5M3 19l5-5l4 4l6.5-6.5M19 17v-6h-6" />
@@ -132,7 +133,7 @@
                             </div>
                         </div>
 
-                        <div class="landlord-dashboard">
+                        <div class="landlord-dashboard flex flex-column gap--20">
                             <div class="dashboard-card-cont flex justify-between flex-wrap">
                                 <div class="dasbord-card">
                                     <div class="heading flex align-center gap--10">
@@ -195,14 +196,19 @@
 
                             <div class="performance-dashboard">
                                 <div class="chart-container">
-                                    <div class="legend">
-                                        <div class="legend-item">
-                                            <div class="color-box rent"></div>
-                                            <span class="legend-text">Rent</span>
+                                    <div class="perf-legend flex align-center justify-between">
+                                        <div class="heading">
+                                            <h3>Performance</h3>
                                         </div>
-                                        <div class="legend-item">
-                                            <div class="color-box short-let"></div>
-                                            <span class="legend-text">Short Let</span>
+                                        <div class="legend">
+                                            <div class="legend-item">
+                                                <div class="color-box rent"></div>
+                                                <span class="legend-text">Rent</span>
+                                            </div>
+                                            <div class="legend-item">
+                                                <div class="color-box short-let"></div>
+                                                <span class="legend-text">Short Let</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <canvas id="performanceChart"></canvas>
@@ -233,6 +239,7 @@
     <script src="/src/js/property.js"></script>
     <script src="/src/js/helper.js"></script>
     <script src="/src/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>
 </html>

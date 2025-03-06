@@ -52,26 +52,26 @@ document.querySelectorAll(".otp-input").forEach((input, index, inputs) => {
 // Signup validation, to be added later when head is calm
 
 // Login Validiation
-document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("form");
-    const emailInput = document.getElementById("email");
-    const passwordInput = document.getElementById("password");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const loginForm = document.querySelector("form");
+//     const emailInput = document.getElementById("email");
+//     const passwordInput = document.getElementById("password");
 
-    loginForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+//     loginForm.addEventListener("submit", (e) => {
+//         e.preventDefault();
 
-        const email = emailInput.value.trim();
-        const password = passwordInput.value.trim();
+//         const email = emailInput.value.trim();
+//         const password = passwordInput.value.trim();
 
-        if (email === "tenant@gmail.com" && password === "password") {
-            window.location.href = "/src/pages/dashboard.html";
-        } else if (email === "landlord@gmail.com" && password === "password") {
-            window.location.href = "/src/pages/dashboard.html";
-         } else {
-            alert("Invalid email or password. Please try again.");
-        }
-    });
-});
+//         if (email === "tenant@gmail.com" && password === "password") {
+//             window.location.href = "/src/pages/dashboard.html";
+//         } else if (email === "landlord@gmail.com" && password === "password") {
+//             window.location.href = "/src/pages/dashboard.html";
+//          } else {
+//             alert("Invalid email or password. Please try again.");
+//         }
+//     });
+// });
 
 // SSO fFuntionality
 document.addEventListener("DOMContentLoaded", () => {

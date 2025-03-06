@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userType = sessionStorage.getItem("selectedUserRole") || ""
 
     goDashboard.addEventListener("click", () => {
-        userType === "userTypeLandlord" ? window.location.href = "/src/pages/landlord.html" : window.location.href = "/src/pages/ternant.html";
+        userType === "userTypeLandlord" ? window.location.href = "/src/pages/landlord.html" : window.location.href = "/src/pages/tenant.html";
 
     })
 

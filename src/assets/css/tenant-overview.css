@@ -1,6 +1,6 @@
 @import url("/src/assets/css/dashboard.css");
 
-.ternant-dashboard {
+.tenant-dashboard {
     & .dashboard-card-cont {
         width: 80%;
 

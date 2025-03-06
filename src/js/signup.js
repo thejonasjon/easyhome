@@ -1,21 +1,26 @@
 // Signup
 'use-strict'
-
-// Signup functionality
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
     const firstName = document.querySelector("#firstName");
-    const lastName = document.querySelector("#LastName");
+    const lastName = document.querySelector("#lastName");
     const email = document.querySelector("#email");
     const password = document.querySelector("#password");
     const userTypeRadios = document.querySelectorAll(".user-type input[name='userType']");
     const signUpBtn = document.querySelector(".btn-cont button");
     const successModal = document.querySelector(".modal-block");
-    const otpInputs = document.querySelectorAll(".modal-input-group input");
-    const continueBtn = document.querySelector("#continueBtn");
-    const resendBtn = document.querySelector("#resendBtn");
-    const timer = document.querySelector(".timer");
     const otpEmail = document.querySelector(".email");
+    const timer = document.querySelector(".timer");
+    const resendBtn = document.querySelector("#resendBtn");
+    const otpInputs = document.querySelectorAll(".otp-input");
+
+    function getUsersData() {
+        return JSON.parse(localStorage.getItem("UsersData")) || [];
+    }
+
+    function saveUsersData(users) {
+        localStorage.setItem("UsersData", JSON.stringify(users));
+    }
 
     function validateForm() {
         let isValid = true;
@@ -24,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         requiredFields.forEach((field) => {
             if (!field.value.trim()) {
-                field.style.border = "1px solid red";
+                field.style.border = "0.5px solid red";
                 isValid = false;
             } else {
-                field.style.border = "1px solid #ccc";
+                field.style.border = "0.5px solid #ccc";
             }
         });
 
@@ -45,27 +50,62 @@ document.addEventListener("DOMContentLoaded", () => {
         return isValid;
     }
 
-    document.querySelectorAll("input").forEach((input) => {
-        input.addEventListener("input", () => {
-            input.style.border = "1px solid #ccc";
+    function normalizeEmail(email) {
+        return email.trim().toLowerCase();
+    }
+
+    function getSelectedUserRole() {
+        let selectedRole = "";
+        userTypeRadios.forEach((radio) => {
+            if (radio.checked) {
+
+                // selectedRole = radio.value;
+                selectedRole = sessionStorage.getItem("selectedUserRole");
+            }
         });
-    });
+        return selectedRole;
+    }
 
     signUpBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
         if (!validateForm()) {
             alert("Please fill all required fields.");
-            e.preventDefault();
             return;
         }
 
-        localStorage.setItem("userEmail", email.value);
-        successModal.style.display = "block";
-        form.reset();
+        const usersData = getUsersData();
+        const normalizedEmail = normalizeEmail(email.value);
 
-        let userEmail = localStorage.getItem("userEmail");
-        if (userEmail && otpEmail) {
-            otpEmail.textContent = `${userEmail}`;
+        if (usersData.some(user => user.email === normalizedEmail)) {
+            alert("Email already exists. Please use a different email.");
+            return;
         }
+
+        const userRole = getSelectedUserRole();
+        if (!userRole) {
+            alert("Please select either 'Landlord' or 'Tenant'.");
+            return;
+        }
+
+        const newUser = {
+            firstName: firstName.value.trim(),
+            lastName: lastName.value.trim(),
+            email: normalizedEmail,
+            password: password.value,
+            role: userRole
+        };
+
+        usersData.push(newUser);
+        saveUsersData(usersData);
+
+        // alert("Signup successful!");
+
+        successModal.style.display = "block";
+        otpEmail.textContent = `${normalizedEmail}`;
+
+        form.reset();
+        userTypeRadios.forEach(radio => radio.checked = false);
 
         let timeLeft = 60;
         resendBtn.disabled = true;
@@ -87,28 +127,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     resendBtn.addEventListener("click", () => {
-        if (!resendBtn.disabled) {
-            alert("Code resent successfully");
+        let timeLeft = 60;
+        resendBtn.disabled = true;
+        resendBtn.style.cursor = "not-allowed";
+        resendBtn.style.opacity = "0.6";
+        resendBtn.textContent = "Resending...";
 
-            let timeLeft = 60;
-            resendBtn.disabled = true;
-            resendBtn.style.cursor = "not-allowed";
-            resendBtn.style.opacity = "0.6";
-            resendBtn.textContent = `Resend Code in`;
+        setTimeout(() => {
+            alert("A new OTP has been sent to your email.");
+            resendBtn.textContent = "Resend Code";
+            resendBtn.disabled = false;
+            resendBtn.style.cursor = "pointer";
+            resendBtn.style.opacity = "1";
 
-            const restartCountdown = setInterval(() => {
+            const countdown = setInterval(() => {
                 timeLeft--;
                 timer.textContent = `${timeLeft}s`;
 
                 if (timeLeft <= 0) {
-                    clearInterval(restartCountdown);
+                    clearInterval(countdown);
                     resendBtn.disabled = false;
                     resendBtn.style.cursor = "pointer";
                     resendBtn.style.opacity = "1";
                     resendBtn.textContent = "Resend Code";
                 }
             }, 1000);
-        }
+        }, 2000);
     });
 
     continueBtn.addEventListener("click", () => {
@@ -116,7 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let isOtpFilled = true;
 
         otpInputs.forEach((input) => {
-            // input.value.trim() !== "" ? input.style.border = "none" : input.style.border = "none";
             if (!input.value.trim()) {
                 input.style.border = "0.1px solid red";
                 isOtpFilled = false;
@@ -128,14 +171,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!isOtpFilled) {
             alert("Please enter the 6-digit code.");
-            input.style.border = "0.1px solid red";
             return;
         }
 
         if (otpValue === "123456") {
             window.location.href = "onboarding.html";
         } else {
-            alert("TEST MODE: Invalid OTP. Kinly try 123456.");
+            alert("TEST MODE: Invalid OTP. Kindly try 123456.");
         }
     });
 });

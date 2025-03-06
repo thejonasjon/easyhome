@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
             if (e.target.id === "logOutYes") {
+                localStorage.removeItem("loggedInUser");
                 window.location.href = "/src/pages/login.html";
             } else if (logoutModal) {
                 logoutModal.classList.toggle("prompt");

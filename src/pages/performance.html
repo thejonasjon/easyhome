@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easyhome | Landlord</title>
+
+    <link rel="stylesheet" href="/src/assets/css/landlord.css">
+    <script src="/src/js/authenticate.js"></script>
+</head>
+<body>
+    <main>
+        <div class="post-a-property">
+            <div class="content flex">
+                <!-- Sidebar -->
+                <section class="sidebar--dashboard">
+                    <div class="sidebar-container">
+                        <div class="brand-containter top flex align-center gap--10">
+                            <span class="logo-icon">
+                                <img src="/src/assets/images/easyhome-logoicon.svg" alt="easyhome Logo Icon">
+                            </span>
+                            <span class="logo-text">
+                                <img src="/src/assets/images/Group 3.svg" alt="easyhome Logo Text">
+                            </span>
+                        </div>
+
+                        <nav>
+                            <ul role="list" class="flex flex-column">
+                                <li><a href="/src/pages/landlord.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M15 20v-7h7v7zm-4-9V4h11v7zm-9 9v-7h11v7zm0-9V4h7v7z" />
+                                        </svg>
+                                    </span>Dashboard</a></li>
+                                <li><a href="/src/pages/post-property.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M17 19.22H5V7h7V5H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-7h-2z" />
+                                            <path fill="#fff" d="M19 2h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0V7h3V5h-3zM7 9h8v2H7zm0 3v2h8v-2h-3zm0 3h8v2H7z" />
+                                        </svg>
+                                    </span>Post a Property</a></li>
+                                <li><a href="/src/pages/my-listings.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                                            <g fill="#fff">
+                                                <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z" />
+                                                <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z" />
+                                            </g>
+                                        </svg>
+                                    </span>My Listings</a></li>
+                                <li><a href="/src/pages/profile.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="size-5">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>Profile</a></li>
+                                <li class="active"><a href="/src/pages/performance.html">
+                                    <span>
+                                        <svg class="perfomance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="#fff" stroke-width="2" d="M4.998 9V1H19.5L23 4.5V23H4M18 1v5h5M3 19l5-5l4 4l6.5-6.5M19 17v-6h-6" />
+                                        </svg>
+                                    </span>Performance</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z" />
+                                        </svg>
+                                    </span>Log Out</a></li>
+                            </ul>
+                        </nav>
+
+                        <a href="#">
+                            <div class="support">
+                                <p>Having troubles?</p>
+                                <p>Contact Our Support Team:</p>
+                                <p style="font-weight: 700;">Customercare@easyhome.ng</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+                <!-- Content -->
+                <section class="main-content">
+                    <div class="main-content-container flex flex-column gap--40">
+                        <div class="profile-search-logout flex justify-between">
+                            <div class="profile flex align-center gap--20">
+                                <div class="profile-photo">
+                                    <img src="/src/assets/images/landing-slide-1.png" alt="">
+                                </div>
+
+                                <div class="user-name">
+                                    <span>Hello Udokz,</span>
+                                </div>
+                            </div>
+
+                            <div class="search-notification-logout flex align-center">
+                                <div class="search-cont">
+                                    <div class="input-group flex align-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                                        </svg>
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <div class="notification">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                        <path fill="#fff" fill-rule="evenodd" d="M12 1a2 2 0 0 0-1.98 2.284A7 7 0 0 0 5 10v8H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2h-1v-8a7 7 0 0 0-5.02-6.716Q14 3.144 14 3a2 2 0 0 0-2-2m2 21a1 1 0 0 1-1 1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+
+                                <div class="logout">
+                                    <ul role="list">
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v10m6.4-5.4a9 9 0 1 1-12.77.04" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="landlord-dashboard flex flex-column gap--10">
+                            <div class="dashboard-card-cont flex justify-between flex-wrap">
+                                <div class="total-rent-status">
+
+                                </div>
+
+                                <div class="total-rent-performance">
+
+                                </div>
+                            </div>
+
+                            <div class="performance-dashboard">
+                                <div class="chart-container">
+                                    <div class="perf-legend flex align-center justify-between">
+                                        <div class="heading">
+                                            <h3>Performance</h3>
+                                        </div>
+                                        <div class="legend">
+                                            <div class="legend-item">
+                                                <div class="color-box rent"></div>
+                                                <span class="legend-text">Rent</span>
+                                            </div>
+                                            <div class="legend-item">
+                                                <div class="color-box short-let"></div>
+                                                <span class="legend-text">Short Let</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <canvas id="performanceChart"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="rent-chart">
+                                <div class="perf-legend flex justify-between align-center">
+                                    <div class="heading">
+                                        <h3>Renting Trend</h3>
+                                    </div>
+
+                                    <div class="legend">
+                                        <div class="legend-item">
+                                            <div class="color-box rent"></div>
+                                            <span class="legend-text">Rent</span>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="color-box short-let"></div>
+                                            <span class="legend-text">Short Let</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <canvas id="rentingChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="logout-modal" id="logoutModal">
+                <div class="modal-content flex flex-column justify-center align-center">
+                    <div class="lm-text">
+                        <h4>Are you sure you want to log out?</4>
+                    </div>
+
+                    <div class="btn-group flex align-center">
+                        <button class="logout-no" id="logOutNo">No</button>
+                        <button class="logout-yes" id="logOutYes">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/src/js/sidebar.js"></script>
+    <script src="/main.js"></script>
+    <script src="/src/js/property.js"></script>
+    <script src="/src/js/helper.js"></script>
+    <script src="/src/js/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
