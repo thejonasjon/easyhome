@@ -27,8 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (!user.completedOnboarding) {
+            window.location.href = "/src/pages/onboarding.html";
+            return;
+        }
+
         localStorage.setItem("loggedInUser", JSON.stringify(user));
 
+        // Redirect based on role
         if (user.role === "userTypeTenant") {
             window.location.href = "/src/pages/tenant.html";
         } else if (user.role === "userTypeLandlord") {
@@ -38,3 +44,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+

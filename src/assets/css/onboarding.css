@@ -2,8 +2,8 @@
 
 .onboarding {
     & .content {
-        margin-block: 16.8rem;
-        gap: clamp(4.8rem, 16.8rem, 16.8rem);
+        margin-block: clamp(4rem, 20vw, 16.8rem);
+        gap: clamp(3rem, 15vw, 16.8rem);
     }
 
     & .onboarding-steps button {
@@ -212,7 +212,7 @@
     }
 
     & .step--1, .step--2, .step--3 {
-        gap: var(--size-20);
+        gap: clamp(3rem, 5vw, 5rem);
         & > * {
             flex: 1 1;
         }
@@ -224,6 +224,10 @@
         & .form {
             flex-basis: 60%;
         }
+    }
+
+    & .step--1, .step--2, .step--3 {
+        gap: clamp(3rem, 5vw, 5rem);
     }
 
     & .input-group-file {
@@ -299,7 +303,6 @@
         border: 0.5px solid var(--white-clr-100);
         margin-bottom: unset;
 
-
         & span {
             min-height: max-content;
             padding-inline: var(--size-10);
@@ -310,6 +313,10 @@
     & .input-group.custom-group input {
         margin-bottom: unset !important;
         border: none !important;
+    }
+
+    & #businessCACBlock {
+        display: none;
     }
 
 
@@ -467,6 +474,13 @@
 
 /* Small mobile */
 @media (max-width: 480px) {
+
+}
+
+@media (max-width: 460px) {
+    .onboarding-steps .flex {
+        flex-wrap: wrap;
+    }
 }
 
 /* Medium mobile */
@@ -515,15 +529,6 @@
                     width: 100%;
                 }
             }
-
-            /* & #goDashboard {
-                margin-bottom: unset;
-                background-color: red;
-
-                & button {
-                    margin-bottom: unset;
-                }
-            } */
         }
     }
 

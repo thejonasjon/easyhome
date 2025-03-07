@@ -167,6 +167,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const onboardingScreen = document.querySelector(".onboarding");
     const userVerificationScreen = document.querySelector(".user-verification");
 
+    const businessCACBlock = document.querySelector("#businessCACBlock");
+
     const userType = sessionStorage.getItem("selectedUserRole") || "";
     let currentStep = 1;
     let totalSteps = stages.length;
@@ -193,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stage.disabled = index + 1 > currentStep;
         });
 
-        prevButton.style.display = currentStep === 1 ? "none" : "block";
+        prevButton.style.display = currentStep === 1 ? "none" : "flex";
         // skipButton.style.display = (currentStep === 3 && userType === "userTypeTenant") ||
         //                            (currentStep === 4 && userType === "userTypeLandlord") ? "block" : "none";
     }
@@ -217,6 +219,10 @@ document.addEventListener("DOMContentLoaded", function () {
             if (userType === "userTypeLandlord") {
                 if (stepNumber === 2) showSubStep(currentSubStep, stepTwoSubSteps);
                 if (stepNumber === 4) showSubStep(currentSubStep4, stepFourSubSteps);
+            }
+
+            if (userType === "userTypeTenant" && stepNumber === 4) {
+                showSubStep(currentSubStep4, stepFourSubSteps);
             }
 
             stepDiv.style.display = stepNumber === step ? "flex" : "none";
@@ -248,8 +254,8 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Handle Step 2 Sub-Steps for Landlord
         if (userType === "userTypeLandlord" && currentStep === 2) {
+            businessCACBlock.style.display = "block";
             if (currentSubStep < totalSubSteps) {
                 currentSubStep++;
                 showSubStep(currentSubStep, stepTwoSubSteps);
@@ -257,8 +263,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Handle Step 4 Sub-Steps for Landlord
         if (userType === "userTypeLandlord" && currentStep === 4) {
+            if (currentSubStep4 < totalSubSteps4) {
+                currentSubStep4++;
+                showSubStep(currentSubStep4, stepFourSubSteps);
+                return;
+            }
+        }
+
+        if (userType === "userTypeTenant" && currentStep === 4) {
             if (currentSubStep4 < totalSubSteps4) {
                 currentSubStep4++;
                 showSubStep(currentSubStep4, stepFourSubSteps);
@@ -275,6 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentStep > totalSteps) {
             onboardingScreen.style.display = "none";
             userVerificationScreen.style.display = "block";
+            userVerificationScreen.scrollIntoView({ behavior: "smooth", block: "center" });
         }
 
         showStep(currentStep);
@@ -320,39 +334,52 @@ document.addEventListener("DOMContentLoaded", function () {
     showStep(currentStep);
 });
 
-// Stop loader afer 50s
+// Stop loader afer 4s
 document.addEventListener("DOMContentLoaded", function () {
     const loader = document.querySelector(".loader-wrapper");
     // const headingH4 = document.querySelector(".user-verification .heading h4");
-    // const headingP = document.querySelector(".user-verification .heading p");
 
     setTimeout(() => {
         loader.style.animation = "none";
-        // headingH4.style.display = "none";
-        // headingP.style.display = "block";
-    }, 50000);
+    }, 40000);
 });
 
-
-
-
-
+// Update user onboarding value and and Redirect user to apporperiate page
 document.addEventListener("DOMContentLoaded", () => {
     const availableListing = document.querySelector("#availableListing");
     const goDashboard = document.querySelector("#goDashboard");
 
-    const userType = sessionStorage.getItem("selectedUserRole") || ""
+    const userType = sessionStorage.getItem("selectedUserRole") || "";
+
+    // Retrieve data from localStorage
+    let usersData = JSON.parse(localStorage.getItem("UsersData")) || [];
+    let activeUser = JSON.parse(localStorage.getItem("loggedInUser")) || {};
+
+    if (!activeUser.email) {
+        window.location.href = "/src/pages/signup.html";
+    }
+
+    function updateOnboardingStatus() {
+        activeUser.completedOnboarding = true;
+
+        usersData = usersData.map(user =>
+            user.email === activeUser.email ? { ...user, completedOnboarding: true } : user
+        );
+
+        localStorage.setItem("loggedInUser", JSON.stringify(activeUser));
+        localStorage.setItem("UsersData", JSON.stringify(usersData));
+    }
 
     goDashboard.addEventListener("click", () => {
-        userType === "userTypeLandlord" ? window.location.href = "/src/pages/landlord.html" : window.location.href = "/src/pages/tenant.html";
-
-    })
+        updateOnboardingStatus();
+        window.location.href = userType === "userTypeLandlord" ? "/src/pages/landlord.html" : "/src/pages/tenant.html";
+    });
 
     availableListing.addEventListener("click", () => {
-        window.location.href = "/src/pages/dashboard.html";
-    })
-})
-
+        updateOnboardingStatus();
+        window.location.href = "/src/pages/property-listings.html";
+    });
+});
 
 // Custome Document upload
 document.addEventListener("DOMContentLoaded", () => {

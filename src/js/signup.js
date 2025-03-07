@@ -93,14 +93,18 @@ document.addEventListener("DOMContentLoaded", () => {
             lastName: lastName.value.trim(),
             email: normalizedEmail,
             password: password.value,
-            role: userRole
+            role: userRole,
+            completedOnboarding: false
         };
 
         usersData.push(newUser);
         saveUsersData(usersData);
 
-        // alert("Signup successful!");
+        // activate active session
+        localStorage.setItem("loggedInUser", JSON.stringify(newUser));
 
+
+        // alert("Signup successful!");
         successModal.style.display = "block";
         otpEmail.textContent = `${normalizedEmail}`;
 

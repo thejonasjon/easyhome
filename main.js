@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const dropdownMenu = dropdown.querySelector(".dropdown-btn-group");
         const dropdownItems = dropdownMenu.querySelectorAll("button");
 
+        // console.log(dropdownBtn)
+
         dropdownBtn.addEventListener("click", (e) => {
             e.stopPropagation();
             closeAllDropdowns();
@@ -28,30 +30,33 @@ document.addEventListener("DOMContentLoaded", () => {
             // console.log(dropdownBtn.innerText)
 
             if (homePage) {
-                console.log(homePage)
                 dropdownBtn.style.backgroundColor = '#e3ab99';
-            } else {
-                dropdownBtn.style.backgroundColor = '#4D4B4A';
-                dropdownBtn.style.color = '#fff'
+                // console.log(homePage)
             }
+            // else {
+            //     dropdownBtn.style.backgroundColor = '#4D4B4A';
+            //     dropdownBtn.style.color = '#fff'
+            // }
 
             if (postPropertyPage) {
                 dropdownBtn.style.border = '1px solid #e3ab99';
                 dropdownBtn.style.backgroundColor = 'transparent';
 
-            } else {
-                // dropdownBtn.style.backgroundColor = '#4D4B4A';
-                dropdownBtn.style.color = '#fff'
             }
+            // else {
+            //     // dropdownBtn.style.backgroundColor = '#4D4B4A';
+            //     dropdownBtn.style.color = '#fff'
+            // }
 
             if (onboardingPage) {
                 dropdownBtn.style.color = '#bcbdbc';
                 dropdownBtn.style.backgroundColor = '#000';
 
-            } else {
-                dropdownBtn.style.color = '#fff'
-                dropdownBtn.style.backgroundColor = '#000';
             }
+            // else {
+            //     dropdownBtn.style.color = '#fff'
+            //     dropdownBtn.style.backgroundColor = '#000';
+            // }
 
         });
 
@@ -59,11 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
             item.addEventListener("click", (e) => {
                 e.stopPropagation();
 
-                // dropdownBtn.innerText = e.target.innerText;
-                const btnTextNode = dropdownBtn.childNodes[0];
-                if (btnTextNode.nodeType === Node.TEXT_NODE) {
-                    btnTextNode.textContent = e.target.innerText.trim() + " ";
-                }
+                dropdownBtn.textContent = e.target.innerText.trim();
+
                 dropdownMenu.classList.remove("show");
 
                 if (postPropertyPage) {

@@ -779,9 +779,9 @@ svg {
   background-color: var(--primary-clr-601);
   border-radius: var(--size-10);
   padding: var(--size-34) 0 var(--size-100) 0;
-  box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
-  -webkit-box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
-  -moz-box-shadow: 1px 2px 9px 2px rgba(55,58,54,0.39);
+  box-shadow: 2px 1px 4px 2px rgba(0,0,0,0.25);
+-webkit-box-shadow: 2px 1px 4px 2px rgba(0,0,0,0.25);
+-moz-box-shadow: 2px 1px 4px 2px rgba(0,0,0,0.25);
   transition: width 0.5s ease-in-out;
 
   & .brand-containter {

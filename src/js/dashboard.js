@@ -107,3 +107,125 @@ const rentingChart = new Chart(ctx, {
 });
 
 })
+
+// Doughnut chart
+document.addEventListener("DOMContentLoaded", () => {
+    const ctx = document.querySelector("#statsChart").getContext("2d");
+
+    const chart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+            // labels: ["Rented Out", "Available For Rent"],
+            datasets: [
+                {
+                    data: [19, 81],
+                    backgroundColor: ["#D48166", "#BF4469"],
+                    borderWidth: 0
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: "80%",
+            plugins: {
+                legend: {
+                    display: true,
+                    position: "bottom",
+                    labels: { color: "white" }
+                },
+                tooltip: { enabled: false }
+            }
+        }
+    });
+
+    // Adding text inside the chart
+    // const centerText = {
+    //     id: "centerText",
+    //     beforeDraw(chart) {
+    //         const { width } = chart;
+    //         const { height } = chart;
+    //         const ctx = chart.ctx;
+    //         ctx.restore();
+    //         const fontSize = (height / 8).toFixed(2);
+    //         ctx.font = `bold ${fontSize}px sans-serif`;
+    //         ctx.textBaseline = "middle";
+    //         ctx.textAlign = "center";
+
+    //         const text = `${rentedOut}%`;
+    //         const textX = width / 2;
+    //         const textY = height / 2 - 10;
+    //         ctx.fillStyle = "#EFA08E";
+    //         ctx.fillText(text, textX, textY);
+
+    //         ctx.font = `${fontSize / 3}px sans-serif`;
+    //         ctx.fillText("of total property has", textX, textY + 20);
+    //         ctx.fillText("been rented out", textX, textY + 40);
+    //         ctx.save();
+    //     }
+    // };
+
+    // Chart.register(centerText);
+});
+
+// Doughnut chart2
+document.addEventListener("DOMContentLoaded", () => {
+    const ctx = document.querySelector("#statsChart2").getContext("2d");
+
+    const chart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+            // labels: ["Rented Out", "Available For Rent"],
+            datasets: [
+                {
+                    data: [19, 81],
+                    backgroundColor: ["#ED4D44", "#34C759"],
+                    borderWidth: 0
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: "80%",
+            plugins: {
+                legend: {
+                    display: true,
+                    // position: "bottom",
+                    // labels: { color: "white" }
+                },
+                // tooltip: { enabled: false }
+            }
+        }
+    });
+
+    // Adding text inside the chart
+    // const centerText = {
+    //     id: "centerText",
+    //     beforeDraw(chart) {
+    //         const { width } = chart;
+    //         const { height } = chart;
+    //         const ctx = chart.ctx;
+    //         ctx.restore();
+    //         const fontSize = (height / 8).toFixed(2);
+    //         ctx.font = `bold ${fontSize}px sans-serif`;
+    //         ctx.textBaseline = "middle";
+    //         ctx.textAlign = "center";
+
+    //         const text = `${rentedOut}%`;
+    //         const textX = width / 2;
+    //         const textY = height / 2 - 10;
+    //         ctx.fillStyle = "#EFA08E";
+    //         ctx.fillText(text, textX, textY);
+
+    //         ctx.font = `${fontSize / 3}px sans-serif`;
+    //         ctx.fillText("Total Expected Revenue For 2025", textX, textY + 20);
+    //         ctx.fillText("", textX, textY + 40);
+    //         ctx.save();
+    //     }
+    // };
+
+    // Chart.register(centerText);
+});
+
+

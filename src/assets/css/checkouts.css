@@ -1,0 +1,111 @@
+@import url("/src/assets/css/summary.css");
+
+/* Summary */
+
+
+
+.checkouts-page {
+    background-color: var(--primary-clr-901);
+    padding: clamp(2rem, 20vw, 20rem) clamp(2rem, 20vw, 10rem);
+
+    width: 100%;
+    background-color: var(--primary-clr-901);
+
+    & .checkouts {
+        gap: clamp(2rem, 10vw, 10rem);
+    }
+
+    & .checkouts > .text {
+        max-width: 70%;
+    }
+
+    & .checkouts > .text .heading--h2 {
+        font-family: poppins-regular;
+        font-size: var(--size-48);
+        line-height: 5.76rem;
+        font-weight: 700;
+        color: var(--white-clr-100);
+        margin-bottom: clamp(1rem, 5vw, 2rem);
+    }
+
+    & .checkouts > .text p {
+        font-family: montserrat-default;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        font-weight: 400;
+        color: var(--white-clr-100);
+    }
+
+    & .payment-method {
+        max-width: 70%;
+        gap: clamp(2rem, 10vw, 5rem);
+        background-color: var(--primary-clr-801);
+        border-radius: var(--size-10);
+        padding: clamp(2rem, 5vw, 5rem) clamp(2rem, 5vw, 5rem);
+    }
+
+    & .payment-method .method-text {
+        & .heading--h4 {
+            font-family: poppins-regular;
+            font-size: var(--size-33);
+            line-height: 3.96rem;
+            font-weight: 600;
+            color: var(--white-clr-100);
+            margin-bottom: clamp(0.5rem, 5vw, 1.5rem);
+        }
+
+        & p {
+            font-family: montserrat-default;
+            font-size: var(--size-23);
+            line-height: 2.76rem;
+            font-weight: 400;
+            color: var(--white-clr-100);
+        }
+    }
+
+    & .payment-method {
+
+        & .bank-option-group {
+            & label {
+                font-family: montserrat-default;
+                font-size: var(--size-20);
+                line-height: 2.76rem;
+                font-weight: 400;
+                color: var(--white-clr-100);
+                cursor: pointer;
+            }
+
+            & input {
+                border: 0.5px solid var(--accent-clr-601);
+                background-color: transparent;
+            }
+
+            & input[type="checkbox"] {
+                display: inline-block;
+                width: var(--size-18);
+                height: var(--size-18);
+                color: transparent;
+                cursor: pointer;
+
+                &:checked {
+                    accent-color: var(--accent-clr-601);
+                }
+            }
+        }
+    }
+
+    & .privacy-policy {
+        p {
+            font-family: montserrat-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 400;
+            color: var(--white-clr-100);
+
+            & a {
+                text-decoration: underline;
+                color: var(--accent-clr-601);
+            }
+        }
+    }
+}

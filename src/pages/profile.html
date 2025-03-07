@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>easyhome | Profile</title>
 
-    <link rel="stylesheet" href="/src/assets/css/profile.css">
     <script src="/src/js/authenticate.js"></script>
+    <link rel="stylesheet" href="/src/assets/css/profile.css">
 </head>
 <body>
     <main>
@@ -247,10 +247,6 @@
                                 </div>
 
                                 <div class="section-info">
-                                    <div class="heading">
-                                        <h5>Bank Account Details</h5>
-                                    </div>
-
                                     <div class="info-grid flex">
                                         <div class="info-left flex flex-column">
                                             <div class="details">
@@ -271,6 +267,34 @@
                                                 <div class="sub-info">
                                                     <p class="label">Bank</p>
                                                     <p class="label-value">Providus Bank</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-left flex flex-column">
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Card Number</p>
+                                                    <p class="label-value">12345678910111213141516</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details flex gap--20">
+                                                <div class="sub-info">
+                                                    <p class="label">Expiry Date</p>
+                                                    <p class="label-value">12 / 26</p>
+                                                </div>
+
+                                                <div class="sub-info">
+                                                    <p class="label">CVV</p>
+                                                    <p class="label-value flex gap--10"> *** <a href="#">click to view pin</a></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Card Pin</p>
+                                                    <p class="label-value flex gap--10"> *** <a href="#">click to view pin</a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -362,28 +386,65 @@
                                         </div>
 
                                         <!-- Bank Account Details Section -->
-                                        <div class="input-section">
-                                            <div class="section-heading">
-                                                <p>Bank Account Details</p>
-                                            </div>
-                                            <div class="sub-section flex">
-                                                <div class="input-group">
-                                                    <label for="accountNumber">Account Number</label>
-                                                    <input type="text" id="accountNumber" name="accountNumber" placeholder="0027656511" required>
+                                        <div class="input-section flex gap--40">
+                                            <div class="bank-details-left">
+                                                <div class="section-heading">
+                                                    <p>Bank Account Details</p>
+                                                </div>
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountNumber">Account Number</label>
+                                                        <input type="text" id="accountNumber" name="accountNumber" placeholder="0027656511" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountName">Account Name</label>
+                                                        <input type="text" id="accountName" name="accountName" placeholder="Charles Udokz Ifediora" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="bank">Bank</label>
+                                                        <input type="text" id="bank" name="bank" placeholder="Providus Bank" required>
+                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <div class="sub-section flex">
-                                                <div class="input-group">
-                                                    <label for="accountName">Account Name</label>
-                                                    <input type="text" id="accountName" name="accountName" placeholder="Charles Udokz Ifediora" required>
+                                            <div class="bank-details-right">
+                                                <div class="section-heading">
+                                                    <p>Bank Card Details</p>
                                                 </div>
-                                            </div>
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountNumber">Card Number</label>
+                                                        <input type="text" id="accountNumber" name="accountNumber" placeholder="1234567890111213141516" required>
+                                                    </div>
+                                                </div>
 
-                                            <div class="sub-section flex">
-                                                <div class="input-group">
-                                                    <label for="bank">Bank</label>
-                                                    <input type="text" id="bank" name="bank" placeholder="Providus Bank" required>
+                                                <div class="sub-section flex flex-wrap gap--10">
+                                                    <div class="input-group input-group-half">
+                                                        <label for="expiryDate">Expiry Date</label>
+                                                        <div class="expiry-container flex align-center">
+                                                            <input type="text" class="expiry-input mm" placeholder="MM" maxlength="2">
+                                                            <span></span>
+                                                            <input type="text" class="expiry-input yy" placeholder="YY" maxlength="2">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="input-group input-group-half">
+                                                        <label for="cardCVV">CVV</label>
+                                                        <input type="text" name="cardCVV" id="cardCVV" placeholder="***">
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="bank">Pin</label>
+                                                        <input type="text" id="bankPin" name="bankPin" placeholder="**" required>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

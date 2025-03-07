@@ -44,7 +44,7 @@
         justify-content: center;
     }
 
-    & .all-listings .text {
+    & .all-listings .heading-text {
         text-align: center;
         margin-block: clamp(2rem, 10vw, 5rem);
 
