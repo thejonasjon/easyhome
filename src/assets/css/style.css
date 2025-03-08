@@ -97,7 +97,7 @@ body {
             gap: max(var(--size-10));
             align-items: center;
             justify-content: center;
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
@@ -333,7 +333,7 @@ body {
     }
 
     & .section-heading .heading--h3 {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-40);
         line-height: var(--size-48);
         font-weight: 400;
@@ -422,7 +422,7 @@ body {
     }
 
     & .block p {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-13);
         line-height: var(--size-15);
     }
@@ -464,7 +464,7 @@ body {
         }
 
         & p {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-19);
             line-height: var(--size-23);
             font-weight: 500;

@@ -50,7 +50,7 @@
         }
 
         & p {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-19);
             line-height: var(--size-23);
             font-weight: 400;
@@ -69,7 +69,7 @@
     }
 
     & .input-group label, .radio-btn-group label {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 500;
@@ -100,7 +100,7 @@
     & .input-group input {
         min-width: 100%;
         min-height: var(--size-60);
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 500;
@@ -112,7 +112,7 @@
         padding: var(--size-10) var(--size-21);
 
         &::placeholder {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
@@ -125,7 +125,7 @@
     }
 
     & .input-group p.error-message {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-26);
         line-height: var(--size-19);
         color: rgba(28, 29, 27, 0.5);
@@ -196,7 +196,7 @@
         width: 100%;
         padding-block: var(--size-16);
         padding-inline: var(--size-24);
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 400;
@@ -222,7 +222,7 @@
     }
 
     & .or-cont span {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         color: var(--primary-clr-101);
@@ -244,7 +244,7 @@
     }
 
     & .auth-cont button {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 400;
@@ -288,7 +288,7 @@
         }
 
         & .text p{
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.6rem;
             line-height: 2.16rem;
             font-weight: 300;
@@ -309,7 +309,7 @@
         }
 
         .dnt p {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.3rem;
             line-height: 1.92rem;
             font-weight: 300;
@@ -317,13 +317,13 @@
         }
 
         .dnt p button {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.1rem;
             line-height: 1.6rem;
         }
 
         .dnt p .timer {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: 1.1rem;
             line-height: 1.4rem;
             color: var(--accent-clr-601);
@@ -347,7 +347,7 @@
             outline: none;
             border-bottom: 0.5px solid #000;
             padding-block: var(--size-5) var(--size-5);
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-28);
             line-height: 3.36rem;
             text-align: center;

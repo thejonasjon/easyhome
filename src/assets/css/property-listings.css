@@ -58,7 +58,7 @@
         }
 
         & p {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-28);
             line-height: 3.36rem;
             font-weight: 500;
@@ -128,7 +128,7 @@
     }
 
     & .tpc-content .brand h4 {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-28);
         line-height: 3.36rem;
         font-weight: 500;

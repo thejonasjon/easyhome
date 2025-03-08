@@ -4,7 +4,7 @@
 .property-my-listings {
 
     & .page--heading > h4 {
-        font-family: montserrat-defaul;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-23);
         line-height: 2.76rem;
         color: var(--white-clr-100);
@@ -47,7 +47,7 @@
         border-radius: var(--size-10);
 
         & h4 {
-            font-family: montserrat-defaul;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-23);
             line-height: 2.76rem;
             color: var(--white-clr-100);
@@ -104,7 +104,7 @@
 
         & .text .heading--h4 {
             display: inline-block;
-            font-family: montserrat-defaul;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-13);
             line-height: 1.56rem;
             color: var(--primary-clr-1101);
@@ -118,7 +118,7 @@
             padding: var(--size-8) var(--size-16);
 
             & span {
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-13);
                 line-height: 1.56rem;
                 font-weight: 600;
@@ -168,7 +168,7 @@
         color: var(--primary-clr-901);
 
         & span {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-13);
             line-height: 1.56rem;
         }
@@ -177,7 +177,7 @@
     & .price-details-link {
 
         & .price span {
-            font-family: montserrat-defaul;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-13);
             line-height: 1.56rem;
             color: var(--primary-clr-701);
@@ -185,7 +185,7 @@
 
             & strong {
                 display: block;
-                font-family: montserrat-defaul;
+                font-family: "Montserrat", sans-serif;
                 font-size: var(--size-23);
                 line-height: 2.56rem;
                 color: var(--primary-clr-1101);
@@ -199,7 +199,7 @@
             padding: var(--size-8) var(--size-16);
 
             & a {
-                font-family: mulish-defaul;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-13);
                 line-height: 1.56rem;
                 color: var(--primary-clr-1101);
@@ -216,7 +216,7 @@
 
         & button {
             max-width: fit-content;
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: 1.92rem;
             color: var(--secondary-clr-101);

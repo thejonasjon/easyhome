@@ -42,7 +42,7 @@
 
     & .dasbord-card .btn-cnt button{
         background-color: var(--primary-clr-501);
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-14);
         line-height: 1.56rem;
         font-weight: 400;
@@ -151,7 +151,7 @@
         gap: var(--size-10);
 
         & span {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: 1.92rem;
             font-weight: 600;
@@ -353,7 +353,7 @@
 
 .main-content-container {
     & .page-heading h3 {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-23);
         line-height: 2.76rem;
         font-weight: 600;

@@ -31,7 +31,7 @@ body {
         margin-bottom: var(--size-40);
 
         & .section-heading p {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
@@ -58,7 +58,7 @@ body {
 
         & .input-group > label, .checkboxs > label {
             display: block;
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
@@ -83,7 +83,7 @@ body {
             cursor: pointer;
 
             &::placeholder {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 400;
@@ -105,7 +105,7 @@ body {
 
             & label {
                 display: block;
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-16);
                 line-height: var(--size-19);
                 font-weight: 400;
@@ -159,7 +159,7 @@ body {
         height: auto;
 
         &::placeholder {
-          font-family: mulish-default;
+          font-family: "Mulish", sans-serif;
           font-size: var(--size-16);
           line-height: var(--size-19);
           font-weight: 400;
@@ -210,7 +210,7 @@ body {
             height: auto;
 
             &::placeholder {
-              font-family: mulish-default;
+              font-family: "Mulish", sans-serif;
               font-size: var(--size-16);
               line-height: var(--size-19);
               font-weight: 400;
@@ -310,7 +310,7 @@ body {
     & .steps button {
         max-width: 15.5rem;
         height: var(--size-50);
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         font-weight: 500;
@@ -363,7 +363,7 @@ body {
         }
 
         & label {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 500;
@@ -377,7 +377,7 @@ body {
         }
 
         & label a {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: 1.92rem;
             color: var(--accent-clr-601);
@@ -528,7 +528,7 @@ body {
             margin-top: clamp(1rem, 3rem, 3rem);
 
             & p {
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-16);
                 line-height: 1.92rem;
                 color: var(--white-clr-100);

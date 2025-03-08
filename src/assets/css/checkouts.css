@@ -27,7 +27,7 @@
     }
 
     & .checkouts > .text p {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-23);
         line-height: 2.76rem;
         font-weight: 400;
@@ -53,7 +53,7 @@
         }
 
         & p {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-23);
             line-height: 2.76rem;
             font-weight: 400;
@@ -65,7 +65,7 @@
 
         & .bank-option-group {
             & label {
-                font-family: montserrat-default;
+                font-family: "Montserrat", sans-serif;
                 font-size: var(--size-20);
                 line-height: 2.76rem;
                 font-weight: 400;
@@ -94,7 +94,7 @@
 
     & .privacy-policy {
         p {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-19);
             line-height: 2.28rem;
             font-weight: 400;

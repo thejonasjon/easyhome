@@ -18,7 +18,7 @@
     }
 
     & .ment-heading h3 {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-23);
         line-height: 2.76rem;
         font-weight: 700;
@@ -55,7 +55,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-19);
             line-height: 2.28rem;
             font-weight: 300;
@@ -120,7 +120,7 @@
         cursor: pointer;
 
         &::placeholder {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-16);
             line-height: var(--size-19);
             font-weight: 400;
@@ -132,7 +132,7 @@
         & .sub-input-group-file {
             & > * {
                 flex: 1 1;
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-19);
                 line-height: 2.28rem;
                 font-weight: 300;
@@ -363,7 +363,7 @@
     }
 
     & .issue-content .text-icon p {
-      font-family: mulish-default;
+      font-family: "Mulish", sans-serif;
       font-size: var(--size-20);
       line-height: var(--size-30);
       font-weight: 400;

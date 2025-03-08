@@ -9,7 +9,7 @@
         }
 
         & .links p {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-19);
             line-height: 2.28rem;
             font-weight: 500;
@@ -22,7 +22,7 @@
         }
 
         & .links .title {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-19);
             line-height: 2.28rem;
             font-weight: 500;
@@ -46,7 +46,7 @@
         }
 
         & .text p {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-20);
             line-height: var(--size-30);
             font-weight: 400;
@@ -56,7 +56,7 @@
 
     & .property-details-cont {
         & .photos-heading h4 {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-23);
             line-height: 2.76rem;
             font-weight: 500;
@@ -65,7 +65,7 @@
         }
 
         & .details .price {
-            font-family: montserrat-default;
+            font-family: "Montserrat", sans-serif;
             font-size: var(--size-23);
             line-height: 2.76rem;
             font-weight: 500;
@@ -89,7 +89,7 @@
         }
 
         & .slide-cont p {
-            font-family: mulish-default;
+            font-family: "Mulish", sans-serif;
             font-size: var(--size-19);
             line-height: 2.28rem;
             font-weight: 400;
@@ -99,7 +99,7 @@
         & .property-includes {
 
             & span {
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-20);
                 line-height: var(--size-30);
                 font-weight: 400;
@@ -120,7 +120,7 @@
         & .description-details {
             margin-block: clamp(2rem, 10vw, 5rem);
             & .desc-heading h5 {
-                font-family: montserrat-default;
+                font-family: "Montserrat", sans-serif;
                 font-size: var(--size-23);
                 line-height: 2.76rem;
                 font-weight: 500;
@@ -129,7 +129,7 @@
             }
 
             & .desc-heading p {
-                font-family: mulish-default;
+                font-family: "Mulish", sans-serif;
                 font-size: var(--size-20);
                 line-height: var(--size-30);
                 font-weight: 500;
@@ -148,7 +148,7 @@
     }
 
     & .heading h4 {
-        font-family: montserrat-default;
+        font-family: "Montserrat", sans-serif;
         font-size: var(--size-28);
         line-height: var(--size-34);
         font-weight: 600;
@@ -175,7 +175,7 @@
     }
 
     & .profile h5 {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-19);
         line-height: var(--size-23);
         font-weight: 600;
@@ -183,7 +183,7 @@
     }
 
     & .profile p {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-13);
         line-height: var(--size-16);
         font-weight: 400;
@@ -234,7 +234,7 @@
     }
 
     & .or-cont span {
-        font-family: mulish-default;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-16);
         line-height: var(--size-19);
         color: var(--secondary-clr-501);
