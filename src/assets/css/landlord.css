@@ -338,6 +338,7 @@
 
 .landlord-dashboard {
     & .dashboard-card-cont {
+
         & > * {
             flex: 1 1 calc(100% / 2 - 10px);
         }
@@ -347,5 +348,15 @@
         width: var(--size-30);
         height: var(--size-25);
         border-radius: var(--size-2);
+    }
+}
+
+.main-content-container {
+    & .page-heading h3 {
+        font-family: montserrat-default;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        font-weight: 600;
+        color: var(--white-clr-100);
     }
 }

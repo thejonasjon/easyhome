@@ -1,0 +1,128 @@
+@import url("/src/assets/css/dashboard.css");
+
+/* Notifications */
+.notifications-text-cont {
+    min-height: fit-content;
+
+    & .page-heading h3 {
+        font-family: montserrat-default;
+        font-size: var(--size-23);
+        line-height: 2.76rem;
+        font-weight: 600;
+        color: var(--white-clr-100);
+    }
+
+    & .btn-cont {
+        width: fit-content;
+        margin-top: unset;
+
+        & button {
+            width: fit-content;
+            font-family: poppins-regular;
+            font-size: var(--size-19);
+            line-height: 1.18rem;
+            font-weight: 300;
+            color: var(--primary-clr-901);
+        }
+    }
+}
+
+.notifications {
+
+    & .notification-content {
+        gap: clamp(1rem, 5vw, 4rem);
+    }
+
+    & .new, .older{
+        & .heading h4 {
+            font-family: montserrat-default;
+            font-size: var(--size-23);
+            line-height: 2.76rem;
+            font-weight: 600;
+            color: var(--accent-clr-601);
+        }
+    }
+
+    & .block-cont {
+        gap: clamp(0.5rem, 5vw, 1.6rem);
+    }
+
+    & .block-cont .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(1rem, 3vw, 2rem);
+        background-color: var(--primary-clr-501);
+        border-radius: var(--size-5);
+        padding: clamp(0.5rem, 10vw, 2rem) clamp(0.5rem, 10vw, 3rem);
+
+        & .text h5 {
+            font-family: mulish-default;
+            font-size: var(--size-19);
+            line-height: 2.28rem;
+            font-weight: 600;
+            color: var(--white-clr-100);
+            margin-bottom: clamp(0.3rem, 3vw, 0.6rem);
+        }
+
+        & .text p {
+            font-family: mulish-default;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 400;
+            color: var(--white-clr-100);
+        }
+
+        & .text-icon svg {
+            width: var(--size-70);
+            height: var(--size-70);
+
+            & path {
+                fill: var(--accent-clr-601);
+                stroke: none;
+            }
+        }
+
+        & .time span {
+            font-family: mulish-default;
+            font-size: var(--size-13);
+            line-height: 1.56rem;
+            font-weight: 500;
+            color: var(--primary-clr-201);
+        }
+
+        & .new-not {
+            width: var(--size-10);
+            height: var(--size-10);
+            border-radius: 50%;
+            background-color: #B21E4B;
+        }
+
+        & .text-marker {
+            display: flex;
+            align-items: center;
+            gap: clamp(0.3rem, 3vw, 1rem);
+        }
+
+        & .text-icon {
+            display: flex;
+            align-items: center;
+            gap: clamp(0.3rem, 3vw, 1.2rem);
+        }
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+}
+
+/* Medium mobile */
+@media (max-width: 768px) {
+
+}
+
+/* Large tablets */
+@media (max-width: 1024px) {
+
+}
