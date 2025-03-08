@@ -2,20 +2,12 @@
 
 /* Summary */
 
-.summary-hero {
-    width: 100%;
-    background-color: var(--primary-clr-901);
-
-    & h2 {
-        font-family: poppins-regular;
-        font-size: var(--size-40);
-        line-height: 4.8rem;
-        font-weight: 700;
-        color: var(--white-clr-100);
-    }
-}
-
 .summary {
+
+    & .links {
+        padding-block: clamp(2rem, 10vw, 8rem) !important;
+        margin-bottom: var(--size-10);
+    }
 
     & .links h2 {
         font-family: poppins-regular;
@@ -25,16 +17,32 @@
         color: var(--white-clr-100);
     }
 
+    & .property-rent-content {
+        max-width: 100%;
+        background-color: var(--primary-clr-901);
+        margin: unset;
+    }
+
     & .btn-cont {
         width: fit-content;
         padding-inline: clamp(4rem 5vw, 10rem);
 
         & button {
             color: var(--primary-clr-901);
+            transition: opacity 0.5s ease-in-out;
 
             & svg path {
                 stroke: var(--primary-clr-901);
             }
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
+    }
+
+    /* Overides */
+    & .roperty-includes {
+        gap: clamp(0.5rem, 5vw, 4rem);
     }
 }

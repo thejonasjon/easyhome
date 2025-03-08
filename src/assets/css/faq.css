@@ -1,5 +1,11 @@
 @import url("/src/assets/css/terms-conditions.css");
 
+.static-bg--fag {
+    & > .text .heading--h2 {
+        color: var(--accent-clr-701);
+    }
+}
+
 .frequently-asked-questions {
 
     & .faq {

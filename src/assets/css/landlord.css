@@ -1,11 +1,13 @@
 @import url("/src/assets/css/dashboard.css");
 
 .landlord-dashboard {
+    gap: clamp(2rem, 10vw, 5rem);
+
     & .dashboard-card-cont {
-        gap: clamp(1rem, 10vw, 5rem);
+        gap: clamp(1rem, 10vw, 1rem);
 
         & > * {
-            flex: 1 1;
+            flex: 1 1 100%;
         }
     }
 
@@ -57,29 +59,12 @@
 }
 
 /* Rent Overview */
-/* General Styles */
-
-/* .performance-dashboard {
-    background-color: #1E1E1E;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: var(--size-50);
-} */
-
  /* Rent Stats */
  .rent-stats {
-    width: 100%;
-    max-width: 100%;
     background-color: var(--primary-clr-601);
-    /* padding: var(--size-50); */
     border-radius: var(--size-10);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    /* margin-top: var(--size-30); */
-
 
     & .heading h3 {
         font-family: poppins-regular;
@@ -115,18 +100,12 @@
         }
     }
 
-    & .color-box {
-        width: var(--size-40);
-        height: var(--size-60);
-        border-radius: var(--size-3);
-    }
-
     .rent {
-        background-color: #D48166;
+        background-color: #D48166 !important;
     }
 
     .short-let {
-        background-color: #BF4469;
+        background-color: #BF4469 !important;
     }
 
     & .legend-text {
@@ -134,28 +113,17 @@
     }
 
     & canvas {
-        /* width: 20rem !important;
-        height: 20rem !important; */
-        width: 50px !important;
-        height: 50px!important;
-        border-radius: 50%;
-        padding: var(--size-5);
         background-color: transparent;
     }
-
 }
 
 .rent-stats--2 {
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     background-color: var(--primary-clr-601);
-    /* padding: var(--size-50); */
     border-radius: var(--size-10);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-top: var(--size-30);
-    background-color: red;
-
 
     & .heading h3 {
         font-family: poppins-regular;
@@ -183,26 +151,27 @@
         gap: var(--size-10);
 
         & span {
-            font-family: poppins-regular;
-            font-size: 1.92rem;
-            line-height: 2.88rem;
-            font-weight: 400;
-            color: var(--white-clr-100);
+            font-family: mulish-default;
+            font-size: var(--size-16);
+            line-height: 1.92rem;
+            font-weight: 600;
+            color: var(--secondary-clr-101);
+
+            & p {
+                font-size: var(--size-13);
+                line-height: 1.56rem;
+                font-weight: 500;
+                width: fit-content;
+            }
         }
     }
 
-    & .color-box {
-        width: var(--size-40);
-        height: var(--size-60);
-        border-radius: var(--size-3);
-    }
-
     .rent {
-        background-color: #34C759;
+        background-color: #34C759 !important;
     }
 
     .short-let {
-        background-color: #ED4D44;
+        background-color: #ED4D44 !important;
     }
 
     & .legend-text {
@@ -210,14 +179,7 @@
     }
 
     & canvas {
-        /* width: 20rem !important;
-        height: 20rem !important; */
-        width: 50px !important;
-        height: 50px!important;
-        border-radius: 50%;
-        padding: var(--size-5);
         background-color: transparent;
-        background-color: red;
     }
 
 }
@@ -240,6 +202,8 @@
     }
 
     & .perf-legend {
+        display: flex;
+        flex-wrap: wrap;
         padding-inline: var(--size-40) 20rem;
     }
 
@@ -253,7 +217,8 @@
     & .legend-item {
         display: flex;
         align-items: center;
-        gap: var(--size-10);
+        flex-wrap: wrap;
+        gap: clamp(0.2rem, 5vw, 1rem);
 
         & span {
             font-family: poppins-regular;
@@ -262,12 +227,6 @@
             font-weight: 400;
             color: var(--white-clr-100);
         }
-    }
-
-    & .color-box {
-        width: var(--size-40);
-        height: var(--size-40);
-        border-radius: var(--size-3);
     }
 
     & .rent {
@@ -298,8 +257,6 @@
     border-radius: var(--size-10);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-top: var(--size-30);
-
 
     & .heading h3 {
         font-family: poppins-regular;
@@ -310,6 +267,8 @@
     }
 
     & .perf-legend {
+        display: flex;
+        flex-wrap: wrap;
         padding-inline: var(--size-40) 20rem;
     }
 
@@ -324,7 +283,8 @@
     & .legend-item {
         display: flex;
         align-items: center;
-        gap: var(--size-10);
+        flex-wrap: wrap;
+        gap: clamp(0.2rem, 5vw, 1rem);
 
         & span {
             font-family: poppins-regular;
@@ -333,12 +293,6 @@
             font-weight: 400;
             color: var(--white-clr-100);
         }
-    }
-
-    & .color-box {
-        width: var(--size-40);
-        height: var(--size-40);
-        border-radius: var(--size-3);
     }
 
     .rent {
@@ -362,8 +316,6 @@
 
 }
 
-
-
 .post-property-cont {
 
     & .btn-cont {
@@ -381,5 +333,19 @@
         font-weight: 500;
         color: var(--primary-clr-1001);
         padding-inline: var(--size-30);
+    }
+}
+
+.landlord-dashboard {
+    & .dashboard-card-cont {
+        & > * {
+            flex: 1 1 calc(100% / 2 - 10px);
+        }
+    }
+
+    & .color-box {
+        width: var(--size-30);
+        height: var(--size-25);
+        border-radius: var(--size-2);
     }
 }

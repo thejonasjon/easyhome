@@ -916,20 +916,20 @@ svg {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: none;
 
   & .modal-content {
 
     width: 54.7rem !important;
     margin: 0 auto;
+    margin-top: clamp(2rem, 20vw, 20rem);
 
     gap: clamp(3rem, 10vw, 10rem);
     background-color: #383a36;
     border-radius: var(--size-8);
     padding: clamp(2rem, 10vw, 6.5rem) clamp(2rem, 10vw, 8.7rem);
     transition: top 0.6s ease-in-out, opacity 0.5s ease-in-out;
-
   }
 
   & .modal-content .lm-text h4 {

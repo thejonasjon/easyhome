@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const chart = new Chart(ctx, {
         type: "doughnut",
         data: {
-            // labels: ["Rented Out", "Available For Rent"],
             datasets: [
                 {
                     data: [19, 81],
@@ -126,7 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 1,
             cutout: "80%",
             plugins: {
                 legend: {
@@ -175,18 +175,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const chart = new Chart(ctx, {
         type: "doughnut",
         data: {
-            // labels: ["Rented Out", "Available For Rent"],
             datasets: [
                 {
                     data: [19, 81],
-                    backgroundColor: ["#ED4D44", "#34C759"],
+                    backgroundColor: ["#34C759", "#ED4D44"],
                     borderWidth: 0
                 }
             ]
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 1,
             cutout: "80%",
             plugins: {
                 legend: {
