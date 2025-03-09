@@ -309,7 +309,7 @@
 }
 
 .margin-block--20 {
-  margin-block: clamp(2rem, 12rem, 12rem);
+  margin-block: clamp(2rem, 15vw, 12rem);
 
 }
 
@@ -399,7 +399,7 @@ svg {
 }
 
 .container-layer--large {
-    margin-bottom: clamp(var(--size-50), 10rem, 2rem);
+    margin-bottom: clamp(1rem, 5vw, 5rem);
 }
 
 /* Move content up page 16rem */
@@ -423,7 +423,7 @@ svg {
   line-height: var(--size-23);
   font-weight: 500;
   color: var(--secondary-clr-201);
-  margin-bottom: clamp(0.5rem, 1rem, 1.1rem);
+  margin-bottom: clamp(0.5rem, 2vw, 1.1rem);
 }
 
 .input-group button {
@@ -622,7 +622,7 @@ svg {
 .property-cards-container {
   & {
       gap: var(--size-67);
-      gap: clamp(var(--size-2), var(--size-67), var(--size-68));
+      gap: clamp(2rem, 20vw, 6.8rem);
     }
 
   & .hr {
@@ -785,7 +785,7 @@ svg {
   transition: width 0.5s ease-in-out;
 
   & .brand-containter {
-      padding-inline: clamp(1.5rem, 1vw, 3.4rem);
+      padding-inline: clamp(1.5rem, 4vw, 3.4rem);
       margin-left: auto;
       margin-right: auto;
   }
@@ -832,7 +832,7 @@ svg {
   & nav a {
       display: flex;
       align-items: center;
-      gap: clamp(2rem, 2rem, 4rem);
+      gap: clamp(2rem, 5vw, 4rem);
       font-family: poppins-regular;
       font-size: 1.92rem;
       line-height: 2.88rem;

@@ -25,7 +25,7 @@
         }
 
         & .info-left, .info-right {
-            gap: clamp(1rem, 4rem, 4rem);
+            gap: clamp(1rem, 5vw, 4rem);
         }
 
         & .profile-info {
@@ -39,7 +39,7 @@
             & .sub-info {
                 display: flex;
                 flex-direction: column;
-                gap: clamp(0.5rem, 1.2rem, 1.2rem);
+                gap: clamp(0.5rem, 2vw, 1.2rem);
 
                 &.profile-photo {
                     position: relative;
@@ -147,7 +147,7 @@
     }
 
     & .sub-section {
-        gap: clamp(0.5rem, 4rem, 4rem);
+        gap: clamp(0.5rem, 5vw, 4rem);
         margin-bottom: var(--size-30) !important;
     }
 

@@ -40,8 +40,8 @@
     & .my-listing-empty-state {
         display: none;
         max-width: 70%;
-        padding: clamp(2rem, 15rem, 15rem) clamp(2rem, 15rem, 15rem);
-        margin: clamp(2rem, 10rem, 10rem) auto;
+        padding: clamp(2rem, 15vw, 15rem) clamp(2rem, 15vw, 15rem);
+        margin: clamp(2rem, 10vw, 10rem) auto;
         height: auto;
         background-color: var(--primary-clr-601);
         border-radius: var(--size-10);
@@ -87,7 +87,7 @@
     & .my-listings-cont {
         flex-wrap: wrap;
         gap: var(--size-16);
-        margin-block: clamp(1rem, 6rem, 6rem);
+        margin-block: clamp(1rem, 6vw, 6rem);
 
         & > * {
             flex: 1 1 calc(100% / 3 - var(--size-48));

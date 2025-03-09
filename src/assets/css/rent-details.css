@@ -223,7 +223,7 @@
     }
 
     & .mgr-btm--39 {
-        margin-bottom: clamp(1rem, 3.9rem, 3.9rem);
+        margin-bottom: clamp(1rem, 5vw, 3.9rem);
     }
 
     & .or-cont {

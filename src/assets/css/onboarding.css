@@ -133,7 +133,7 @@
             font-size: var(--size-23);
             line-height: 1.76rem;
             font-weight: 500;
-            margin-bottom: clamp(0.5rem, 2rem, 2.1rem);
+            margin-bottom: clamp(0.5rem, 4vw, 2.1rem);
 
             & span {
                 font-family: "Mulish", sans-serif;
@@ -142,7 +142,7 @@
                 font-style: italic;
                 font-weight: 400;
                 color: var(--accent-clr-601);
-                margin-bottom: clamp(0.5rem, 2rem, 2.1rem);
+                margin-bottom: clamp(0.5rem, 4vw, 2.1rem);
                 }
         }
 
@@ -157,7 +157,7 @@
             outline: none;
             border: 0.1px solid var(--white-clr-100);
             padding: var(--size-18);
-            margin-bottom: clamp(0.5rem, 2rem, 2.1rem);
+            margin-bottom: clamp(0.5rem, 4vw, 2.1rem);
             color: var(--white-clr-100);
             color: var(--primary-clr-101);
 

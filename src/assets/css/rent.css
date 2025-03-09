@@ -200,7 +200,7 @@ body {
     & .input-group input {
         background-color: var(--secondary-clr-301);
         border-radius: var(--size-5);
-        padding: clamp(1rem, 1.8rem, 1.8rem) var(--size-16);
+        padding: clamp(1rem, 4vw, 1.8rem) var(--size-16);
         padding-left: var(--size-58);
         width: clamp(fit-content, 20vw, 40rem);
         height: auto;
@@ -391,7 +391,7 @@ body {
 
     & .listings-cont {
         flex-wrap: wrap;
-        gap: clamp(0.5rem, 2rem, 2rem);
+        gap: clamp(0.5rem, 4vw, 2rem);
 
         & .text .heading--h4 {
             font-family: "Montserrat", sans-serif;
@@ -411,7 +411,7 @@ body {
     }
 
     & .listings-cont {
-        gap: clamp(0.5rem, 2rem, 2rem);
+        gap: clamp(0.5rem, 4vw, 2rem);
     }
 
     & .block {
@@ -527,7 +527,7 @@ body {
             & .input-group input {
                 background-color: var(--secondary-clr-301);
                 border-radius: var(--size-5);
-                padding: clamp(1rem, 1.8rem, 1.8rem) var(--size-16);
+                padding: clamp(1rem, 4vw, 1.8rem) var(--size-16);
                 padding-left: var(--size-58);
                 width: 100% !important;
                 /* border: 1px solid red; */
