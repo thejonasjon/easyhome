@@ -466,9 +466,17 @@ body {
             border: 1px solid var(--accent-clr-601);
             border-radius: var(--size-5);
             padding: 1rem 1rem;
+            transition: background-color 0.5s ease-in-out;
 
             &.active {
                 background-color: var(--accent-clr-601);
+            }
+
+            &:hover {
+                background-color: var(--accent-clr-501);
+                border: 1px solid var(--accent-clr-501);
+
+
             }
         }
     }
