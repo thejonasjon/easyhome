@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 logoText.style.visibility = "visible";
                 sidebarCont.style.width = "fit-content";
                 sidebarUl.style.alignItems = "flex-start";
-                sidebarBrandCont.style.width = "24rem" // 29rem
+                // sidebarBrandCont.style.width = "maintenance"
 
                 navLinks.forEach(link => {
                     link.style.fontSize = "1.92rem";

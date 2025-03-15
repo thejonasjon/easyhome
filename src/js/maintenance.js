@@ -1,4 +1,4 @@
-// Mentainance
+// maintenance
 'use-strict'
 
 // Submit request
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const navButtons = document.querySelectorAll(".nav-btns button");
     const sections = [
-        document.querySelector(".mentainance-cont .ment-step"),
+        document.querySelector(".maintenance-cont .ment-step"),
         document.querySelector(".my-request"),
         document.querySelector(".maintenance-policies")
     ];

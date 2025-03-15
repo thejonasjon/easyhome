@@ -44,7 +44,7 @@
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
                                         </svg>
                                     </span>Profile</a></li>
-                                <li><a href="/src/pages/mentainance.html">
+                                <li><a href="/src/pages/maintenance.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                                             <g fill="#fff">
@@ -53,7 +53,7 @@
                                                 <path fill-rule="evenodd" d="m12.556 17.329l4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.8 6.8 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.6.6 0 0 0-.167.063zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
                                             </g>
                                         </svg>
-                                    </span>Performance & Request</a></li>
+                                    </span>Performance &<br> Request</a></li>
                                 <li><a href="#">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -137,6 +137,7 @@
                                 <table>
                                     <thead>
                                         <tr>
+                                            <th class="select-renew"></th>
                                             <th>Apartment Name</th>
                                             <th>Location</th>
                                             <th>Rent Price</th>
@@ -149,45 +150,222 @@
 
                                     <tbody>
                                         <tr>
+                                            <td class="select-renew flex align-center gap--4">
+                                                <span>
+                                                    <input type="checkbox">
+                                                </span>
+                                            </td>
                                             <td>Three Bedroom Apartment</td>
                                             <td>Badore, Lagos</td>
                                             <td>2,000,000</td>
                                             <td>Yearly</td>
                                             <td>Active</td>
                                             <td>12/04/2024</td>
-                                            <td>
+                                            <td class="view-details flex align-center gap--4">
                                                 <a href="#">View Details</a>
-                                                <span>
-                                                    <input type="checkbox">
-                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="overview-row">
+                                            <td colspan="7">
+                                                <div class="overview-details">
+                                                    <div class="details-content flex gap--20">
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Apartment Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Apartment Name</span></div>
+                                                                    <div class="flex"><span>Location</span></div>
+                                                                    <div class="flex"><span>Price</span></div>
+                                                                    <div class="flex"><span>Lease Duration</span></div>
+                                                                    <div class="flex"><span>Lease Status</span></div>
+                                                                    <div class="flex"><span>Payment Made on</span></div>
+                                                                    <div class="flex"><span>Next Payment Due</span></div>
+                                                                    <div class="flex"><span>Previous Payment Method Used</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Three Bedroom Apartment</span></div>
+                                                                    <div class="flex"><span>Badore, Lagos</span></div>
+                                                                    <div class="flex"><span>#2,000,000</span></div>
+                                                                    <div class="flex"><span>Yearly</span></div>
+                                                                    <div class="flex"><span>Active</span></div>
+                                                                    <div class="flex"><span>12/04/2024</span></div>
+                                                                    <div class="flex"><span>12/04/2025</span></div>
+                                                                    <div class="flex"><span>Bank Transfer</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Landlord Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Landlord Name</span></div>
+                                                                    <div class="flex"><span>Phone number</span></div>
+                                                                    <div class="flex"><span>Residential Address</span></div>
+                                                                    <div class="flex"><span>Gender</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Charles Udokz</span></div>
+                                                                    <div class="flex"><span>+2348131349207</span></div>
+                                                                    <div class="flex"><span>Badore, Lagos</span></div>
+                                                                    <div class="flex"><span>Male</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
 
                                         <tr>
+                                            <td class="select-renew flex align-center gap--4">
+                                                <span>
+                                                    <input type="checkbox">
+                                                </span>
+                                            </td>
                                             <td>Two Bedroom Crescent Apartment</td>
                                             <td>Ikoyi, Lagos</td>
                                             <td>1,000,000</td>
                                             <td>Yearly</td>
                                             <td>Expired</td>
                                             <td>12/04/2024</td>
-                                            <td>
+                                            <td class="view-details flex align-center gap--4">
                                                 <a href="#">View Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="overview-row">
+                                            <td colspan="7">
+                                                <div class="overview-details">
+                                                    <div class="details-content flex gap--20">
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Apartment Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Apartment Name</span></div>
+                                                                    <div class="flex"><span>Location</span></div>
+                                                                    <div class="flex"><span>Price</span></div>
+                                                                    <div class="flex"><span>Lease Duration</span></div>
+                                                                    <div class="flex"><span>Lease Status</span></div>
+                                                                    <div class="flex"><span>Payment Made on</span></div>
+                                                                    <div class="flex"><span>Next Payment Due</span></div>
+                                                                    <div class="flex"><span>Previous Payment Method Used</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Two Bedroom Crescent Apartment</span></div>
+                                                                    <div class="flex"><span>Ikoyi, Lagos</span></div>
+                                                                    <div class="flex"><span>#1,000,000</span></div>
+                                                                    <div class="flex"><span>Yearly</span></div>
+                                                                    <div class="flex"><span>Expired</span></div>
+                                                                    <div class="flex"><span>13/04/2023</span></div>
+                                                                    <div class="flex"><span>12/04/2024</span></div>
+                                                                    <div class="flex"><span>Bank Transfer</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Landlord Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Landlord Name</span></div>
+                                                                    <div class="flex"><span>Phone number</span></div>
+                                                                    <div class="flex"><span>Residential Address</span></div>
+                                                                    <div class="flex"><span>Gender</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Michael Johnson</span></div>
+                                                                    <div class="flex"><span>+2348123456789</span></div>
+                                                                    <div class="flex"><span>Ikoyi, Lagos</span></div>
+                                                                    <div class="flex"><span>Male</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
 
                                         <tr>
-                                            <td>Spacious Self-Contained Apartment</td>
-                                            <td>Eziobodo, Owerri</td>
-                                            <td>250,000</td>
+                                            <td class="select-renew flex align-center gap--4">
+                                                <span>
+                                                    <input type="checkbox">
+                                                </span>
+                                            </td>
+                                            <td>1 Bedroom Flat Apartment</td>
+                                            <td>VI, Lagos</td>
+                                            <td>3,000,000</td>
                                             <td>Yearly</td>
-                                            <td>Terminated</td>
+                                            <td>Expired</td>
                                             <td>12/04/2024</td>
-                                            <td>
+                                            <td class="view-details flex align-center gap--4">
                                                 <a href="#">View Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="overview-row">
+                                            <td colspan="7">
+                                                <div class="overview-details">
+                                                    <div class="details-content flex gap--20">
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Apartment Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Apartment Name</span></div>
+                                                                    <div class="flex"><span>Location</span></div>
+                                                                    <div class="flex"><span>Price</span></div>
+                                                                    <div class="flex"><span>Lease Duration</span></div>
+                                                                    <div class="flex"><span>Lease Status</span></div>
+                                                                    <div class="flex"><span>Payment Made on</span></div>
+                                                                    <div class="flex"><span>Next Payment Due</span></div>
+                                                                    <div class="flex"><span>Previous Payment Method Used</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>1 Bedroom Flat Apartment</span></div>
+                                                                    <div class="flex"><span>V1, Lagos</span></div>
+                                                                    <div class="flex"><span>#3,000,000</span></div>
+                                                                    <div class="flex"><span>Yearly</span></div>
+                                                                    <div class="flex"><span>Expired</span></div>
+                                                                    <div class="flex"><span>13/04/2023</span></div>
+                                                                    <div class="flex"><span>12/04/2024</span></div>
+                                                                    <div class="flex"><span>Bank Transfer</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="apartment-details">
+                                                            <div class="heading">
+                                                                <h4>Landlord Details</h4>
+                                                            </div>
+                                                            <div class="apartment-data flex gap--60">
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Landlord Name</span></div>
+                                                                    <div class="flex"><span>Phone number</span></div>
+                                                                    <div class="flex"><span>Residential Address</span></div>
+                                                                    <div class="flex"><span>Gender</span></div>
+                                                                </div>
+                                                                <div class="flex flex-column gap--20">
+                                                                    <div class="flex"><span>Felix Adejumo</span></div>
+                                                                    <div class="flex"><span>+0934744474</span></div>
+                                                                    <div class="flex"><span>VI, Lagos</span></div>
+                                                                    <div class="flex"><span>Female</span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                            <div class="btn-cont" id="renew">
+                                <button>Renew Rent</button>
                             </div>
                         </div>
                     </div>

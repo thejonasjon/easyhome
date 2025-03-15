@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>easyhome | Profile</title>
 
-    <link rel="stylesheet" href="/src/assets/css/mentainance.css">
+    <link rel="stylesheet" href="/src/assets/css/maintenance.css">
     <script src="/src/js/authenticate.js"></script>
 
 </head>
 <body>
     <main>
-        <div class="post-a-property mentainance">
+        <div class="post-a-property maintenance">
             <div class="content flex">
                 <!-- Sidebar -->
                 <section class="sidebar--dashboard">
@@ -45,7 +45,7 @@
                                             <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
                                         </svg>
                                     </span>Profile</a></li>
-                                <li class="active"><a href="/src/pages/mentainance.html">
+                                <li class="active"><a href="/src/pages/maintenance.html">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
                                             <g fill="#fff">
@@ -54,7 +54,7 @@
                                                 <path fill-rule="evenodd" d="m12.556 17.329l4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.8 6.8 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.6.6 0 0 0-.167.063zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
                                             </g>
                                         </svg>
-                                    </span>Performance & Request</a></li>
+                                    </span>Performance &<br> Request</a></li>
                                 <li><a href="#">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -111,14 +111,14 @@
                         </div>
                     </div>
 
-                    <div class="mentainance-cont">
+                    <div class="maintenance-cont">
                         <div class="ment-content flex flex-column gap--20">
                             <div class="ment-heading">
                                 <h3>Maintenance & Requests</h3>
                             </div>
 
                             <div class="ment-nav">
-                                <div class="nav-btns flex justify-center align-center">
+                                <div class="nav-btns flex justify-center align-center flex-wrap">
                                     <button class="active">Report Issue</button>
                                     <button>My Requests</button>
                                     <button>Maintenance Policies</button>
@@ -219,7 +219,8 @@
                                 <div class="mp-content flex flex-column gap--10">
                                     <div class="heading">
                                         <h3>Maintenance Policies</h3>
-                                        <p>Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                                        <p>Tenants should report maintenance issues as soon as they arise to prevent further damage.
+                                            Emergency issues (e.g., major leaks, electrical hazards) should be reported immediately.</p>
                                     </div>
 
                                     <div class="section">
@@ -229,8 +230,9 @@
 
                                         <div>
                                             <ul>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Landlord-Responsible Repairs: Issues that existed before the tenant moved in, structural damages, plumbing, and electrical failures not caused by misuse.</li>
+                                                <li>Tenant-Responsible Repairs: Damages caused by tenant negligence, pest infestations due to
+                                                    uncleanliness. and minor cosmetic fixes.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -242,10 +244,10 @@
 
                                         <div>
                                             <ul>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Keep the apartment clean and in good condition.</li>
+                                                <li>Report issues earl to avoid worsening the problem.</li>
+                                                <li>Don't ignore minor issues that can become costly repairs.</li>
+                                                <li>Don't attempt maior repairs without and ord approva.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -257,10 +259,10 @@
 
                                         <div>
                                             <ul>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
-                                                <li>Lorem is simply dummy text of the printing and typesetting industry.</li>
+                                                <li>Select the type of issue.</li>
+                                                <li>Provide a clear description and attach images if needed.</li>
+                                                <li>Submit the request and track its progress under "My Requests."</li>
+                                                <li>Urgent requests will be prioritized based on severity.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -304,8 +306,6 @@
     <script src="/src/js/helper.js"></script>
     <script src="/main.js"></script>
     <script src="/src/js/onboarding.js"></script>
-
-
-    <script src="/src/js/mentainance.js"></script>
+    <script src="/src/js/maintenance.js"></script>
 </body>
 </html>

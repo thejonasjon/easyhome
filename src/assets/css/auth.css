@@ -374,6 +374,19 @@ footer {
     }
 }
 
+/* Small mobile */
+@media (max-width: 400px) {
+    .auth-section {
+        & .form-cont-text {
+            & h4 {
+                font-family: poppins-regular;
+                font-size: clamp(2rem, 10vw, 3.6rem);
+                line-height: var(--size-47);
+            }
+        }
+    }
+}
+
 
 /* Small mobile */
 @media (max-width: 480px) {

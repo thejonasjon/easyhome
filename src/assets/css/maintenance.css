@@ -1,12 +1,12 @@
 @import url("/src/assets/css/onboarding.css");
 @import url("/src/assets/css/profile.css");
 
-/* mentainance */
-.mentainance {
+/* maintenance */
+.maintenance {
     position: relative;
 }
 
-.mentainance-cont {
+.maintenance-cont {
     margin-top: clamp(2rem, 10vw, 10rem);
 
     & .ment-content {
@@ -26,10 +26,10 @@
     }
 
     & .ment-nav .nav-btns {
-        gap: clamp(2rem, 10vw, 5rem);
+        gap: clamp(0.5rem, 5vw, 5rem);
         width: 100%;
         background-color: var(--primary-clr-501);
-        padding: var(--size-12);
+        padding: clamp(0.5rem, 5vw, 1.2rem);
         border-radius: var(--size-5);
 
         & button {
@@ -250,7 +250,8 @@
 }
 
 .maintenance-policies {
-    background-color: var(--white-clr-100);
+    background-color: var(--secondary-clr-601);
+    border-radius: var(--size-5);
     /* display: none; */
 
     & .mp-content .heading {

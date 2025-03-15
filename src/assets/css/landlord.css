@@ -1,13 +1,13 @@
 @import url("/src/assets/css/dashboard.css");
 
 .landlord-dashboard {
-    gap: clamp(2rem, 10vw, 5rem);
+    gap: clamp(2rem, 5vw, 5rem);
 
     & .dashboard-card-cont {
-        gap: clamp(1rem, 10vw, 1rem);
+        gap: clamp(1rem, 5vw, 5rem);
 
         & > * {
-            flex: 1 1 100%;
+            flex: 1 1 calc(100% / 3 - 50px);
         }
     }
 
@@ -118,12 +118,11 @@
 }
 
 .rent-stats--2 {
-    /* width: 100%;
-    max-width: 100%; */
     background-color: var(--primary-clr-601);
     border-radius: var(--size-10);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin-bottom: clamp(1rem, 5vw, 2rem);
 
     & .heading h3 {
         font-family: poppins-regular;
@@ -257,6 +256,7 @@
     border-radius: var(--size-10);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin-top: clamp(1rem, 5vw, 2rem);
 
     & .heading h3 {
         font-family: poppins-regular;
@@ -336,8 +336,9 @@
     }
 }
 
-.landlord-dashboard {
+.landlord-dashboard-performance {
     & .dashboard-card-cont {
+        margin-bottom: clamp(1rem, 5vw, 2rem);
 
         & > * {
             flex: 1 1 calc(100% / 2 - 10px);

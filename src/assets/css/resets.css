@@ -190,3 +190,22 @@ a {
   font-family: poppins-regular;
   text-decoration: none;
 }
+
+/* Reduce font size for smaller screens */
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 43.75%;
+  }
+}

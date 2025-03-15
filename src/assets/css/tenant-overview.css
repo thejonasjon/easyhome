@@ -208,3 +208,68 @@
         padding-inline: var(--size-30);
     }
 }
+
+tr {
+    /* position: relative;
+    width: 100%;
+    height: 100%;
+    display: block; */
+}
+
+.overview-row {
+    display: none;
+}
+
+#renew {
+    display: none;
+    width: fit-content;
+    margin-top: 2rem;
+
+    & button {
+        background-color: transparent;
+        border: 1px solid var(--accent-clr-601);
+        padding-inline: var(--size-30);
+        padding-block: var(--size-15);
+    }
+}
+
+.overview-details {
+
+    width: fit-content;
+    height: auto;
+    background-color: var(--secondary-clr-701);
+    padding: var(--size-16);
+
+    & .heading h4 {
+        font-family: "Montserrat";
+        font-size: var(--size-19);
+        line-height: 120%;
+        font-weight: 700;
+        color: var(--primary-clr-1001);
+        margin-bottom: clamp(1rem, 5vw, 2rem);
+    }
+
+    & .apartment-data {
+        background-color: var(--secondary-clr-701);
+        border: 1px solid var(--primary-clr-1101);
+        padding: var(--size-16);
+
+        & div span {
+            font-family: "Mulish";
+            font-size: var(--size-16);
+            line-height: 120%;
+            font-weight: 500;
+            color: var(--primary-clr-1001);
+        }
+    }
+}
+
+th.select-renew {
+    width: 0px !important;
+
+}
+
+.select-renew {
+    display: none;
+    flex: none !important;
+}

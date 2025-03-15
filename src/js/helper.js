@@ -18,21 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedOption = document.getElementById("selected-option");
     const hiddenInput = document.getElementById("dropdown-value");
 
-    dropdownBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        dropdownMenu.classList.toggle("show");
-        dropdownBtn.classList.toggle("active");
-    });
-
-    dropdownMenu.querySelectorAll("li").forEach((item) => {
-        item.addEventListener("click", function (e) {
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener("click", (e) => {
             e.stopPropagation();
-            selectedOption.textContent = this.textContent;
-            hiddenInput.value = this.dataset.value;
-            dropdownBtn.classList.remove("active");
-            dropdownMenu.classList.remove("show");
+            dropdownMenu.classList.toggle("show");
+            dropdownBtn.classList.toggle("active");
         });
-    });
+    }
+
+    if (dropdownMenu) {
+        dropdownMenu.querySelectorAll("li").forEach((item) => {
+            item.addEventListener("click", function (e) {
+                e.stopPropagation();
+                selectedOption.textContent = this.textContent;
+                hiddenInput.value = this.dataset.value;
+                dropdownBtn.classList.remove("active");
+                dropdownMenu.classList.remove("show");
+            });
+        });
+    }
 
     document.addEventListener("click", () => {
         dropdownMenu.classList.remove("show");
@@ -72,6 +76,63 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Post a property redirect functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const postPropertyBtn = document.querySelector("#postProperty button");
+
+   if(postPropertyBtn) {
+    postPropertyBtn.addEventListener("click", () => {
+        window.location.href = "post-property.html";
+    })
+   }
+});
+
+// View details rent funtionality
+document.addEventListener("DOMContentLoaded", () => {
+    const detailBtns = document.querySelectorAll(".view-details a");
+
+    if(detailBtns) {
+        detailBtns.forEach((btn, index) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                const detailsRow = document.querySelectorAll(".overview-row")[index];
+                detailsRow.style.display = detailsRow.style.display === "table-row" ? "none" : "table-row";
+            });
+        })
+    }
+})
+
+// Renew rent funtionality
+document.addEventListener("DOMContentLoaded", () => {
+    const renewRentBtn = document.querySelector("#renewRent button");
+    const checkBtns = document.querySelectorAll(".select-renew");
+    const renewBtn = document.querySelector("#renew");
+    const textElement = document.querySelector(".rent-renew-cont .text p");
+
+    console.log(textElement)
+
+    if (renewRentBtn) {
+        renewRentBtn.addEventListener("click", () => {
+            const isCancel = renewRentBtn.textContent === "Cancel";
+
+            checkBtns.forEach((check) => {
+                check.style.display = isCancel ? "none" : "flex";
+            });
+
+            if (renewBtn) {
+                renewBtn.style.display = isCancel ? "none" : "block";
+            }
+
+            if (textElement) {
+                textElement.style.display = isCancel ? "none" : "block";
+            }
+
+            renewRentBtn.textContent = isCancel ? "Renew Rent" : "Cancel";
+        });
+    }
+});
+
 
 
 

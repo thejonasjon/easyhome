@@ -80,7 +80,6 @@
             }
         }
 
-
         & .slide-cont {
             background-color: var(--primary-clr-901);
             padding-block: var(--size-5);
@@ -139,8 +138,155 @@
 
     }
 
+    & .video-wraper {
+        position: relative;
+
+        & .play-btn {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            & svg {
+                width: 9.75rem;
+                height: 9.75rem;
+                cursor: pointer;
+
+                & path {
+                    fill: #1C1D1BB2;
+                    stroke: none;
+                }
+            }
+        }
+
+        & iframe {
+            display: none;
+        }
+
+        & .video-icons {
+            width: 95%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            background-color: #25272480;
+            padding-inline: clamp(0.4rem, 5vw, 1rem);
+            padding-block: var(--size-3);
+            border-radius: var(--size-7);
+            bottom: var(--size-20);
+
+            & svg {
+
+                & path {
+                    fill: var(--primary-clr-101);
+                }
+            }
+
+            & .play-progress-bar {
+                position: relative;
+                flex-shrink: 1;
+                width: 100%;
+                height: 0.8rem;
+                background-color: #FAF9F8B2;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: var(--accent-clr-601);
+                    width: 20%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+        }
+    }
+
     & .video-tour, .videos {
-        margin-top: clamp(2rem, 10vw, 10rem);
+        margin-top: clamp(1rem, 5vw, 10rem);
+
+        & .video-wraper {
+            width: 100%;
+
+            & .video-bg {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+
+    & .video-tour {
+        & .slide {
+            width: 100%;
+            height: 100%;
+
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    & .video-tour {
+        position: relative;
+
+        & .photos-heading h4 {
+            margin-bottom: -40px; /* I could not figure where the padding coming from, to be uptimize later */
+        }
+
+        & .btn-cont {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: unset;
+
+            & button {
+                width: fit-content;
+                font-family: poppins-regular;
+                font-size: var(--size-19);
+                line-height: 120%;
+                font-weight: 300;
+                color: var(--white-clr-100);
+                background-color: var(--primary-clr-501);
+                padding: var(--size-10) var(--size-20);
+                border-radius: var(--size-5);
+
+                & svg {
+                    path {
+                        fill: var(--primary-clr-201);
+                        stroke: none;
+
+                    }
+                }
+            }
+        }
+
+        & .tour-icons {
+            width: 100%;
+            position: absolute;
+            padding-inline: var(--size-20);
+            bottom: var(--size-20);
+            left: 0;
+
+            & svg {
+                cursor: pointer;
+                display: block;
+                width: var(--size-30);
+                height: var(--size-30);
+                path {
+                    fill: var(--secondary-clr-701) ;
+                }
+            }
+
+            & svg:last-child{
+                path {
+                    stroke: var(--secondary-clr-701) ;
+                }
+            }
+        }
     }
 
     .heading {
