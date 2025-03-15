@@ -2,6 +2,25 @@
 
 'use strict'
 
+// Check for active session
+document.addEventListener("DOMContentLoaded", () => {
+    function onboardingCompletedCheck() {
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        const currentPage = window.location.pathname.replace("/src/pages/", "");
+
+        const tenantDashboard = "/src/pages/tenant.html";
+        const landlordDashboard = "/src/pages/landlord.html";
+
+        if (loggedInUser.role === "userTypeTenant" && currentPage === ("onboarding.html") && loggedInUser.completedOnboarding === true) {
+            window.location.href = tenantDashboard;
+        } else if(loggedInUser.role === "userTypeLandlord" && currentPage === ("onboarding.html") && loggedInUser.completedOnboarding == true){
+            window.location.href = landlordDashboard;
+        }
+    }
+    onboardingCompletedCheck();
+});
+
 // Onboarding funtionality
 document.addEventListener("DOMContentLoaded", function () {
     const nextButton = document.querySelector("#nextBtn");

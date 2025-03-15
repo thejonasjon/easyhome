@@ -257,6 +257,12 @@ body {
     color: var(--primary-clr-101);
 }
 
+.main-nav {
+    & .logoutLink {
+        display: none;
+    }
+}
+
 .main-nav li a,
 .main-nav li svg {
     transition: fill 0.3s ease-in-out, color 0.3s ease-in-out, stroke 0.3s ease-in-out;
