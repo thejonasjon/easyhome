@@ -750,6 +750,18 @@ footer {
 }
 
 /* Mobile styling */
+@media (max-width: 302px) {
+    footer {
+        & .section-one {
+            & .input-group {
+                input {
+                  min-width: clamp(15rem, 5vw, 30rem);
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 555px) {
     .services {
         margin-top: 10rem;
@@ -789,7 +801,6 @@ footer {
 
         & .section-one {
             justify-content: center;
-            padding-inline: unset;
         }
 
         & .section-three {
