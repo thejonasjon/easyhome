@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".page-hero .content-static") ||
     document.querySelector(".page-hero--rent");
 
-    const heroPage = document.querySelector(".page-hero header");
+    const heroPage = document.querySelector(".page-hero header") || document.querySelector(".page-hero--rent header");
 
     const hamburger = document.querySelector("#hamburger");
     const menuOpen = document.querySelector("#menu-open");
