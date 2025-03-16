@@ -76,8 +76,8 @@
     & .input-section {
         background-color: #585B581A;
         border-radius: var(--size-10);
-        padding: var(--size-68) var(--size-48);
-        margin-bottom: var(--size-40);
+        padding: clamp(2rem, 5vw, 6.8rem) clamp(2rem, 5vw, 4.8rem);
+        margin-bottom: clamp(2rem, 5vw, 4rem);
 
         & .section-heading p {
             font-family: "Mulish", sans-serif;
@@ -150,10 +150,10 @@
             display: block;
             min-height: var(--size-60);
             background-color: transparent;
-            font-family: "Montserrat", sans-serif;
-            font-size: var(--size-23);
-            line-height: 1.76rem;
-            font-weight: 500;
+            font-family: "Mulish", sans-serif;
+            font-size: var(--size-19);
+            line-height: 120%;
+            font-weight: 300;
             outline: none;
             border: 0.1px solid var(--white-clr-100);
             padding: var(--size-18);
@@ -199,7 +199,8 @@
         }
 
         & .input-group {
-            margin-bottom: var(--size-80);
+            margin-bottom: clamp(2rem, 8vw, 8rem);
+
         }
 
         & .input-group .bank-icon {
@@ -297,7 +298,7 @@
     }
 
     & .phone-input {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Mulish", sans-serif;
         font-size: var(--size-19);
         font-weight: 300;
         border: 0.5px solid var(--white-clr-100);
@@ -409,7 +410,8 @@
     display: none;
     & .content {
         width: 60%;
-        margin-block: 16.8rem 16.8rem;
+        /* margin-block: 16.8rem 16.8rem; */
+        margin-block: clamp(5rem, 10vw, 16.8rem) clamp(5rem, 10vw, 16.8rem);
         margin-inline: auto;
         color: var(--primary-clr-101);
     }
@@ -514,25 +516,13 @@
 
     & .user-verification {
         & .btn-next-prev {
-            flex-direction: column;
-            gap: clamp(1rem, 5vw, 2rem);
-            justify-content: unset;
+            gap: clamp(0.5rem, 4vw, 1rem);
             justify-content: center;
             align-items: center;
-
-            & .btn-link-cont {
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-
-                & button {
-                    width: 100%;
-                }
-            }
         }
     }
 
     & .btn-link-cont {
-        margin-top: clamp(1rem, 10vw, 10rem);
+        margin-top: clamp(1rem, 5vw, 5rem);
     }
 }

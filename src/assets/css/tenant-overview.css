@@ -108,6 +108,7 @@
 
 /* Rent Overview */
 .rent-overview {
+    overflow-x: scroll;
 
     & .overview-content table {
         tab-size: 100%;

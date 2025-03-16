@@ -2,7 +2,9 @@
 
 .static-bg--fag {
     & > .text .heading--h2 {
-        color: var(--accent-clr-701);
+        /* color: var(--accent-clr-701); */
+        /* color: var(--primary-clr-701); */
+        color: var(--secondary-clr-1101);
     }
 }
 

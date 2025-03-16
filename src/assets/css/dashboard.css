@@ -28,7 +28,7 @@ body {
         background-color: var(--primary-clr-501);
         border-radius: var(--size-10);
         padding: var(--size-22) var(--size-22);
-        margin-bottom: var(--size-40);
+        margin-bottom: clamp(1rem, 3vw, 4rem);
 
         & .section-heading p {
             font-family: "Mulish", sans-serif;
@@ -126,7 +126,7 @@ body {
     }
 
     & .input-section--seperated {
-        gap: clamp(0.5rem, 5vw, 6rem);
+        gap: clamp(0.5rem, 2vw, 6rem);
 
         & > * {
             flex: 1 1 auto;
@@ -335,7 +335,7 @@ body {
 
     & .btn-cont {
         width: 100%;
-        margin-top: clamp(1rem, 10vw, 10rem);
+        margin-top: clamp(1rem, 5vw, 10rem);
 
         & button {
             width: 100%;

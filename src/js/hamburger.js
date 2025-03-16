@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".page-hero .content-static") ||
     document.querySelector(".page-hero--rent");
 
+    const heroPage = document.querySelector(".page-hero header");
+
     const hamburger = document.querySelector("#hamburger");
     const menuOpen = document.querySelector("#menu-open");
     const menuClose = document.querySelector("#menu-close");
@@ -19,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menuClose.classList.toggle("hidden");
         navMenu.style.display = "block";
         body.style.overflow = "hidden";
+        heroPage.style.backgroundColor = "#2e302d";
 
     })
 
@@ -28,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         menuClose.classList.toggle("hidden");
         navMenu.style.display = "none";
         body.style.overflow = "scroll";
+        heroPage.style.backgroundColor = "#121312";
 
     })
 });

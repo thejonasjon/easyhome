@@ -162,7 +162,7 @@
         color: var(--white-clr-100);
         background-color: var(--accent-clr-601);
         padding: var(--size-15) var(--size-30);
-        color: var(--white-clr-100);
+        color: var(--primary-clr-901);
         border-radius: var(--size-5);
         cursor: pointer;
         border: none;

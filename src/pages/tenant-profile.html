@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easyhome | Profile</title>
+
+    <script src="/src/js/authenticate.js"></script>
+    <link rel="stylesheet" href="/src/assets/css/profile.css">
+</head>
+<body>
+    <main>
+        <div class="post-a-property">
+            <div class="content flex">
+                <!-- Sidebar -->
+                <section class="sidebar--dashboard">
+                    <div class="sidebar-container">
+                        <div class="brand-containter top flex align-center gap--10">
+                            <span class="logo-icon">
+                                <img src="/src/assets/images/easyhome-logoicon.svg" alt="easyhome Logo Icon">
+                            </span>
+                            <span class="logo-text">
+                                <img src="/src/assets/images/Group 3.svg" alt="easyhome Logo Text">
+                            </span>
+                        </div>
+
+                        <nav>
+                            <ul role="list" class="flex flex-column">
+                                <li><a href="/src/pages/tenant.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M15 20v-7h7v7zm-4-9V4h11v7zm-9 9v-7h11v7zm0-9V4h7v7z" />
+                                        </svg>
+                                    </span>Dashboard</a></li>
+                                <li><a href="/src/pages/overview.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="64" viewBox="0 0 640 512">
+                                            <path fill="#fff" d="M320.7 352c8.1-89.7 83.5-160 175.3-160c8.9 0 17.6.7 26.1 1.9L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1.9-.1 1.8-.1 2.8v112c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5.1 3 .2 4.5.2h55.9c22.1 0 40-17.9 40-40v-88c0-17.7 14.3-32 32-32h64.7zM496 512a144 144 0 1 0 0-288a144 144 0 1 0 0 288m0-96a24 24 0 1 1 0 48a24 24 0 1 1 0-48m0-144c8.8 0 16 7.2 16 16v80c0 8.8-7.2 16-16 16s-16-7.2-16-16v-80c0-8.8 7.2-16 16-16" />
+                                        </svg>
+                                    </span>Rent Overview</a></li>
+                                <li class="active"><a href="/src/pages/tenant-profile.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fff" class="size-5">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>Profile</a></li>
+                                <li><a href="/src/pages/maintenance.html">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <g fill="#fff">
+                                                <path fill-rule="evenodd" d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025a.75.75 0 0 1 .313 1.248l-3.32 3.319a2.25 2.25 0 0 0 1.941 1.939l3.318-3.319a.75.75 0 0 1 1.248.313a5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5 5 0 0 1 12 6.75M4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75z" clip-rule="evenodd" />
+                                                <path d="m10.076 8.64l-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062z" />
+                                                <path fill-rule="evenodd" d="m12.556 17.329l4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.8 6.8 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.6.6 0 0 0-.167.063zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06" clip-rule="evenodd" />
+                                            </g>
+                                        </svg>
+                                    </span>Performance &<br> Request</a></li>
+                                <li><a href="#">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h6q.425 0 .713.288T12 4t-.288.713T11 5H5v14h6q.425 0 .713.288T12 20t-.288.713T11 21zm12.175-8H10q-.425 0-.712-.288T9 12t.288-.712T10 11h7.175L15.3 9.125q-.275-.275-.275-.675t.275-.7t.7-.313t.725.288L20.3 11.3q.3.3.3.7t-.3.7l-3.575 3.575q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712t.287-.688z" />
+                                        </svg>
+                                    </span>Log Out</a></li>
+                            </ul>
+                        </nav>
+
+                        <a href="mailto:customercare@easyhome.ng">
+                            <div class="support">
+                                <p>Having troubles?</p>
+                                <p>Contact Our Support Team:</p>
+                                <p style="font-weight: 700;">Customercare@easyhome.ng</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </section>
+
+                <!-- Content -->
+                <section class="main-content">
+                    <div class="main-content-container flex flex-column gap--40">
+                        <div class="profile-search-logout flex justify-between">
+
+                            <div class="search-notification-logout flex align-center justify-self-right margin-left--auto">
+                                <div class="search-cont">
+                                    <div class="input-group flex align-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#fff" d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                                        </svg>
+                                        <input type="text" placeholder="Search">
+                                    </div>
+                                </div>
+
+                                <div class="notification">
+                                    <a href="/src/pages/notifications.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                            <path fill="#fff" fill-rule="evenodd" d="M12 1a2 2 0 0 0-1.98 2.284A7 7 0 0 0 5 10v8H4a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2h-1v-8a7 7 0 0 0-5.02-6.716Q14 3.144 14 3a2 2 0 0 0-2-2m2 21a1 1 0 0 1-1 1h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1" clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="logout">
+                                    <ul role="list">
+                                        <li>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v10m6.4-5.4a9 9 0 1 1-12.77.04" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="profile-edit-button">
+                            <div class="btn-cont">
+                                <button id="editProfile" type="button">Edit Profile</button>
+                            </div>
+                        </section>
+
+                        <!-- Profil Display -->
+                        <section class="profile" >
+                            <div class="profile-content">
+                                <div class="section-info">
+                                    <div class="heading">
+                                        <h5>My Profile</h5>
+                                    </div>
+
+                                    <div class="info-grid flex">
+                                        <div class="profile-info flex gap--40 flex-wrap">
+                                            <div class="details">
+                                                <div class="sub-info profile-photo">
+                                                    <div class="profile-img">
+                                                        <img src="https://s3-alpha-sig.figma.com/img/4bb3/9f42/1dcdc1e2d913c98de74566c55e84dbe1?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=pfHjRJwwvk2Mv4U3As7dIOfNGTf3Wc3n5Tx7Rit9pK78ZEVZfdOo7zBf1zDXrKVkEhH3-nOmDrOv6NyUR6iu~2VGHsQBWWwdw0PyyhDpU9S-u85BLqHbTHs~oOGZRgJNucj73uwxoCa5UyHRiRJKooAK612teqb~rvgADNpfmeJK7kyiat9RiipvKt3~uIqUqSUMN~yfxZdMZqnntxU0Ey51CGLg9JS3mpqNTzW~TOD-6azsG4ETxckk~5iH54B2TmTWiy1caGEEBaLjAk2ZqXO3gf16owjXMiNqrIf8OIMqUt1oFy62GjWpKRFJj9pZrQsEIvbo10VcXtOwcmWEoQ__" alt="Default Profile">
+                                                    </div>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                                                            <g fill="#fff">
+                                                                <path d="M12 9a3.75 3.75 0 1 0 0 7.5A3.75 3.75 0 0 0 12 9" />
+                                                                <path fill-rule="evenodd" d="M9.344 3.071a50 50 0 0 1 5.312 0c.967.052 1.83.585 2.332 1.39l.821 1.317c.24.383.645.643 1.11.71q.579.081 1.152.177c1.432.239 2.429 1.493 2.429 2.909V18a3 3 0 0 1-3 3h-15a3 3 0 0 1-3-3V9.574c0-1.416.997-2.67 2.429-2.909q.573-.096 1.151-.178a1.56 1.56 0 0 0 1.11-.71l.822-1.315a2.94 2.94 0 0 1 2.332-1.39M6.75 12.75a5.25 5.25 0 1 1 10.5 0a5.25 5.25 0 0 1-10.5 0m12-1.5a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5" clip-rule="evenodd" />
+                                                            </g>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="profile-name">Charles Udokz</p>
+                                                    <p class="label-value">harles Udokz</p>
+                                                    <p class="label-value">Lagos, Nigeria</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-info">
+                                    <div class="heading">
+                                        <h5>Personal Information</h5>
+                                    </div>
+
+                                    <div class="info-grid flex">
+                                        <div class="info-left flex flex-column">
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">First Name</p>
+                                                    <p class="label-value">Charles</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Email Address</p>
+                                                    <p class="label-value">charlesudokz@gmail.com</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Occupation</p>
+                                                    <p class="label-value">Businessman</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-right flex flex-column">
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Last Name</p>
+                                                    <p class="label-value">Udokz</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Phone Number</p>
+                                                    <p class="label-value">+2348131349207</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-info">
+                                    <div class="heading">
+                                        <h5>Address</h5>
+                                    </div>
+
+                                    <div class="info-grid flex">
+                                        <div class="info-left flex flex-column">
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Country</p>
+                                                    <p class="label-value">Nigeria</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">LGA</p>
+                                                    <p class="label-value">Ikeja</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Postal Code</p>
+                                                    <p class="label-value">100271</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-right flex flex-column">
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">State</p>
+                                                    <p class="label-value">Lagos</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="details">
+                                                <div class="sub-info">
+                                                    <p class="label">Residential Address</p>
+                                                    <p class="label-value">No 17 Toyin Street Ikeja, Lagos</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-info">
+                                    <div class="info-grid flex">
+                                        <div>
+                                            <div class="heading">
+                                                <h5>Bank Account Details</h5>
+                                            </div>
+
+                                            <div class="info-left flex flex-column">
+                                                <div class="details">
+                                                    <div class="sub-info">
+                                                        <p class="label">Account Number</p>
+                                                        <p class="label-value">0027656511</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="details">
+                                                    <div class="sub-info">
+                                                        <p class="label">Account Name</p>
+                                                        <p class="label-value">Charles Udokz Ifediora</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="details">
+                                                    <div class="sub-info">
+                                                        <p class="label">Bank</p>
+                                                        <p class="label-value">Providus Bank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="heading">
+                                                <h5>Bank Card Details</h5>
+                                            </div>
+
+                                            <div class="info-left flex flex-column">
+                                                <div class="details">
+                                                    <div class="sub-info">
+                                                        <p class="label">Card Number</p>
+                                                        <p class="label-value">12345678910111213141516</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="details flex gap--20">
+                                                    <div class="sub-info">
+                                                        <p class="label">Expiry Date</p>
+                                                        <p class="label-value">12 / 26</p>
+                                                    </div>
+
+                                                    <div class="sub-info">
+                                                        <p class="label">CVV</p>
+                                                        <p class="label-value flex gap--10"> *** <a href="#">click to view pin</a></p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="details">
+                                                    <div class="sub-info">
+                                                        <p class="label">Card Pin</p>
+                                                        <p class="label-value flex gap--10"> *** <a href="#">click to view pin</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Edit form -->
+                        <section>
+                            <div class="profile-edit">
+                                <div class="heading">
+                                    <h4>Edit Profile</h4>
+                                </div>
+                                <form action="#">
+                                    <div class="wrap">
+                                        <!-- Personal Information Section -->
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Personal Information</p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="firstName">First Name</label>
+                                                    <input type="text" id="firstName" name="firstName" placeholder="Charles" required>
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="lastName">Last Name</label>
+                                                    <input type="text" id="lastName" name="lastName" placeholder="Udokz" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" id="email" name="email" placeholder="charlesudokz@gmail.com" required>
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="phoneNumber">Phone Number</label>
+                                                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="09036257618" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="occupation">Occupation</label>
+                                                    <input type="text" id="occupation" name="occupation" placeholder="UI/UX Engineer" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Address Section -->
+                                        <div class="input-section">
+                                            <div class="section-heading">
+                                                <p>Address</p>
+                                            </div>
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="country">Country</label>
+                                                    <input type="text" id="country" name="country" placeholder="Nigeria" required>
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="state">State</label>
+                                                    <input type="text" id="state" name="state" placeholder="Lagos" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="lga">LGA</label>
+                                                    <input type="text" id="lga" name="lga" placeholder="Ikeja" required>
+                                                </div>
+
+                                                <div class="input-group">
+                                                    <label for="postCode">Postal Code</label>
+                                                    <input type="number" id="postCode" name="postCode" placeholder="100101" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="sub-section flex">
+                                                <div class="input-group">
+                                                    <label for="residentialAddress">Residential Address</label>
+                                                    <input type="text" id="residentialAddress" name="residentialAddress" placeholder="12, Adebolaji Street" required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Bank Account Details Section -->
+                                        <div class="input-section flex gap--40">
+                                            <div class="bank-details-left">
+                                                <div class="section-heading">
+                                                    <p>Bank Account Details</p>
+                                                </div>
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountNumber">Account Number</label>
+                                                        <input type="text" id="accountNumber" name="accountNumber" placeholder="0027656511" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountName">Account Name</label>
+                                                        <input type="text" id="accountName" name="accountName" placeholder="Charles Udokz Ifediora" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="bank">Bank</label>
+                                                        <input type="text" id="bank" name="bank" placeholder="Providus Bank" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="bank-details-right">
+                                                <div class="section-heading">
+                                                    <p>Bank Card Details</p>
+                                                </div>
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="accountNumber">Card Number</label>
+                                                        <input type="text" id="accountNumber" name="accountNumber" placeholder="1234567890111213141516" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex flex-wrap gap--10">
+                                                    <div class="input-group input-group-half">
+                                                        <label for="expiryDate">Expiry Date</label>
+                                                        <div class="expiry-container flex align-center">
+                                                            <input type="text" class="expiry-input mm" placeholder="MM" maxlength="2">
+                                                            <span></span>
+                                                            <input type="text" class="expiry-input yy" placeholder="YY" maxlength="2">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="input-group input-group-half">
+                                                        <label for="cardCVV">CVV</label>
+                                                        <input type="text" name="cardCVV" id="cardCVV" placeholder="***">
+                                                    </div>
+                                                </div>
+
+                                                <div class="sub-section flex">
+                                                    <div class="input-group">
+                                                        <label for="bank">Pin</label>
+                                                        <input type="text" id="bankPin" name="bankPin" placeholder="**" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-cont">
+                                        <button type="submit">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="logout-modal" id="logoutModal">
+                <div class="modal-content flex flex-column justify-center align-center">
+                    <div class="lm-text">
+                        <h4>Are you sure you want to log out?</4>
+                    </div>
+
+                    <div class="btn-group flex align-center">
+                        <button class="logout-no" id="logOutNo">No</button>
+                        <button class="logout-yes" id="logOutYes">Yes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/src/js/sidebar.js"></script>
+    <script src="/src/js/helper.js"></script>
+    <script src="/src/js/profile.js"></script>
+</body>
+</html>

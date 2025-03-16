@@ -408,10 +408,17 @@ footer {
     .auth-section {
         & .first-last-name {
             flex-wrap: wrap;
-            gap: clamp(1rem, 10vw, 2rem);
+            gap: clamp(1rem, 5vw, 2rem);
         }
 
         & .empty {
+            display: none;
+        }
+    }
+
+    .modal-block {
+
+        & .empty-void {
             display: none;
         }
     }

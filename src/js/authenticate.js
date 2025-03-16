@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const tenantDashboard = "/src/pages/tenant.html";
         const landlordDashboard = "/src/pages/landlord.html";
 
-        const landlordPages = ["landlord.html", "post-property.html", "performance.html", "my-listings.html"];
+        const landlordPages = ["landlord.html", "post-property.html", "my-listings.html", "landlord-profile.html", "performance.html"];
 
-        const tenantPages = ["tenant.html", "overview.html", "maintenance.html"];
+        const tenantPages = ["tenant.html", "overview.html", "tenant-profile.html", "maintenance.html"];
 
         if (loggedInUser.role === "userTypeTenant" && landlordPages.includes(currentPage)) {
             window.location.href = tenantDashboard;

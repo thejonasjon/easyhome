@@ -67,7 +67,7 @@
 
     & .content {
         padding-block: var(--size-50) 0;
-        padding-inline: clamp(2rem, 12vw, 11rem);
+        padding-inline: clamp(0.6rem, 10vw, 12rem);
     }
 
     & ol.level--1 > li:not(.level--2) {
@@ -136,7 +136,13 @@
 
 /* Small mobile */
 @media (max-width: 480px) {
+    .terms-and-conditions, .privacy-and-policy {
 
+        & .content {
+            padding-block: var(--size-50) 0;
+            padding-inline: clamp(0.6rem, 10vw, 8rem);
+        }
+    }
 }
 
 /* Medium mobile */

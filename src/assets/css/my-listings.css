@@ -88,10 +88,12 @@
         flex-wrap: wrap;
         gap: var(--size-16);
         margin-block: clamp(1rem, 6vw, 6rem);
+        justify-content: center;
 
         & > * {
             flex: 1 1 calc(100% / 3 - var(--size-48));
-            width: 20rem;
+            max-width: 30rem;
+            min-width: 25rem;
         }
 
         & .text {

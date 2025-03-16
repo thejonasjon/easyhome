@@ -163,6 +163,10 @@
 
 /* My request */
 .my-request {
+    & .overview-content {
+        overflow-x: scroll;
+    }
+
     & .overview-content table {
         tab-size: 100%;
         width: 100%;

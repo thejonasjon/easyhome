@@ -377,8 +377,8 @@ body {
 
 .all-listings {
     background-color: var(--primary-clr-901);
-    padding-inline: clamp(2rem, 10vw, 5rem);
-    padding-block: clamp(1rem, 10vw, 3rem);
+    padding-inline: clamp(1rem, 5vw, 5rem);
+    padding-block: clamp(1rem, 5vw, 3rem);
 
     & .text .heading--h4 {
         font-family: "Montserrat", sans-serif;
@@ -390,6 +390,7 @@ body {
     }
 
     & .listings-cont {
+        justify-content: center;
         flex-wrap: wrap;
         gap: clamp(0.5rem, 4vw, 2rem);
 
@@ -493,6 +494,17 @@ body {
             flex: 1 1 calc(100% / 2 - 10px);
             min-width: clamp(10rem, 30vw, 18rem);
         }
+    }
+
+    .listings-cont {
+        justify-content: center;
+        & .block {
+            min-width: unset;
+        }
+
+        & > * {
+            flex: 1 1 calc(100% / 1 - 40px) !important;
+        };
     }
 }
 

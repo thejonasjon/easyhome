@@ -789,6 +789,7 @@ footer {
 
         & .section-one {
             justify-content: center;
+            padding-inline: unset;
         }
 
         & .section-three {
@@ -934,7 +935,7 @@ footer {
 
         & .input-group {
             input {
-              min-width: clamp(10rem, 50vw, 42rem);
+              min-width: clamp(35rem, 50vw, 42rem);
             }
         }
     }
