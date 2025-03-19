@@ -1224,7 +1224,7 @@ svg {
 /* Tablet screen */
 @media (max-width: 1024px) {
 
-  .hero, .page-hero {
+  .hero, .page-hero, .page-hero--rent {
     & .brand-containter {
       width: 18.4rem;
       height: auto;
